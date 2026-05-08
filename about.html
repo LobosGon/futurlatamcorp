@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About Us | FUTUR LATAM CORP</title>
+  <meta name="description" content="Learn about Futur Latam Corp—international real estate development across South Florida and Chile." />
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,300,0,0&display=swap" rel="stylesheet" />
+  <script id="tailwind-config">
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: { navy: "#001a33", ink: "#000d1a", gold: "#d4af37", goldMuted: "#b8952f", teal: "#008b8b" },
+          },
+          fontFamily: {
+            sans: ["Inter", "system-ui", "sans-serif"],
+            serif: ["Playfair Display", "Georgia", "serif"],
+          },
+        },
+      },
+    };
+  </script>
+</head>
+<body class="min-h-screen bg-brand-navy pb-24 text-white antialiased selection:bg-brand-gold selection:text-brand-navy pt-24 md:pt-28">
+  <header class="site-nav fixed inset-x-0 top-0 z-50 bg-brand-navy/70 backdrop-blur-sm">
+    <nav class="mx-auto flex max-w-7xl items-center justify-between px-6 py-5 lg:px-10">
+      <a href="index.html" class="flex items-center gap-3">
+        <img src="assets/images/logo_futur.jpeg" alt="Futur Latam Corp logo" class="h-12 w-12 object-contain" decoding="async" />
+        <div class="leading-tight">
+          <span class="block font-sans text-lg font-light tracking-[0.3em]">FUTUR</span>
+          <span class="block font-sans text-[10px] uppercase tracking-[0.22em] text-brand-gold">Latam Corp</span>
+        </div>
+      </a>
+      <div class="hidden md:flex md:items-center md:gap-10">
+        <a class="nav-link-underline font-sans text-xs font-semibold uppercase tracking-[0.2em] text-white/85 hover:text-brand-gold" href="index.html">Home</a>
+        <a class="nav-link-underline font-sans text-xs font-semibold uppercase tracking-[0.2em] text-white/85 hover:text-brand-gold" href="residential.html">Projects</a>
+        <a class="nav-active nav-link-underline font-sans text-xs font-semibold uppercase tracking-[0.2em] text-brand-gold" href="about.html">About Us</a>
+        <a class="nav-link-underline font-sans text-xs font-semibold uppercase tracking-[0.2em] text-white/85 hover:text-brand-gold" href="contact.html">Contact</a>
+      </div>
+      <button type="button" class="rounded border border-brand-gold/40 p-2 text-brand-gold md:hidden" aria-label="Open menu" data-nav-toggle>
+        <span class="material-symbols-outlined text-2xl">menu</span>
+      </button>
+    </nav>
+  </header>
+
+  <aside data-mobile-drawer class="mobile-drawer fixed right-0 top-0 z-[60] flex h-full w-[min(100%,320px)] flex-col gap-8 border-l border-brand-gold/25 bg-brand-ink px-8 pb-16 pt-24 md:hidden">
+    <button type="button" class="absolute right-6 top-6 text-brand-gold" data-nav-close aria-label="Close menu">
+      <span class="material-symbols-outlined text-3xl">close</span>
+    </button>
+    <a class="font-sans text-sm font-semibold uppercase tracking-[0.2em] text-white/90" href="index.html">Home</a>
+    <a class="font-sans text-sm font-semibold uppercase tracking-[0.2em] text-white/90" href="residential.html">Projects</a>
+    <a class="font-sans text-sm font-semibold uppercase tracking-[0.2em] text-brand-gold" href="about.html">About Us</a>
+    <a class="font-sans text-sm font-semibold uppercase tracking-[0.2em] text-white/90" href="contact.html">Contact</a>
+  </aside>
+
+  <main class="mx-auto max-w-7xl px-6 lg:px-10">
+    <!-- HERO -->
+    <section class="relative overflow-hidden border border-brand-gold/20 bg-brand-ink/35 px-8 py-16 md:px-12 md:py-20" data-reveal>
+      <div class="pointer-events-none absolute inset-0 -z-10">
+        <img alt="" src="assets/images/monroe/04-DJI_0827-Edit-1.jpg" width="2000" height="1200" decoding="async" class="h-full w-full object-cover opacity-12 grayscale" />
+        <div class="absolute inset-0 bg-gradient-to-b from-brand-navy/95 via-brand-navy/78 to-brand-navy"></div>
+      </div>
+      <p class="font-sans text-[11px] font-semibold uppercase tracking-[0.35em] text-brand-gold/90">About</p>
+      <h1 class="mt-6 max-w-4xl font-serif text-4xl text-white md:text-6xl">International real estate, built with discipline.</h1>
+      <p class="mt-8 max-w-3xl font-sans text-sm leading-relaxed text-white/78">
+        Based in South Florida, we are an international real estate firm focused on the vibrant markets of Broward County and Miami-Dade County.
+        Our work is inspired by the region’s diversity, potential, and dynamic growth.
+      </p>
+      <div class="mt-10 flex flex-wrap gap-3">
+        <span class="rounded-full border border-brand-gold/25 bg-brand-navy/40 px-5 py-2 font-sans text-[11px] uppercase tracking-[0.28em] text-brand-gold/95">Development</span>
+        <span class="rounded-full border border-brand-gold/25 bg-brand-navy/40 px-5 py-2 font-sans text-[11px] uppercase tracking-[0.28em] text-brand-gold/95">Investment</span>
+        <span class="rounded-full border border-brand-gold/25 bg-brand-navy/40 px-5 py-2 font-sans text-[11px] uppercase tracking-[0.28em] text-brand-gold/95">Land</span>
+        <span class="rounded-full border border-brand-gold/25 bg-brand-navy/40 px-5 py-2 font-sans text-[11px] uppercase tracking-[0.28em] text-brand-gold/95">Property management</span>
+      </div>
+      <div class="mt-12 flex flex-wrap gap-4">
+        <a href="contact.html#form" class="hover-glow inline-flex items-center rounded-sm bg-brand-gold px-8 py-3.5 font-sans text-xs font-bold uppercase tracking-[0.28em] text-brand-navy">Contact</a>
+        <a href="residential.html" class="hover-glow inline-flex items-center rounded-sm border border-brand-gold/60 px-8 py-3.5 font-sans text-xs font-bold uppercase tracking-[0.28em] text-brand-gold hover:bg-brand-gold hover:text-brand-navy">View projects</a>
+      </div>
+    </section>
+
+    <!-- CONTENT GRID -->
+    <section class="mt-18 grid gap-10 pt-16 lg:grid-cols-[1.05fr_0.95fr] lg:gap-12">
+      <article class="space-y-6 rounded-sm border border-brand-gold/20 bg-brand-ink/30 p-10 font-sans text-sm leading-relaxed text-white/80" data-reveal>
+        <h2 class="font-serif text-3xl text-brand-gold">Who we are</h2>
+        <p>
+          We specialize in real estate development, investment, land acquisition, and property management, with experience in single-family homes, multifamily residences,
+          offices, retail, and mixed-use projects.
+        </p>
+        <p>
+          Our integrated approach allows us to oversee each stage of development — from concept to completion — with care, innovation, and precision.
+        </p>
+        <p>
+          We collaborate with investors, partners, and communities who share our vision of creating long-term value and transforming neighborhoods through thoughtful and sustainable development.
+        </p>
+      </article>
+
+      <aside class="rounded-sm border border-brand-gold/20 bg-brand-ink/30 p-10" data-delay="1" data-reveal>
+        <h2 class="font-serif text-3xl text-brand-gold">How we work</h2>
+        <div class="mt-8 space-y-6 font-sans text-sm text-white/80">
+          <div class="flex gap-4">
+            <span class="badge-chip text-brand-gold">01</span>
+            <div>
+              <p class="font-semibold text-white">Underwrite with clarity</p>
+              <p class="mt-1 text-white/70">We align scope, timelines, and constraints early—then execute without surprises.</p>
+            </div>
+          </div>
+          <div class="flex gap-4">
+            <span class="badge-chip text-brand-gold">02</span>
+            <div>
+              <p class="font-semibold text-white">Design for durability</p>
+              <p class="mt-1 text-white/70">Clean architecture, practical details, and efficient operations across the asset lifecycle.</p>
+            </div>
+          </div>
+          <div class="flex gap-4">
+            <span class="badge-chip text-brand-gold">03</span>
+            <div>
+              <p class="font-semibold text-white">Deliver with discipline</p>
+              <p class="mt-1 text-white/70">From concept to completion—we stay hands-on to protect quality and schedule.</p>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="mt-16 border-t border-brand-gold/15 pt-16" data-reveal>
+      <div class="flex flex-wrap items-end justify-between gap-6">
+        <div>
+          <p class="font-sans text-[11px] font-semibold uppercase tracking-[0.35em] text-brand-gold/90">Capabilities</p>
+          <h2 class="mt-4 font-serif text-3xl text-brand-gold md:text-4xl">What we deliver</h2>
+        </div>
+        <a href="contact.html#form" class="nav-link-underline font-sans text-xs font-semibold uppercase tracking-[0.25em] text-brand-gold">Start a conversation →</a>
+      </div>
+      <div class="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+        <div class="rounded-sm border border-brand-gold/20 bg-brand-ink/30 p-8">
+          <p class="font-sans text-[11px] font-semibold uppercase tracking-[0.28em] text-brand-gold/90">Development</p>
+          <p class="mt-4 font-sans text-sm text-white/75">Concept-to-delivery execution with scope control and quality oversight.</p>
+        </div>
+        <div class="rounded-sm border border-brand-gold/20 bg-brand-ink/30 p-8">
+          <p class="font-sans text-[11px] font-semibold uppercase tracking-[0.28em] text-brand-gold/90">Investment</p>
+          <p class="mt-4 font-sans text-sm text-white/75">Pragmatic underwriting, durable fundamentals, and clear exit optionality.</p>
+        </div>
+        <div class="rounded-sm border border-brand-gold/20 bg-brand-ink/30 p-8">
+          <p class="font-sans text-[11px] font-semibold uppercase tracking-[0.28em] text-brand-gold/90">Land acquisition</p>
+          <p class="mt-4 font-sans text-sm text-white/75">Site screening and corridor strategy across Broward and Miami-Dade.</p>
+        </div>
+        <div class="rounded-sm border border-brand-gold/20 bg-brand-ink/30 p-8">
+          <p class="font-sans text-[11px] font-semibold uppercase tracking-[0.28em] text-brand-gold/90">Property management</p>
+          <p class="mt-4 font-sans text-sm text-white/75">Stewardship that supports leasing performance and long-term asset health.</p>
+        </div>
+        <div class="rounded-sm border border-brand-gold/20 bg-brand-ink/30 p-8">
+          <p class="font-sans text-[11px] font-semibold uppercase tracking-[0.28em] text-brand-gold/90">Asset types</p>
+          <p class="mt-4 font-sans text-sm text-white/75">Single-family, multifamily, offices, retail, and mixed-use projects.</p>
+        </div>
+        <div class="rounded-sm border border-brand-gold/20 bg-brand-ink/30 p-8">
+          <p class="font-sans text-[11px] font-semibold uppercase tracking-[0.28em] text-brand-gold/90">Partnerships</p>
+          <p class="mt-4 font-sans text-sm text-white/75">Aligned capital + transparent execution with investors and communities.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- IMAGE STRIP -->
+    <section class="mt-16 grid gap-6 lg:grid-cols-3" data-reveal>
+      <figure class="overflow-hidden rounded-sm border border-brand-gold/20 bg-black">
+        <img alt="Portfolio highlight" src="assets/images/monroe/01-DSC08361-1.jpg" width="560" height="360" decoding="async" class="aspect-[16/11] h-full w-full object-cover grayscale transition duration-[900ms] hover:grayscale-0 hover:scale-[1.02]" />
+      </figure>
+      <figure class="overflow-hidden rounded-sm border border-brand-gold/20 bg-black">
+        <img alt="Portfolio highlight" src="assets/images/monroe/09-Staging.jpg" width="560" height="360" decoding="async" class="aspect-[16/11] h-full w-full object-cover grayscale transition duration-[900ms] hover:grayscale-0 hover:scale-[1.02]" />
+      </figure>
+      <figure class="overflow-hidden rounded-sm border border-brand-gold/20 bg-black">
+        <img alt="Portfolio highlight" src="assets/images/monroe/18-Staging.png" width="560" height="360" decoding="async" class="aspect-[16/11] h-full w-full object-cover grayscale transition duration-[900ms] hover:grayscale-0 hover:scale-[1.02]" />
+      </figure>
+    </section>
+
+    <!-- CTA -->
+    <section class="mt-16 overflow-hidden rounded-sm border border-brand-gold/15 bg-brand-ink/35 px-10 py-12 text-center" data-reveal>
+      <h2 class="font-serif text-3xl text-brand-gold md:text-4xl">Building long-term value.</h2>
+      <p class="mx-auto mt-5 max-w-3xl font-sans text-sm leading-relaxed text-white/75">
+        Our goal is to build spaces where people can live, work, and thrive—contributing to the continued evolution of South Florida’s urban landscape.
+      </p>
+      <a href="contact.html#form" class="hover-glow mt-9 inline-flex items-center rounded-sm bg-brand-gold px-10 py-3.5 font-sans text-xs font-bold uppercase tracking-[0.26em] text-brand-navy">Contact</a>
+    </section>
+  </main>
+
+  <footer class="border-t border-brand-gold/10 bg-brand-ink px-6 py-12 lg:px-10">
+    <div class="mx-auto grid max-w-7xl gap-10 md:grid-cols-[1.15fr_0.9fr_0.95fr] md:items-start">
+      <div class="space-y-4">
+        <div class="flex items-center gap-4">
+          <img src="assets/images/logo_futur.jpeg" alt="Futur Latam Corp logo" class="h-10 w-10 object-contain" decoding="async" />
+          <div class="leading-tight">
+            <p class="font-sans text-sm font-semibold uppercase tracking-[0.28em] text-brand-gold">FUTUR LATAM CORP</p>
+            <p class="mt-1 font-sans text-xs text-white/60">South Florida · Chile</p>
+          </div>
+        </div>
+        <p class="font-sans text-sm leading-relaxed text-white/70">
+          International real estate development, investment, and property advisory with disciplined execution.
+        </p>
+      </div>
+
+      <div class="space-y-4">
+        <p class="font-sans text-[11px] font-semibold uppercase tracking-[0.28em] text-brand-gold/90">Office</p>
+        <p class="font-sans text-sm leading-relaxed text-white/75">5000 Pembroke Rd<br />Hollywood, FL 33021</p>
+        <div class="overflow-hidden rounded-sm border border-brand-gold/15 bg-brand-navy/35 hidden md:block">
+          <iframe
+            title="Futur Latam Corp — 5000 Pembroke Rd map"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            class="h-28 w-full"
+            src="https://www.google.com/maps?q=5000%20Pembroke%20Rd%2C%20Hollywood%2C%20FL%2033021&output=embed"
+          ></iframe>
+        </div>
+        <a class="inline-flex items-center gap-2 border-b border-brand-gold/40 font-sans text-xs font-semibold uppercase tracking-[0.2em] text-brand-gold hover:text-white" href="https://www.google.com/maps/place/5000+Pembroke+Rd,+Hollywood,+FL+33021,+EE.+UU./@25.9950849,-80.193496,914m/data=!3m2!1e3!4b1!4m6!3m5!1s0x88d9a9538ed91211:0xa9ac3e5a583cd4d4!8m2!3d25.9950849!4d-80.193496!16s%2Fg%2F11wfd7xncv?entry=ttu&g_ep=EgoyMDI1MTExMi4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer">
+          Open in Google Maps
+          <span aria-hidden="true">→</span>
+        </a>
+      </div>
+
+      <div class="space-y-5">
+        <p class="font-sans text-[11px] font-semibold uppercase tracking-[0.28em] text-brand-gold/90">Contact</p>
+        <div class="grid gap-3 font-sans text-sm text-white/78">
+          <div class="flex items-start gap-3">
+            <span class="material-symbols-outlined text-brand-gold">call</span>
+            <p>+1 786 755 6998 <span class="text-xs text-white/50">(Miami)</span></p>
+          </div>
+          <div class="flex items-start gap-3">
+            <span class="material-symbols-outlined text-brand-gold">call</span>
+            <p>+56 9 6728 3175 <span class="text-xs text-white/50">(Santiago)</span></p>
+          </div>
+          <div class="flex items-start gap-3">
+            <span class="material-symbols-outlined text-brand-gold">mail</span>
+            <a class="break-all hover:text-brand-gold" href="mailto:contact@futurlatamcorp.com">contact@futurlatamcorp.com</a>
+          </div>
+        </div>
+
+        <div class="flex flex-wrap gap-x-6 gap-y-3 border-t border-brand-gold/10 pt-5 font-sans text-xs font-semibold uppercase tracking-[0.22em] text-white/65">
+          <a class="hover:text-brand-gold" href="about.html">About Us</a>
+          <a class="hover:text-brand-gold" href="residential.html">Residential</a>
+          <a class="hover:text-brand-gold" href="retail.html">Retail</a>
+          <a class="hover:text-brand-gold" href="industrial.html">Industrial</a>
+          <a class="hover:text-brand-gold" href="contact.html#form">Contact</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="mx-auto mt-10 max-w-7xl border-t border-brand-gold/10 pt-6 text-center font-sans text-xs text-white/50">
+      © 2026 Futur Latam Corp. All rights reserved.
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>

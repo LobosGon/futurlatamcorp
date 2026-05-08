@@ -1,0 +1,26 @@
+Cómo subir el sitio a tu hosting
+==============================
+
+1. Sube TODO el contenido de la carpeta "website" al directorio público del servidor
+   (por ejemplo public_html, www, o htdocs), de modo que index.html quede en la raíz pública.
+
+2. Estructura esperada en el servidor:
+   index.html
+   about.html
+   contact.html
+   residential.html
+   retail.html
+   industrial.html
+   model-granada.html
+   css/styles.css
+   js/main.js
+   assets/images/   (tus fotos)
+   assets/videos/   (tus clips en bucle, opcional)
+   assets/images/plans/
+
+3. No necesitas Node ni build: es HTML estático.
+
+4. CDN: el sitio usa Tailwind y fuentes Google desde internet; el servidor debe permitir
+   conexiones HTTPS salientes a los CDNs (lo habitual en cualquier hosting).
+
+5. Formulario: edita contact.html y configura action="" con tu servicio de formularios.
