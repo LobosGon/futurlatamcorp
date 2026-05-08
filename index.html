@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>FUTUR LATAM CORP – Real Estate Miami & Chile</title>
   <meta name="description" content="International real estate development and property advisory with presence in South Florida and Chile." />
-  <link rel="preload" as="image" href="assets/images/monroe/01-DSC08361-1.jpg" />
+  <link rel="preload" as="image" href="assets/images/opt/monroe/01-DSC08361-1.jpg" fetchpriority="high" />
   <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
   <link rel="stylesheet" href="css/styles.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -38,7 +38,7 @@
   <header class="site-nav fixed inset-x-0 top-0 z-50 bg-brand-navy/70 backdrop-blur-sm transition-colors">
     <nav class="site-nav mx-auto flex max-w-7xl items-center justify-between px-6 py-5 lg:px-10">
       <a href="index.html" class="flex items-center gap-3 hover:opacity-90">
-        <img src="assets/images/logo_futur.jpeg" alt="Futur Latam Corp logo" class="h-12 w-12 object-contain" decoding="async" />
+        <img src="assets/images/opt/logo_futur.jpg" alt="Futur Latam Corp logo" class="h-12 w-12 object-contain" loading="eager" decoding="async" />
         <div class="leading-tight">
           <span class="block font-sans text-lg font-light tracking-[0.3em]">FUTUR</span>
           <span class="block font-sans text-[10px] uppercase tracking-[0.22em] text-brand-gold">Latam Corp</span>
@@ -58,7 +58,6 @@
     </nav>
   </header>
 
-  <!-- Mobile drawer -->
   <aside data-mobile-drawer class="mobile-drawer fixed right-0 top-0 z-[60] flex h-full w-[min(100%,320px)] flex-col gap-8 border-l border-brand-gold/25 bg-brand-ink px-8 pb-16 pt-24 md:hidden">
     <button type="button" class="absolute right-6 top-6 text-brand-gold" aria-label="Close menu" data-nav-close>
       <span class="material-symbols-outlined text-3xl">close</span>
@@ -70,16 +69,12 @@
   </aside>
 
   <main>
-    <!-- Hero (ya usando imágenes reales de assets) -->
     <section id="home" data-hero-parallax class="relative flex min-h-screen items-center justify-center overflow-hidden pt-24 pb-28">
       <div class="absolute inset-0 z-0 overflow-hidden bg-brand-ink">
-        <!-- Parallax wraps poster + optional video layer together -->
         <div class="hero-parallax-media absolute left-1/2 top-0 h-[118%] w-full max-w-none" style="will-change: transform; transform: translate3d(-50%, 0, 0) scale(1.08)">
-          <!-- PHOTO: Monroe exterior — archivo 01 (Welcome to Miami) -->
-          <img alt="Welcome to Miami — Modena exterior" src="assets/images/monroe/01-DSC08361-1.jpg" width="1920" height="1080" decoding="async" fetchpriority="high" class="absolute inset-0 h-full w-full object-cover brightness-[0.74]" />
+          <img alt="Welcome to Miami — Modena exterior" src="assets/images/opt/monroe/01-DSC08361-1.jpg" width="1920" height="1080" loading="eager" decoding="async" fetchpriority="high" class="absolute inset-0 h-full w-full object-cover brightness-[0.74]" />
 
-          <!-- VIDEO (opcional): si no tienes hero-city-loop, usamos el walkthrough del Monroe -->
-          <video class="pointer-events-none absolute inset-0 h-full w-full object-cover opacity-[0.92]" autoplay muted loop playsinline preload="metadata" poster="assets/images/monroe/01-DSC08361-1.jpg" aria-hidden="true">
+          <video class="pointer-events-none absolute inset-0 h-full w-full object-cover opacity-[0.92]" autoplay muted loop playsinline preload="none" poster="assets/images/opt/monroe/01-DSC08361-1.jpg" aria-hidden="true">
             <source src="assets/videos/Video_Unbranded.mp4" type="video/mp4" />
           </video>
         </div>
@@ -100,12 +95,10 @@
       </div>
     </section>
 
-    <!-- Parallax panel -->
     <section class="relative overflow-hidden border-y border-brand-gold/15 bg-brand-ink py-28">
       <div class="relative h-[420px] max-w-none overflow-hidden lg:h-[480px]">
         <div data-parallax-inner data-speed="0.18" class="absolute inset-[-18%_-5%_-10%_-5%] bg-brand-navy/20">
-          <!-- Fondo “Residential, retail & industrial”: vista aérea (antes en hero) -->
-          <img alt="Residential footprint overview" src="assets/images/monroe/04-DJI_0827-Edit-1.jpg" width="2000" height="1200" class="parallax-scroll h-full w-full object-cover opacity-45 mix-blend-screen" decoding="async" />
+          <img alt="Residential footprint overview" src="assets/images/opt/monroe/04-DJI_0827-Edit-1.jpg" width="2000" height="1200" class="parallax-scroll h-full w-full object-cover opacity-45 mix-blend-screen" loading="lazy" decoding="async" />
         </div>
         <div class="relative z-[1] mx-auto flex h-full max-w-7xl flex-col justify-center px-6 lg:flex-row lg:items-center lg:justify-between lg:px-12">
           <div class="max-w-xl" data-reveal>
@@ -114,7 +107,7 @@
           </div>
           <div class="mt-12 grid max-w-xl gap-5 font-sans text-sm leading-relaxed text-white/82 lg:mt-0" data-delay="1" data-reveal>
             <p class="rounded-sm border border-brand-gold/20 bg-brand-navy/60 px-6 py-4 hover:border-brand-gold/40">
-              Hover-driven media cards on project pages showcase short building loops and enlarge floor plans in a modal for a sharper, cinematic review.
+              Each lane blends curated visuals with floor-plan depth—preview motion where it helps, then zoom in when you are ready to study layouts.
             </p>
           </div>
         </div>
@@ -123,30 +116,29 @@
 
     <section id="about-summary" class="relative overflow-hidden px-6 py-28 lg:px-10">
       <div class="absolute inset-0 z-0">
-        <!-- Background image (requested “01.jpg”): using Monroe 01 hero image -->
-        <img alt="" src="assets/images/01.jpg" width="2000" height="1200" class="h-full w-full object-cover opacity-12" decoding="async" />
+        <img alt="" src="assets/images/opt/01.jpg" width="2000" height="1200" class="h-full w-full object-cover opacity-12" loading="lazy" decoding="async" />
         <div class="absolute inset-0 bg-gradient-to-b from-brand-navy/92 via-brand-navy/82 to-brand-navy"></div>
       </div>
       <div class="relative z-10 mx-auto max-w-7xl">
-        <div class="grid gap-14 lg:grid-cols-[1fr_1.15fr] lg:gap-24 lg:items-center">
-        <!-- About collage: Monroe staging -->
-        <figure class="order-2 overflow-hidden border border-brand-gold/35 lg:order-1" data-reveal>
-          <img alt="Portfolio highlight" src="assets/images/monroe/09-Staging.jpg" width="900" height="1100" class="h-auto w-full object-cover" decoding="async" />
-        </figure>
-        <div class="order-1 space-y-8 lg:order-2">
-          <h2 class="font-serif text-3xl text-brand-gold md:text-4xl" data-reveal>Miami roots. Continental reach.</h2>
-          <p class="font-sans text-sm leading-relaxed text-white/80" data-delay="1" data-reveal>
-            FUTUR LATAM CORP is an international real estate company based in South Florida, focused on development and acquisitions across Broward and Miami-Dade—with strategic collaboration in Chile when your goals span borders.
-          </p>
-          <div class="flex flex-wrap gap-4 pt-4" data-delay="2" data-reveal>
-            <a href="about.html" class="nav-link-underline font-sans text-xs font-semibold uppercase tracking-[0.25em] text-brand-gold">Read About Us →</a>
+        <div class="about-summary-block grid gap-14 lg:grid-cols-[1fr_1.15fr] lg:gap-24 lg:items-center" data-reveal>
+          <figure class="about-summary-frame order-2 lg:order-1">
+            <div class="about-summary-frame-inner">
+              <img alt="Portfolio highlight — staged residence interior" src="assets/images/opt/monroe/09-Staging.jpg" width="900" height="1100" class="about-summary-photo h-auto w-full object-cover" loading="eager" decoding="async" />
+            </div>
+          </figure>
+          <div class="about-summary-copy order-1 space-y-8 lg:order-2">
+            <h2 class="font-serif text-3xl text-brand-gold md:text-4xl">Miami roots. Continental reach.</h2>
+            <p class="font-sans text-sm leading-relaxed text-white/80">
+              FUTUR LATAM CORP is an international real estate company based in South Florida, focused on development and acquisitions across Broward and Miami-Dade—with strategic collaboration in Chile when your goals span borders.
+            </p>
+            <div class="about-summary-cta flex flex-wrap gap-4 pt-4">
+              <a href="about.html" class="nav-link-underline font-sans text-xs font-semibold uppercase tracking-[0.25em] text-brand-gold">Read About Us →</a>
+            </div>
           </div>
-        </div>
         </div>
       </div>
     </section>
 
-    <!-- Project gateways -->
     <section id="projects-preview" class="relative overflow-hidden border-t border-brand-gold/10 bg-brand-ink px-6 py-24 lg:px-10">
       <div class="absolute inset-0 -z-10">
         <div class="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(212,175,55,0.12),rgba(0,0,0,0)_55%)]"></div>
@@ -164,13 +156,10 @@
           </div>
         </div>
         <div class="mt-16 grid gap-10 md:grid-cols-3">
-          <!-- Residential: vista Monroe + video; clic lleva a la página Residential -->
           <a href="residential.html" class="group hover-glow rounded-sm border border-brand-gold/25 bg-brand-navy/55 p-6" data-reveal>
             <div class="media-card aspect-[16/11] rounded-sm bg-brand-ink ring-1 ring-brand-gold/15">
-              <!-- Monroe cover image -->
-              <img class="poster-img" alt="Residential — Monroe featured reel" src="assets/images/monroe/01-DSC08361-1.jpg" width="640" height="440" decoding="async" />
-              <!-- Monroe walkthrough hover video -->
-              <video class="loop-video" muted loop playsinline preload="none"><source src="assets/videos/Video_Unbranded.mp4" type="video/mp4" /></video>
+              <img class="poster-img" alt="Residential — Monroe featured reel" src="assets/images/opt/c/MODENA_CARD.jpg" width="920" height="630" loading="eager" decoding="async" fetchpriority="high" sizes="(max-width:768px) 100vw, 33vw" />
+              <video class="loop-video" muted loop playsinline preload="none" poster="assets/images/opt/c/MODENA_CARD.jpg"><source src="assets/videos/Video_Unbranded.mp4" type="video/mp4" /></video>
               <span class="media-card-chip absolute left-4 top-4 badge-chip font-sans text-brand-gold/95">Residential</span>
               <span class="media-card-caption absolute bottom-4 left-4 font-sans text-xs uppercase tracking-[0.25em] text-white">Models →</span>
             </div>
@@ -179,8 +168,8 @@
 
           <a href="retail.html" class="group hover-glow rounded-sm border border-brand-gold/25 bg-brand-navy/55 p-6" data-delay="1" data-reveal>
             <div class="media-card aspect-[16/11] rounded-sm bg-brand-ink ring-1 ring-brand-gold/15">
-              <img class="poster-img" alt="Retail portfolio preview" src="assets/images/westplazamall_1.jpeg" width="640" height="440" decoding="async" />
-              <video class="loop-video" muted loop playsinline preload="none"><source src="assets/videos/gateway-retail.mp4" type="video/mp4" /></video>
+              <img class="poster-img" alt="Retail portfolio preview" src="assets/images/opt/c/gateway_westplaza.jpg" width="920" height="630" loading="lazy" decoding="async" sizes="(max-width:768px) 100vw, 33vw" />
+              <video class="loop-video" muted loop playsinline preload="none" poster="assets/images/opt/c/gateway_westplaza.jpg"><source src="assets/videos/gateway-retail.mp4" type="video/mp4" /></video>
               <span class="media-card-chip absolute left-4 top-4 badge-chip font-sans text-brand-gold/95">Retail</span>
               <span class="media-card-caption absolute bottom-4 left-4 font-sans text-xs uppercase tracking-[0.25em] text-white">Plazas &amp; office →</span>
             </div>
@@ -189,8 +178,8 @@
 
           <a href="industrial.html" class="group hover-glow rounded-sm border border-brand-gold/25 bg-brand-navy/55 p-6" data-delay="2" data-reveal>
             <div class="media-card aspect-[16/11] rounded-sm bg-brand-ink ring-1 ring-brand-gold/15">
-              <img class="poster-img" alt="Industrial portfolio preview" src="assets/images/LANIN_2.png" width="640" height="440" decoding="async" />
-              <video class="loop-video" muted loop playsinline preload="none"><source src="assets/videos/gateway-industrial.mp4" type="video/mp4" /></video>
+              <img class="poster-img" alt="Industrial portfolio preview" src="assets/images/opt/c/gateway_industrial.jpg" width="920" height="630" loading="lazy" decoding="async" sizes="(max-width:768px) 100vw, 33vw" />
+              <video class="loop-video" muted loop playsinline preload="none" poster="assets/images/opt/c/gateway_industrial.jpg"><source src="assets/videos/gateway-industrial.mp4" type="video/mp4" /></video>
               <span class="media-card-chip absolute left-4 top-4 badge-chip font-sans text-brand-gold/95">Industrial</span>
               <span class="media-card-caption absolute bottom-4 left-4 font-sans text-xs uppercase tracking-[0.25em] text-white">Logistics hubs →</span>
             </div>
@@ -202,8 +191,7 @@
 
     <section id="contact-cta" class="relative overflow-hidden border-t border-brand-gold/15 py-24">
       <div class="absolute inset-0 z-0">
-        <!-- Footer texture / staging -->
-        <img alt="" src="assets/images/monroe/18-Staging.png" width="1600" height="900" class="h-full w-full object-cover opacity-15 grayscale" decoding="async" />
+        <img alt="" src="assets/images/opt/monroe/18-Staging.jpg" width="1600" height="900" class="h-full w-full object-cover opacity-15 grayscale" loading="lazy" decoding="async" />
         <div class="absolute inset-0 bg-brand-navy/92"></div>
       </div>
       <div class="relative z-10 mx-auto flex max-w-5xl flex-col items-center px-6 text-center" data-reveal>
@@ -214,12 +202,11 @@
     </section>
   </main>
 
-  <!-- ========== FOOTER: company contact (mirror on every page) ========== -->
   <footer class="border-t border-brand-gold/10 bg-brand-ink px-6 py-12 lg:px-10">
     <div class="mx-auto grid max-w-7xl gap-10 md:grid-cols-[1.15fr_0.9fr_0.95fr] md:items-start">
       <div class="space-y-4">
         <div class="flex items-center gap-4">
-          <img src="assets/images/logo_futur.jpeg" alt="Futur Latam Corp logo" class="h-10 w-10 object-contain" decoding="async" />
+          <img src="assets/images/opt/logo_futur.jpg" alt="Futur Latam Corp logo" class="h-10 w-10 object-contain" loading="lazy" decoding="async" />
           <div class="leading-tight">
             <p class="font-sans text-sm font-semibold uppercase tracking-[0.28em] text-brand-gold">FUTUR LATAM CORP</p>
             <p class="mt-1 font-sans text-xs text-white/60">South Florida · Chile</p>
@@ -261,7 +248,7 @@
           </div>
           <div class="flex items-start gap-3">
             <span class="material-symbols-outlined text-brand-gold">mail</span>
-            <a class="break-all hover:text-brand-gold" href="mailto:contact@futurlatamcorp.com">contact@futurlatamcorp.com</a>
+            <a class="break-all hover:text-brand-gold" href="mailto:info@futurlatamcorp.com">info@futurlatamcorp.com</a>
           </div>
         </div>
 

@@ -220,6 +220,8 @@
       var list = parseImages(el.getAttribute("data-hover-images"));
       if (list.length < 2) return;
 
+      var posterSrc = img.getAttribute("src") || "";
+
       // Preload before starting to reduce flicker.
       preloadAll(list);
 
@@ -229,7 +231,7 @@
         fadeSwap(img, list[i]);
       }, 900);
 
-      intervals.set(el, { id: id, img: img, first: list[0] });
+      intervals.set(el, { id: id, img: img, posterSrc: posterSrc });
     }
 
     function stop(el) {
@@ -237,7 +239,8 @@
       if (!state) return;
       window.clearInterval(state.id);
       try {
-        fadeSwap(state.img, state.first);
+        var back = state.posterSrc || "";
+        fadeSwap(state.img, back);
       } catch (_) {}
       intervals.delete(el);
     }
@@ -283,6 +286,46 @@
     });
   }
 
+  function initWalkthroughModal() {
+    var dlg = document.getElementById("walkthrough-modal");
+    if (!dlg || !window.HTMLDialogElement) return;
+
+    var vid = dlg.querySelector("[data-walkthrough-player]");
+
+    function pauseReset() {
+      if (!vid) return;
+      try {
+        vid.pause();
+        vid.currentTime = 0;
+      } catch (_) {}
+    }
+
+    document.querySelectorAll("[data-walkthrough-open]").forEach(function (btn) {
+      btn.addEventListener("click", function (e) {
+        e.preventDefault();
+        if (dlg.showModal) dlg.showModal();
+        if (vid) {
+          try {
+            vid.muted = false;
+          } catch (_) {}
+          var playPromise = vid.play();
+          if (playPromise && typeof playPromise.catch === "function") {
+            playPromise.catch(function () {});
+          }
+        }
+      });
+    });
+
+    dlg.querySelectorAll("[data-walkthrough-close]").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        dlg.close();
+      });
+    });
+
+    dlg.addEventListener("close", pauseReset);
+    dlg.addEventListener("cancel", pauseReset);
+  }
+
   function initCardLinks() {
     document.querySelectorAll("[data-card-link]").forEach(function (card) {
       var href = card.getAttribute("data-card-link");
@@ -299,7 +342,9 @@
           t.closest("button") ||
             t.closest("a") ||
             t.closest("[data-floor-open]") ||
-            t.closest("[data-floor-close]"),
+            t.closest("[data-floor-close]") ||
+            t.closest("[data-walkthrough-open]") ||
+            t.closest("[data-walkthrough-close]"),
         );
       }
 
@@ -318,12 +363,116 @@
     });
   }
 
+  function setContactStatus(el, kind, text) {
+    if (!el) return;
+    el.textContent = text;
+    el.classList.remove(
+      "hidden",
+      "border-brand-gold/50",
+      "bg-brand-gold/10",
+      "text-brand-gold",
+      "border-red-400/40",
+      "bg-red-950/40",
+      "text-red-200",
+    );
+    el.classList.add("mt-5", "rounded-sm", "border", "px-4", "py-3", "font-sans", "text-sm");
+    if (kind === "success") {
+      el.classList.add("border-brand-gold/50", "bg-brand-gold/10", "text-brand-gold");
+    } else if (kind === "error") {
+      el.classList.add("border-red-400/40", "bg-red-950/40", "text-red-200");
+    }
+  }
+
+  function initContactUrlBanner() {
+    var path = window.location.pathname || "";
+    if (path.indexOf("contact.html") === -1) return;
+    var params = new URLSearchParams(window.location.search);
+    var statusEl = document.getElementById("contact-form-status");
+    if (!statusEl) return;
+    var file = path.split("/").pop() || "contact.html";
+    if (params.get("sent") === "1") {
+      setContactStatus(statusEl, "success", "Thank you — we received your message and will reply soon.");
+      window.history.replaceState({}, "", file + "#form");
+      statusEl.scrollIntoView({ behavior: "smooth", block: "center" });
+    } else if (params.get("error") === "1") {
+      setContactStatus(
+        statusEl,
+        "error",
+        "We could not send your message from this server. Please email info@futurlatamcorp.com directly.",
+      );
+      window.history.replaceState({}, "", file + "#form");
+      statusEl.scrollIntoView({ behavior: "smooth", block: "center" });
+    }
+  }
+
+  function initContactPhpForms() {
+    document.querySelectorAll("form[data-contact-php]").forEach(function (form) {
+      var action = form.getAttribute("action");
+      if (!action) return;
+
+      form.addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        var statusEl = document.getElementById("contact-form-status");
+        var btn = form.querySelector('button[type="submit"]');
+        if (btn) btn.disabled = true;
+
+        var fd = new FormData(form);
+
+        fetch(action, {
+          method: "POST",
+          body: fd,
+          headers: {
+            Accept: "application/json",
+            "X-Requested-With": "XMLHttpRequest",
+          },
+        })
+          .then(function (res) {
+            return res.text().then(function (text) {
+              try {
+                var data = JSON.parse(text);
+                return { ok: res.ok, data: data };
+              } catch (_) {
+                return {
+                  ok: false,
+                  data: {
+                    success: false,
+                    message: "Unexpected response from server.",
+                  },
+                };
+              }
+            });
+          })
+          .catch(function () {
+            return {
+              ok: false,
+              data: { success: false, message: "Network error. Please try again." },
+            };
+          })
+          .then(function (result) {
+            if (btn) btn.disabled = false;
+            var data = result.data || {};
+            var ok = Boolean(data.success);
+            var msg =
+              typeof data.message === "string" && data.message
+                ? data.message
+                : ok
+                  ? "Thank you — we received your message."
+                  : "Something went wrong.";
+            setContactStatus(statusEl, ok ? "success" : "error", msg);
+            if (statusEl) statusEl.scrollIntoView({ behavior: "smooth", block: "center" });
+            if (ok) form.reset();
+          });
+      });
+    });
+  }
+
   function initMailtoForms() {
     document.querySelectorAll("form[data-mailto-form]").forEach(function (form) {
       form.addEventListener("submit", function (e) {
         e.preventDefault();
 
-        var to = form.getAttribute("data-mailto-to") || "contact@futurlatamcorp.com";
+        var to = form.getAttribute("data-mailto-to") || "info@futurlatamcorp.com";
         var subject = form.getAttribute("data-mailto-subject") || "New inquiry — Futur Latam Corp";
 
         var fd = new FormData(form);
@@ -361,12 +510,15 @@
   function boot() {
     initNav();
     initReveal();
+    initContactUrlBanner();
     initParallaxHero();
     initParallaxSections();
     initMediaCards();
     initHoverSlideshows();
     initCardLinks();
+    initContactPhpForms();
     initMailtoForms();
     initFloorPlanModal();
+    initWalkthroughModal();
   }
 })();

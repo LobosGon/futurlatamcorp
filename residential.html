@@ -25,7 +25,7 @@
   <header class="site-nav fixed inset-x-0 top-0 z-50 bg-brand-navy/82 backdrop-blur-md">
     <nav class="mx-auto flex max-w-7xl items-center justify-between px-6 py-5 lg:px-10">
       <a href="index.html" class="flex gap-3">
-        <img src="assets/images/logo_futur.jpeg" alt="Futur Latam Corp logo" class="h-12 w-12 object-contain" decoding="async" />
+        <img src="assets/images/opt/logo_futur.jpg" alt="Futur Latam Corp logo" class="h-12 w-12 object-contain" loading="eager" decoding="async" />
         <div class="leading-tight">
           <span class="block font-sans text-lg font-light tracking-[0.3em]">FUTUR</span>
           <span class="block font-sans text-[10px] uppercase tracking-[0.22em] text-brand-gold">Latam Corp</span>
@@ -49,7 +49,6 @@
     <a href="contact.html" class="text-sm uppercase tracking-[0.2em] text-white/90">Contact</a>
   </aside>
 
-  <!-- Project lane sub-navigation -->
   <div class="mx-auto flex max-w-7xl flex-wrap justify-center gap-4 px-6 pt-6 lg:justify-end lg:px-10" data-reveal>
     <a href="residential.html" class="subnav-pill active rounded-full border border-brand-gold px-8 py-2 text-xs uppercase tracking-[0.28em] text-brand-navy hover:border-brand-gold/80" style="background: linear-gradient(120deg,#d4af37,#cfa83a);">Residential</a>
     <a href="retail.html" class="subnav-pill rounded-full border border-brand-gold/35 px-8 py-2 text-xs uppercase tracking-[0.28em] text-brand-gold/90 hover:border-brand-gold hover:text-white">Retail</a>
@@ -62,7 +61,7 @@
         <p class="font-sans text-xs font-semibold uppercase tracking-[0.35em] text-brand-gold/90">Residential models</p>
         <h1 class="mt-5 font-serif text-4xl uppercase tracking-[0.16em] text-brand-gold md:text-5xl">Residential</h1>
         <p class="mt-6 max-w-2xl font-sans text-sm leading-relaxed text-white/75">
-          Hover a model to preview. If there is no video, the card cycles through images. Use “Floor plan” to open the blueprint in a modal.
+          Hover a model to preview. If there is no video, the card cycles through images. Use "Floor plan" to open the blueprint in a modal.
         </p>
       </div>
       <div class="lg:text-right">
@@ -77,15 +76,14 @@
           <span class="font-sans text-[11px] uppercase tracking-[0.28em] text-white/45">Granada · Merida · Sevilla · Valencia</span>
         </div>
         <div class="grid gap-8 grid-cols-1">
-          <!-- GRANADA -->
           <article data-card-link="model-granada.html" class="hover-glow group border border-brand-gold/25 bg-brand-ink/25 p-4 cursor-pointer">
             <div class="media-card aspect-[16/11] bg-black"
-              data-hover-images="assets/images/GRANADA_1.png, assets/images/GRANADA_2.png, assets/images/GRANADA_3.png, assets/images/GRANADA_4.png">
-              <img alt="Granada model" src="assets/images/GRANADA_1.png" class="poster-img" width="920" height="630" decoding="async" />
+              data-hover-images="assets/images/opt/c/GRANADA_1.jpg, assets/images/opt/c/GRANADA_2.jpg, assets/images/opt/c/GRANADA_3.jpg, assets/images/opt/c/GRANADA_4.jpg">
+              <img alt="Granada model" src="assets/images/opt/c/GRANADA_1.jpg" class="poster-img" loading="eager" fetchpriority="high" width="920" height="630" decoding="async" sizes="(max-width: 1024px) 100vw, 42vw" />
               <span class="media-card-overlay" aria-hidden="true"></span>
               <span class="media-card-chip badge-chip absolute left-4 top-4 text-brand-gold">1 Story</span>
               <button type="button" class="badge-chip absolute right-4 top-4 font-semibold text-white"
-                data-floor-open data-floor-src="assets/images/GRANADA_PLANO.png" data-floor-alt="Granada floor plan">
+                data-floor-open data-floor-src="assets/images/opt/GRANADA_PLANO.jpg" data-floor-alt="Granada floor plan">
                 Floor plan <span class="material-symbols-outlined text-base">architecture</span>
               </button>
             </div>
@@ -100,15 +98,14 @@
             </div>
           </article>
 
-          <!-- MERIDA -->
           <article data-card-link="model-merida.html" class="hover-glow group border border-brand-gold/25 bg-brand-ink/25 p-4 cursor-pointer">
             <div class="media-card aspect-[16/11] bg-black"
-              data-hover-images="assets/images/MERIDA_1.png, assets/images/MERIDA_2.png, assets/images/MERIDA_3.png, assets/images/MERIDA_4.png, assets/images/MERIDA_5.png">
-              <img alt="Merida model" src="assets/images/MERIDA_1.png" class="poster-img" width="920" height="630" decoding="async" />
+              data-hover-images="assets/images/opt/c/MERIDA_1.jpg, assets/images/opt/c/MERIDA_2.jpg, assets/images/opt/c/MERIDA_3.jpg, assets/images/opt/c/MERIDA_4.jpg, assets/images/opt/c/MERIDA_5.jpg">
+              <img alt="Merida model" src="assets/images/opt/c/MERIDA_1.jpg" class="poster-img" loading="lazy" width="920" height="630" decoding="async" />
               <span class="media-card-overlay" aria-hidden="true"></span>
               <span class="media-card-chip badge-chip absolute left-4 top-4 text-brand-gold">1 Story</span>
               <button type="button" class="badge-chip absolute right-4 top-4 font-semibold text-white"
-                data-floor-open data-floor-src="assets/images/MERIDA_PLANO.png" data-floor-alt="Merida floor plan">
+                data-floor-open data-floor-src="assets/images/opt/MERIDA_PLANO.jpg" data-floor-alt="Merida floor plan">
                 Floor plan <span class="material-symbols-outlined text-base">architecture</span>
               </button>
             </div>
@@ -123,15 +120,14 @@
             </div>
           </article>
 
-          <!-- SEVILLA -->
           <article data-card-link="model-sevilla.html" class="hover-glow group border border-brand-gold/25 bg-brand-ink/25 p-4 cursor-pointer">
             <div class="media-card aspect-[16/11] bg-black"
-              data-hover-images="assets/images/SEVILLA_1.png, assets/images/SEVILLA_2.png, assets/images/SEVILLA_3.png, assets/images/SEVILLA_4.png, assets/images/SEVILLA_5.png">
-              <img alt="Sevilla model" src="assets/images/SEVILLA_1.png" class="poster-img" width="920" height="630" decoding="async" />
+              data-hover-images="assets/images/opt/c/SEVILLA_1.jpg, assets/images/opt/c/SEVILLA_2.jpg, assets/images/opt/c/SEVILLA_3.jpg, assets/images/opt/c/SEVILLA_4.jpg, assets/images/opt/c/SEVILLA_5.jpg">
+              <img alt="Sevilla model" src="assets/images/opt/c/SEVILLA_1.jpg" class="poster-img" loading="lazy" width="920" height="630" decoding="async" />
               <span class="media-card-overlay" aria-hidden="true"></span>
               <span class="media-card-chip badge-chip absolute left-4 top-4 text-brand-gold">1 Story</span>
               <button type="button" class="badge-chip absolute right-4 top-4 font-semibold text-white"
-                data-floor-open data-floor-src="assets/images/SEVILLA_5.png" data-floor-alt="Sevilla floor plan">
+                data-floor-open data-floor-src="assets/images/opt/SEVILLA_5.jpg" data-floor-alt="Sevilla floor plan">
                 Floor plan <span class="material-symbols-outlined text-base">architecture</span>
               </button>
             </div>
@@ -146,15 +142,14 @@
             </div>
           </article>
 
-          <!-- VALENCIA -->
           <article data-card-link="model-valencia.html" class="hover-glow group border border-brand-gold/25 bg-brand-ink/25 p-4 cursor-pointer">
             <div class="media-card aspect-[16/11] bg-black"
-              data-hover-images="assets/images/VALENCIA_1.png, assets/images/VALENCIA_2.png, assets/images/VALENCIA_3.png, assets/images/VALENCIA_4.png">
-              <img alt="Valencia model" src="assets/images/VALENCIA_1.png" class="poster-img" width="920" height="630" decoding="async" />
+              data-hover-images="assets/images/opt/c/VALENCIA_1.jpg, assets/images/opt/c/VALENCIA_2.jpg, assets/images/opt/c/VALENCIA_3.jpg, assets/images/opt/c/VALENCIA_4.jpg">
+              <img alt="Valencia model" src="assets/images/opt/c/VALENCIA_1.jpg" class="poster-img" loading="lazy" width="920" height="630" decoding="async" />
               <span class="media-card-overlay" aria-hidden="true"></span>
               <span class="media-card-chip badge-chip absolute left-4 top-4 text-brand-gold">1 Story</span>
               <button type="button" class="badge-chip absolute right-4 top-4 font-semibold text-white"
-                data-floor-open data-floor-src="assets/images/VALENCIA_PLANO.png" data-floor-alt="Valencia floor plan">
+                data-floor-open data-floor-src="assets/images/opt/VALENCIA_PLANO.jpg" data-floor-alt="Valencia floor plan">
                 Floor plan <span class="material-symbols-outlined text-base">architecture</span>
               </button>
             </div>
@@ -177,15 +172,14 @@
           <span class="font-sans text-[11px] uppercase tracking-[0.28em] text-white/45">Lanin · Modena · Toledo</span>
         </div>
         <div class="grid gap-8 grid-cols-1">
-          <!-- MODENA (VIDEO) -->
           <article data-card-link="model-modena.html" class="hover-glow group border border-brand-gold/25 bg-brand-ink/25 p-4 cursor-pointer">
             <div class="media-card aspect-[16/11] bg-black">
-              <img alt="Modena model" src="assets/images/monroe/01-DSC08361-1.jpg" class="poster-img" width="920" height="630" decoding="async" />
+              <img alt="Modena model" src="assets/images/opt/c/MODENA_CARD.jpg" class="poster-img" loading="eager" fetchpriority="high" width="920" height="630" decoding="async" sizes="(max-width: 1024px) 100vw, 42vw" />
               <video class="loop-video" muted loop playsinline preload="none"><source src="assets/videos/Video_Unbranded.mp4" type="video/mp4" /></video>
               <span class="media-card-overlay" aria-hidden="true"></span>
               <span class="media-card-chip badge-chip absolute left-4 top-4 text-brand-gold">2 Story</span>
               <button type="button" class="badge-chip absolute right-4 top-4 font-semibold text-white"
-                data-floor-open data-floor-src="assets/images/MODENA_4.png" data-floor-alt="Modena floor plan">
+                data-floor-open data-floor-src="assets/images/opt/MODENA_4.jpg" data-floor-alt="Modena floor plan">
                 Floor plan <span class="material-symbols-outlined text-base">architecture</span>
               </button>
             </div>
@@ -200,15 +194,14 @@
             </div>
           </article>
 
-          <!-- LANIN -->
           <article data-card-link="model-lanin.html" class="hover-glow group border border-brand-gold/25 bg-brand-ink/25 p-4 cursor-pointer">
             <div class="media-card aspect-[16/11] bg-black"
-              data-hover-images="assets/images/LANIN_1.png, assets/images/LANIN_2.png, assets/images/LANIN_3.png, assets/images/LANIN_4.png">
-              <img alt="Lanin model" src="assets/images/LANIN_1.png" class="poster-img" width="920" height="630" decoding="async" />
+              data-hover-images="assets/images/opt/c/LANIN_1.jpg, assets/images/opt/c/LANIN_2.jpg, assets/images/opt/c/LANIN_3.jpg, assets/images/opt/c/LANIN_4.jpg">
+              <img alt="Lanin model" src="assets/images/opt/c/LANIN_1.jpg" class="poster-img" loading="lazy" width="920" height="630" decoding="async" />
               <span class="media-card-overlay" aria-hidden="true"></span>
               <span class="media-card-chip badge-chip absolute left-4 top-4 text-brand-gold">2 Story</span>
               <button type="button" class="badge-chip absolute right-4 top-4 font-semibold text-white"
-                data-floor-open data-floor-src="assets/images/LANIN_4.png" data-floor-alt="Lanin floor plan">
+                data-floor-open data-floor-src="assets/images/opt/LANIN_4.jpg" data-floor-alt="Lanin floor plan">
                 Floor plan <span class="material-symbols-outlined text-base">architecture</span>
               </button>
             </div>
@@ -223,15 +216,14 @@
             </div>
           </article>
 
-          <!-- TOLEDO -->
           <article data-card-link="model-toledo.html" class="hover-glow group border border-brand-gold/25 bg-brand-ink/25 p-4 cursor-pointer">
             <div class="media-card aspect-[16/11] bg-black"
-              data-hover-images="assets/images/TOLEDO_1.png, assets/images/TOLEDO_2.png, assets/images/TOLEDO_3.png, assets/images/TOLEDO_4.png">
-              <img alt="Toledo model" src="assets/images/TOLEDO_1.png" class="poster-img" width="1200" height="600" decoding="async" />
+              data-hover-images="assets/images/opt/c/TOLEDO_1.jpg, assets/images/opt/c/TOLEDO_2.jpg, assets/images/opt/c/TOLEDO_3.jpg, assets/images/opt/c/TOLEDO_4.jpg">
+              <img alt="Toledo model" src="assets/images/opt/c/TOLEDO_1.jpg" class="poster-img" loading="lazy" width="920" height="630" decoding="async" sizes="(max-width: 1024px) 100vw, 42vw" />
               <span class="media-card-overlay" aria-hidden="true"></span>
               <span class="media-card-chip badge-chip absolute left-4 top-4 text-brand-gold">2 Story</span>
               <button type="button" class="badge-chip absolute right-4 top-4 font-semibold text-white"
-                data-floor-open data-floor-src="assets/images/TOLEDO_PLANO.png" data-floor-alt="Toledo floor plan">
+                data-floor-open data-floor-src="assets/images/opt/TOLEDO_PLANO.jpg" data-floor-alt="Toledo floor plan">
                 Floor plan <span class="material-symbols-outlined text-base">architecture</span>
               </button>
             </div>
@@ -263,7 +255,7 @@
     <div class="mx-auto grid max-w-7xl gap-10 md:grid-cols-[1.15fr_0.9fr_0.95fr] md:items-start">
       <div class="space-y-4">
         <div class="flex items-center gap-4">
-          <img src="assets/images/logo_futur.jpeg" alt="Futur Latam Corp logo" class="h-10 w-10 object-contain" decoding="async" />
+          <img src="assets/images/opt/logo_futur.jpg" alt="Futur Latam Corp logo" class="h-10 w-10 object-contain" loading="lazy" decoding="async" />
           <div class="leading-tight">
             <p class="font-sans text-sm font-semibold uppercase tracking-[0.28em] text-brand-gold">FUTUR LATAM CORP</p>
             <p class="mt-1 font-sans text-xs text-white/60">South Florida · Chile</p>
@@ -305,7 +297,7 @@
           </div>
           <div class="flex items-start gap-3">
             <span class="material-symbols-outlined text-brand-gold">mail</span>
-            <a class="break-all hover:text-brand-gold" href="mailto:contact@futurlatamcorp.com">contact@futurlatamcorp.com</a>
+            <a class="break-all hover:text-brand-gold" href="mailto:info@futurlatamcorp.com">info@futurlatamcorp.com</a>
           </div>
         </div>
 

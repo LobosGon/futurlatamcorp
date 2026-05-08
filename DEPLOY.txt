@@ -14,13 +14,19 @@ Cómo subir el sitio a tu hosting
    model-granada.html
    css/styles.css
    js/main.js
-   assets/images/   (tus fotos)
+   assets/images/opt/   (JPEG optimizados generados; súbelos junto al resto)
+   assets/images/opt/c/ (JPEG ~920px para la cuadrícula Residential)
    assets/videos/   (tus clips en bucle, opcional)
-   assets/images/plans/
+   assets/images/plans/ (si tienes planos fuente aparte; muchos ya están en opt/)
 
-3. No necesitas Node ni build: es HTML estático.
+   Tras cambiar PNG/JPEG grandes en assets/images/, rég desde PowerShell:
+   tools\optimize-all-images.ps1
+   (vuelve a crear opt\ y opt\c\. Las rutas del HTML ya apuntan ahí.)
+
+3. No necesitas Node ni build: es HTML estático (solo Node opcional para tools\rewrite-image-paths.mjs si mueves rutas a mano).
 
 4. CDN: el sitio usa Tailwind y fuentes Google desde internet; el servidor debe permitir
    conexiones HTTPS salientes a los CDNs (lo habitual en cualquier hosting).
 
-5. Formulario: edita contact.html y configura action="" con tu servicio de formularios.
+5. Formulario: contact.html envía a send-contact.php (requiere hosting con PHP). Sube send-contact.php junto al HTML.
+   En producción suele hacer falta SMTP / función mail() configurada en el servidor; en XAMPP local mail() puede necesitar sendmail.ini.

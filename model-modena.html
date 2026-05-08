@@ -23,7 +23,7 @@
   <header class="site-nav fixed inset-x-0 top-0 z-50 bg-brand-navy/85 backdrop-blur-md border-b border-brand-gold/10">
     <nav class="mx-auto flex max-w-7xl items-center justify-between px-6 py-5 lg:px-10">
       <a href="index.html" class="flex gap-3">
-        <img src="assets/images/logo_futur.jpeg" alt="Futur Latam Corp logo" class="h-12 w-12 object-contain" decoding="async" />
+        <img src="assets/images/opt/logo_futur.jpg" alt="Futur Latam Corp logo" class="h-12 w-12 object-contain" loading="eager" decoding="async" />
         <div class="leading-tight">
           <span class="block font-sans text-lg font-light tracking-[0.3em]">FUTUR</span>
           <span class="block font-sans text-[10px] uppercase tracking-[0.22em] text-brand-gold">Latam Corp</span>
@@ -56,28 +56,36 @@
 
     <div class="grid gap-14 lg:grid-cols-[1fr_1.08fr]" data-reveal>
       <div>
-        <div class="overflow-hidden border border-brand-gold/30">
-          <img alt="Modena model" src="assets/images/monroe/01-DSC08361-1.jpg" class="aspect-[16/12] w-full object-cover lg:sticky lg:top-32" width="900" height="675" decoding="async" />
+        <div class="overflow-hidden border border-brand-gold/30 lg:sticky lg:top-32 self-start">
+          <div class="media-card aspect-[16/12] bg-black">
+            <img alt="Modena model — exterior" src="assets/images/opt/c/MODENA_CARD.jpg" class="poster-img" width="900" height="675" loading="eager" decoding="async" fetchpriority="high" />
+            <video class="loop-video" muted loop playsinline preload="none"><source src="assets/videos/Video_Unbranded.mp4" type="video/mp4" /></video>
+            <span class="media-card-chip badge-chip absolute left-4 top-4 font-sans text-brand-gold/95">Walkthrough</span>
+          </div>
         </div>
-        <video class="mt-6 w-full border border-brand-gold/25 aspect-video" controls playsinline preload="metadata" poster="assets/images/monroe/01-DSC08361-1.jpg">
-          <source src="assets/videos/Video_Unbranded.mp4" type="video/mp4" />
-        </video>
-        <p class="mt-2 text-[11px] uppercase tracking-[0.25em] text-white/40">Model walkthrough — assets/videos/Video_Unbranded.mp4</p>
       </div>
       <div>
         <p class="text-xs uppercase tracking-[0.3em] text-brand-gold/80">Residential model</p>
         <h1 class="mt-4 font-serif text-4xl uppercase tracking-[0.14em] text-brand-gold md:text-5xl">Modena</h1>
         <ul class="mt-8 space-y-3 font-sans text-sm uppercase tracking-[0.18em] text-brand-gold/90">
           <li>2 Story</li>
-          <li>Walkthrough reel + photo gallery</li>
+          <li>Modern presentation · Walkthrough on hover or player below</li>
         </ul>
         <p class="mt-10 font-sans text-sm leading-relaxed text-white/80">
-          The <strong class="text-brand-gold">Modena</strong> presentation focuses on scale, light, and circulation through a clean unbranded walkthrough. Use the player for full playback control; the Home and portfolio cards reuse this clip on hover for quick preview.
+          The <strong class="text-brand-gold">Modena</strong> model emphasizes scale, natural light, and circulation through photography and a short walkthrough reel—hover the hero for a silent preview, or open the player for full controls and audio.
         </p>
         <div class="mt-8 flex flex-wrap gap-4">
+          <button type="button" class="hover-glow inline-flex items-center gap-2 rounded-sm border border-brand-gold/60 bg-brand-navy/40 px-6 py-3 text-xs font-bold uppercase tracking-[0.22em] text-brand-gold hover:border-brand-gold hover:bg-brand-gold hover:text-brand-navy"
+            data-walkthrough-open>
+            <span class="material-symbols-outlined text-base">smart_display</span>
+            Watch walkthrough
+          </button>
+          <button type="button" class="hover-glow rounded-sm border border-brand-gold px-6 py-3 text-xs font-bold uppercase tracking-[0.22em] text-brand-gold hover:bg-brand-gold hover:text-brand-navy"
+            data-floor-open data-floor-src="assets/images/opt/MODENA_4.jpg" data-floor-alt="Modena floor plan">
+            View floor plan
+          </button>
           <a href="contact.html#form" class="hover-glow inline-flex items-center rounded-sm bg-brand-gold px-6 py-3 text-xs font-bold uppercase tracking-[0.22em] text-brand-navy">Request info</a>
         </div>
-        <p class="mt-6 font-sans text-xs text-white/45"><a class="text-brand-gold/90 hover:text-brand-gold" href="residential.html">← Back to residential grid</a></p>
       </div>
     </div>
 
@@ -85,63 +93,73 @@
       <h2 class="font-serif text-4xl text-brand-gold md:text-5xl">Gallery:</h2>
       <div class="mt-10 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-6">
         <div class="media-card aspect-[4/3] bg-black ring-1 ring-brand-gold/10">
-          <img alt="Modena photo 01" src="assets/images/monroe/01-DSC08361-1.jpg" class="poster-img" width="480" height="360" decoding="async" />
-          <video class="loop-video" muted loop playsinline preload="none"><source src="assets/videos/Video_Unbranded.mp4" type="video/mp4" /></video>
-          <span class="media-card-chip badge-chip absolute left-3 top-3 text-white/95">Modena</span>
+          <img alt="Modena photo 01" src="assets/images/opt/monroe/01-DSC08361-1.jpg" class="poster-img" loading="lazy" width="480" height="360" decoding="async" />
         </div>
         <div class="media-card aspect-[4/3] bg-black ring-1 ring-brand-gold/10">
-          <img alt="Modena photo 02" src="assets/images/monroe/02-DSC08369-1.jpg" class="poster-img" width="480" height="360" decoding="async" />
-          <video class="loop-video" muted loop playsinline preload="none"><source src="assets/videos/Video_Unbranded.mp4" type="video/mp4" /></video>
+          <img alt="Modena photo 02" src="assets/images/opt/monroe/02-DSC08369-1.jpg" class="poster-img" loading="lazy" width="480" height="360" decoding="async" />
         </div>
         <div class="media-card aspect-[4/3] bg-black ring-1 ring-brand-gold/10">
-          <img alt="Modena photo 03" src="assets/images/monroe/03-DSC08372-1.jpg" class="poster-img" width="480" height="360" decoding="async" />
-          <video class="loop-video" muted loop playsinline preload="none"><source src="assets/videos/Video_Unbranded.mp4" type="video/mp4" /></video>
+          <img alt="Modena photo 03" src="assets/images/opt/monroe/03-DSC08372-1.jpg" class="poster-img" loading="lazy" width="480" height="360" decoding="async" />
         </div>
         <div class="media-card aspect-[4/3] bg-black ring-1 ring-brand-gold/10">
-          <img alt="Modena photo 04" src="assets/images/monroe/04-DJI_0827-Edit-1.jpg" class="poster-img" width="480" height="360" decoding="async" />
-          <video class="loop-video" muted loop playsinline preload="none"><source src="assets/videos/Video_Unbranded.mp4" type="video/mp4" /></video>
+          <img alt="Modena photo 04" src="assets/images/opt/monroe/04-DJI_0827-Edit-1.jpg" class="poster-img" loading="lazy" width="480" height="360" decoding="async" />
         </div>
         <div class="media-card aspect-[4/3] bg-black ring-1 ring-brand-gold/10">
-          <img alt="Modena photo 05" src="assets/images/monroe/05-DJI_0829-Edit-1.jpg" class="poster-img" width="480" height="360" decoding="async" />
-          <video class="loop-video" muted loop playsinline preload="none"><source src="assets/videos/Video_Unbranded.mp4" type="video/mp4" /></video>
+          <img alt="Modena photo 05" src="assets/images/opt/monroe/05-DJI_0829-Edit-1.jpg" class="poster-img" loading="lazy" width="480" height="360" decoding="async" />
         </div>
         <div class="media-card aspect-[4/3] bg-black ring-1 ring-brand-gold/10">
-          <img alt="Modena photo 06" src="assets/images/monroe/06-DJI_0836-1.jpg" class="poster-img" width="480" height="360" decoding="async" />
-          <video class="loop-video" muted loop playsinline preload="none"><source src="assets/videos/Video_Unbranded.mp4" type="video/mp4" /></video>
+          <img alt="Modena photo 06" src="assets/images/opt/monroe/06-DJI_0836-1.jpg" class="poster-img" loading="lazy" width="480" height="360" decoding="async" />
         </div>
         <div class="media-card aspect-[4/3] bg-black ring-1 ring-brand-gold/10">
-          <img alt="Modena photo 07" src="assets/images/monroe/07-DJI_0844-Edit-1.jpg" class="poster-img" width="480" height="360" decoding="async" />
-          <video class="loop-video" muted loop playsinline preload="none"><source src="assets/videos/Video_Unbranded.mp4" type="video/mp4" /></video>
+          <img alt="Modena photo 07" src="assets/images/opt/monroe/07-DJI_0844-Edit-1.jpg" class="poster-img" loading="lazy" width="480" height="360" decoding="async" />
         </div>
         <div class="media-card aspect-[4/3] bg-black ring-1 ring-brand-gold/10">
-          <img alt="Modena photo 08" src="assets/images/monroe/08-DSC08389-1.jpg" class="poster-img" width="480" height="360" decoding="async" />
-          <video class="loop-video" muted loop playsinline preload="none"><source src="assets/videos/Video_Unbranded.mp4" type="video/mp4" /></video>
+          <img alt="Modena photo 08" src="assets/images/opt/monroe/08-DSC08389-1.jpg" class="poster-img" loading="lazy" width="480" height="360" decoding="async" />
         </div>
         <div class="media-card aspect-[4/3] bg-black ring-1 ring-brand-gold/10">
-          <img alt="Modena photo 10" src="assets/images/monroe/10-DSC08395-1.jpg" class="poster-img" width="480" height="360" decoding="async" />
-          <video class="loop-video" muted loop playsinline preload="none"><source src="assets/videos/Video_Unbranded.mp4" type="video/mp4" /></video>
+          <img alt="Modena photo 10" src="assets/images/opt/monroe/10-DSC08395-1.jpg" class="poster-img" loading="lazy" width="480" height="360" decoding="async" />
         </div>
         <div class="media-card aspect-[4/3] bg-black ring-1 ring-brand-gold/10">
-          <img alt="Modena photo 11" src="assets/images/monroe/11-DSC08398-1.jpg" class="poster-img" width="480" height="360" decoding="async" />
-          <video class="loop-video" muted loop playsinline preload="none"><source src="assets/videos/Video_Unbranded.mp4" type="video/mp4" /></video>
+          <img alt="Modena photo 11" src="assets/images/opt/monroe/11-DSC08398-1.jpg" class="poster-img" loading="lazy" width="480" height="360" decoding="async" />
         </div>
         <div class="media-card aspect-[4/3] bg-black ring-1 ring-brand-gold/10">
-          <img alt="Modena photo 12" src="assets/images/monroe/12-DSC08401-1.jpg" class="poster-img" width="480" height="360" decoding="async" />
-          <video class="loop-video" muted loop playsinline preload="none"><source src="assets/videos/Video_Unbranded.mp4" type="video/mp4" /></video>
+          <img alt="Modena photo 12" src="assets/images/opt/monroe/12-DSC08401-1.jpg" class="poster-img" loading="lazy" width="480" height="360" decoding="async" />
         </div>
         <div class="media-card aspect-[4/3] bg-black ring-1 ring-brand-gold/10">
-          <img alt="Modena photo 13" src="assets/images/monroe/13-DSC08404-1.jpg" class="poster-img" width="480" height="360" decoding="async" />
-          <video class="loop-video" muted loop playsinline preload="none"><source src="assets/videos/Video_Unbranded.mp4" type="video/mp4" /></video>
+          <img alt="Modena photo 13" src="assets/images/opt/monroe/13-DSC08404-1.jpg" class="poster-img" loading="lazy" width="480" height="360" decoding="async" />
         </div>
+        <button type="button" class="media-card floor-plan-trigger reduce-motion aspect-[4/3] cursor-zoom-in bg-black ring-1 ring-brand-gold/30"
+          data-floor-open data-floor-src="assets/images/opt/MODENA_4.jpg" data-floor-alt="Modena floor plan">
+          <img alt="Modena floor plan" src="assets/images/opt/MODENA_4.jpg" class="floor-plan-zoom poster-img" loading="lazy" decoding="async" />
+          <span class="badge-chip absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-white">Open plan</span>
+        </button>
       </div>
     </section>
   </main>
+
+  <dialog id="floor-modal" class="p-6 text-white outline-none md:p-10">
+    <div class="mb-6 flex justify-end">
+      <button type="button" class="flex items-center gap-2 rounded border border-brand-gold/40 px-4 py-2 text-xs uppercase tracking-[0.2em] text-brand-gold hover:bg-brand-gold/10" data-floor-close>Close</button>
+    </div>
+    <img data-floor-modal-img src="" alt="" width="1400" height="900" class="rounded-sm" decoding="async" />
+  </dialog>
+
+  <dialog id="walkthrough-modal" class="w-[min(100vw-2rem,920px)] max-w-none border border-brand-gold/25 bg-brand-ink p-5 text-white shadow-2xl outline-none md:p-8">
+    <div class="mb-5 flex flex-wrap items-center justify-between gap-4 border-b border-brand-gold/15 pb-4">
+      <p class="font-sans text-[11px] font-semibold uppercase tracking-[0.28em] text-brand-gold/95">Modena · Walkthrough</p>
+      <button type="button" class="flex items-center gap-2 rounded border border-brand-gold/40 px-4 py-2 text-xs uppercase tracking-[0.2em] text-brand-gold hover:bg-brand-gold/10" data-walkthrough-close>Close</button>
+    </div>
+    <video data-walkthrough-player controls playsinline preload="metadata" poster="assets/images/opt/c/MODENA_CARD.jpg" class="aspect-video w-full rounded-sm bg-black ring-1 ring-brand-gold/20">
+      <source src="assets/videos/Video_Unbranded.mp4" type="video/mp4" />
+    </video>
+    <p class="mt-4 font-sans text-[11px] leading-relaxed text-white/45">Use your browser controls to play, pause, and adjust volume.</p>
+  </dialog>
 
   <footer class="border-t border-brand-gold/10 bg-brand-ink px-6 py-12 lg:px-10">
     <div class="mx-auto grid max-w-7xl gap-10 md:grid-cols-[1.15fr_0.9fr_0.95fr] md:items-start">
       <div class="space-y-4">
         <div class="flex items-center gap-4">
-          <img src="assets/images/logo_futur.jpeg" alt="Futur Latam Corp logo" class="h-10 w-10 object-contain" decoding="async" />
+          <img src="assets/images/opt/logo_futur.jpg" alt="Futur Latam Corp logo" class="h-10 w-10 object-contain" loading="lazy" decoding="async" />
           <div class="leading-tight">
             <p class="font-sans text-sm font-semibold uppercase tracking-[0.28em] text-brand-gold">FUTUR LATAM CORP</p>
             <p class="mt-1 font-sans text-xs text-white/60">South Florida · Chile</p>
@@ -183,13 +201,13 @@
           </div>
           <div class="flex items-start gap-3">
             <span class="material-symbols-outlined text-brand-gold">mail</span>
-            <a class="break-all hover:text-brand-gold" href="mailto:contact@futurlatamcorp.com">contact@futurlatamcorp.com</a>
+            <a class="break-all hover:text-brand-gold" href="mailto:info@futurlatamcorp.com">info@futurlatamcorp.com</a>
           </div>
         </div>
 
         <div class="flex flex-wrap gap-x-6 gap-y-3 border-t border-brand-gold/10 pt-5 font-sans text-xs font-semibold uppercase tracking-[0.22em] text-white/65">
-          <a class="hover:text-brand-gold" href="about.html">About Us</a>
           <a class="hover:text-brand-gold" href="residential.html">Projects</a>
+          <a class="hover:text-brand-gold" href="about.html">About Us</a>
           <a class="hover:text-brand-gold" href="contact.html#form">Contact</a>
         </div>
       </div>
