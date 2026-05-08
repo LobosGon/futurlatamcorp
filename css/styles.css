@@ -1,0 +1,267 @@
+/* Futur Latam Corp – sitio estático para hosting */
+
+:root {
+  --brand-navy: #001a33;
+  --brand-gold: #d4af37;
+  --brand-teal: #008b8b;
+  --reveal-shift: 24px;
+  --reveal-dur: 0.85s;
+}
+
+.parallax-scroll {
+  will-change: transform;
+}
+
+.hero-parallax-media {
+  will-change: transform;
+}
+
+.media-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 2px;
+}
+
+.media-card img,
+.media-card video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition:
+    opacity 0.55s ease,
+    transform 0.75s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.media-card .poster-img {
+  z-index: 1;
+}
+
+.media-card video.loop-video {
+  z-index: 2;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.media-card.is-playing video.loop-video {
+  opacity: 1;
+}
+
+.media-card:not(.reduce-motion):hover .poster-img {
+  transform: scale(1.05);
+}
+
+.media-card.reduce-motion:hover .poster-img {
+  transform: none;
+}
+
+.media-card-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 3;
+  background: linear-gradient(
+    to top,
+    rgba(0, 26, 51, 0.92) 0%,
+    rgba(0, 26, 51, 0.08) 45%,
+    transparent 72%
+  );
+  opacity: 0.92;
+  transition: opacity 0.4s ease;
+}
+
+.media-card:hover .media-card-overlay {
+  opacity: 0.75;
+}
+
+.media-card-chip {
+  z-index: 4;
+}
+
+.media-card-caption {
+  z-index: 4;
+}
+
+.badge-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  border: 1px solid rgba(212, 175, 55, 0.45);
+  backdrop-filter: blur(8px);
+  background: rgba(0, 26, 51, 0.55);
+  padding: 0.35rem 0.65rem;
+  letter-spacing: 0.08em;
+  font-size: 0.62rem;
+  text-transform: uppercase;
+}
+
+.hover-glow {
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease,
+    border-color 0.35s ease;
+}
+
+.hover-glow:hover {
+  transform: translateY(-3px);
+  box-shadow:
+    0 18px 40px rgba(0, 0, 0, 0.45),
+    0 0 0 1px rgba(212, 175, 55, 0.35),
+    0 0 28px rgba(212, 175, 55, 0.12);
+}
+
+[data-reveal] {
+  opacity: 0;
+  transform: translate3d(0, var(--reveal-shift), 0);
+  transition:
+    opacity var(--reveal-dur) cubic-bezier(0.22, 1, 0.36, 1),
+    transform var(--reveal-dur) cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+[data-reveal].is-visible {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+
+[data-reveal][data-delay="1"] {
+  transition-delay: 0.08s;
+}
+[data-reveal][data-delay="2"] {
+  transition-delay: 0.16s;
+}
+[data-reveal][data-delay="3"] {
+  transition-delay: 0.24s;
+}
+
+.nav-scrolled nav.site-nav {
+  background-color: rgba(0, 26, 51, 0.92);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(212, 175, 55, 0.15);
+}
+
+body.menu-open {
+  overflow: hidden;
+}
+
+.mobile-drawer {
+  transform: translateX(100%);
+  transition: transform 0.38s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.mobile-drawer.is-open {
+  transform: translateX(0);
+}
+
+.floor-plan-zoom {
+  transition: transform 0.55s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.media-card.floor-plan-trigger:hover .floor-plan-zoom {
+  transform: scale(1.06);
+}
+
+.btn-send-contact {
+  background-color: var(--brand-teal);
+  transition:
+    transform 0.25s ease,
+    filter 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.btn-send-contact:hover {
+  filter: brightness(1.06);
+  box-shadow: 0 14px 32px rgba(0, 139, 139, 0.35);
+}
+
+.btn-send-contact:active {
+  transform: scale(0.98);
+}
+
+.nav-link-underline {
+  position: relative;
+}
+
+.nav-link-underline::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 100%;
+  height: 2px;
+  transform: scaleX(0);
+  transform-origin: right;
+  background: linear-gradient(
+    90deg,
+    rgba(212, 175, 55, 0.2),
+    rgba(212, 175, 55, 0.95),
+    rgba(212, 175, 55, 0.2)
+  );
+  transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.nav-link-underline:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.nav-link-underline.nav-active::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.subnav-pill.active {
+  /* Active pill uses gold background; text should read as brand navy */
+  color: #001a33;
+  border-color: rgba(212, 175, 55, 0.75);
+  box-shadow:
+    0 0 0 1px rgba(212, 175, 55, 0.18),
+    0 12px 32px rgba(0, 0, 0, 0.28);
+}
+
+#floor-modal {
+  max-width: min(96vw, 1100px);
+  width: 100%;
+  border: 1px solid rgba(212, 175, 55, 0.45);
+  background: #001a33;
+  color: #fff;
+  padding: 0;
+  border-radius: 2px;
+}
+
+#floor-modal::backdrop {
+  background: rgba(0, 8, 20, 0.78);
+  backdrop-filter: blur(4px);
+}
+
+#floor-modal img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: min(78vh, 860px);
+  object-fit: contain;
+  background: #000;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-parallax-media,
+  .parallax-scroll {
+    transform: none !important;
+    transition: none !important;
+  }
+
+  [data-reveal] {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+
+  .media-card.reduce-motion *,
+  .media-card.reduce-motion:hover .poster-img {
+    transition: none;
+    transform: none;
+  }
+
+  html {
+    scroll-behavior: auto;
+  }
+}
