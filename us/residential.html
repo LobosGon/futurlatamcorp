@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Residential Portfolio | FUTUR LATAM CORP</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,300,0,0&display=swap" rel="stylesheet" />
+  <script id="tailwind-config">
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: { brand: { navy: "#001a33", ink: "#000d1a", gold: "#d4af37", goldMuted: "#b8952f", teal: "#008b8b" } },
+          fontFamily: { sans: ["Inter", "sans-serif"], serif: ["Playfair Display", "serif"] },
+        },
+      },
+    };
+  </script>
+</head>
+<body class="bg-brand-navy pb-28 pt-24 md:pt-28 text-white selection:bg-brand-gold selection:text-brand-navy antialiased">
+  <header class="site-nav fixed inset-x-0 top-0 z-50 bg-brand-navy/82 backdrop-blur-md">
+    <nav class="mx-auto flex max-w-7xl items-center justify-between px-6 py-5 lg:px-10">
+      <a href="index.html" class="flex gap-3">
+        <img src="../assets/images/logo_futur.jpeg" alt="Futur Latam Corp logo" class="h-12 w-12 object-contain" decoding="async" />
+        <div class="leading-tight">
+          <span class="block font-sans text-lg font-light tracking-[0.3em]">FUTUR</span>
+          <span class="block font-sans text-[10px] uppercase tracking-[0.22em] text-brand-gold">Latam Corp</span>
+        </div>
+      </a>
+      <div class="hidden md:flex md:items-center md:gap-10">
+        <a class="nav-link-underline text-xs uppercase tracking-[0.2em] text-white/85 hover:text-brand-gold" href="index.html">Home</a>
+        <a class="nav-active nav-link-underline text-xs uppercase tracking-[0.2em] text-brand-gold" href="residential.html">Projects</a>
+        <a class="nav-link-underline text-xs uppercase tracking-[0.2em] text-white/85 hover:text-brand-gold" href="about.html">About Us</a>
+        <a class="nav-link-underline text-xs uppercase tracking-[0.2em] text-white/85 hover:text-brand-gold" href="contact.html">Contact</a>
+      </div>
+      <div class="flex items-center gap-2">
+        <a href="../cl/index.html" class="region-switch-miami hidden items-center rounded border border-brand-gold/50 bg-brand-navy/60 px-3 py-2 font-sans text-[10px] font-semibold uppercase tracking-[0.2em] text-brand-gold hover:bg-brand-gold/15 sm:inline-flex" data-i18n="nav.visit_chile">Chile</a>
+        <div class="flex items-center gap-1 rounded border border-brand-gold/25 bg-brand-navy/40 p-1" data-lang-switch aria-label="Language">
+          <button type="button" class="lang-toggle rounded px-2 py-1 font-sans text-[10px] font-semibold uppercase tracking-[0.18em] text-white/70 hover:text-brand-gold" data-set-lang="en">EN</button>
+          <span class="text-white/25 px-0.5" aria-hidden="true">|</span>
+          <button type="button" class="lang-toggle rounded px-2 py-1 font-sans text-[10px] font-semibold uppercase tracking-[0.18em] text-white/70 hover:text-brand-gold" data-set-lang="es">ES</button>
+        </div>
+      <button type="button" class="rounded border border-brand-gold/35 p-2 text-brand-gold md:hidden" data-nav-toggle aria-label="Open menu"><span class="material-symbols-outlined text-2xl">menu</span></button>
+      </div>
+    </nav>
+  </header>
+
+  <aside data-mobile-drawer class="mobile-drawer fixed right-0 top-0 z-[60] flex h-full w-[min(100%,320px)] flex-col gap-8 border-l border-brand-gold/25 bg-brand-ink px-8 pb-16 pt-24 md:hidden">
+    <button type="button" class="absolute right-6 top-6 text-brand-gold" data-nav-close aria-label="Close"><span class="material-symbols-outlined text-3xl">close</span></button>
+    <a href="index.html" class="text-sm uppercase tracking-[0.2em] text-white/90">Home</a>
+    <a href="residential.html" class="text-sm uppercase tracking-[0.2em] text-brand-gold">Projects</a>
+    <a href="about.html" class="text-sm uppercase tracking-[0.2em] text-white/90">About Us</a>
+    <a href="contact.html" class="text-sm uppercase tracking-[0.2em] text-white/90">Contact</a>
+    <a href="../cl/index.html" class="rounded border border-brand-gold/35 bg-brand-navy/60 px-4 py-3 text-center font-sans text-xs font-semibold uppercase tracking-[0.2em] text-brand-gold hover:bg-brand-gold/10" data-i18n="nav.visit_chile">Chile</a>
+  </aside>
+
+  <!-- Project lane sub-navigation -->
+  <div class="mx-auto flex max-w-7xl flex-wrap justify-center gap-4 px-6 pt-6 lg:justify-end lg:px-10" data-reveal>
+    <a href="residential.html" class="subnav-pill active rounded-full border border-brand-gold px-8 py-2 text-xs uppercase tracking-[0.28em] text-brand-navy hover:border-brand-gold/80" style="background: linear-gradient(120deg,#d4af37,#cfa83a);">Residential</a>
+    <a href="retail.html" class="subnav-pill rounded-full border border-brand-gold/35 px-8 py-2 text-xs uppercase tracking-[0.28em] text-brand-gold/90 hover:border-brand-gold hover:text-white">Retail</a>
+    <a href="industrial.html" class="subnav-pill rounded-full border border-brand-gold/35 px-8 py-2 text-xs uppercase tracking-[0.28em] text-brand-gold/90 hover:border-brand-gold hover:text-white">Industrial</a>
+  </div>
+
+  <main class="mx-auto max-w-7xl px-6 py-14 lg:px-10">
+    <header class="grid gap-8 lg:grid-cols-[1.2fr_0.8fr] lg:items-end" data-reveal>
+      <div>
+        <p class="font-sans text-xs font-semibold uppercase tracking-[0.35em] text-brand-gold/90">Residential models</p>
+        <h1 class="mt-5 font-serif text-4xl uppercase tracking-[0.16em] text-brand-gold md:text-5xl">Residential</h1>
+        <p class="mt-6 max-w-2xl font-sans text-sm leading-relaxed text-white/75">
+          Hover a model to preview. If there is no video, the card cycles through images. Use “Floor plan” to open the blueprint in a modal.
+        </p>
+      </div>
+      <div class="lg:text-right">
+        <a href="contact.html#form" class="hover-glow inline-flex items-center justify-center rounded-sm border border-brand-gold/60 px-8 py-3 font-sans text-xs font-bold uppercase tracking-[0.28em] text-brand-gold hover:bg-brand-gold hover:text-brand-navy">Inquire</a>
+      </div>
+    </header>
+
+    <section class="mt-14 grid gap-12 lg:grid-cols-2">
+      <div data-reveal>
+        <div class="mb-8 flex items-baseline justify-between">
+          <h2 class="font-serif text-2xl uppercase tracking-[0.2em] text-brand-gold md:text-3xl">1 Story</h2>
+          <span class="font-sans text-[11px] uppercase tracking-[0.28em] text-white/45">Granada · Merida · Sevilla · Valencia</span>
+        </div>
+        <div class="grid gap-8 grid-cols-1">
+          <!-- GRANADA -->
+          <article data-card-link="model-granada.html" class="hover-glow group border border-brand-gold/25 bg-brand-ink/25 p-4 cursor-pointer">
+            <div class="media-card aspect-[16/11] bg-black"
+              data-hover-images="assets/images/GRANADA_1.png, assets/images/GRANADA_2.png, assets/images/GRANADA_3.png, assets/images/GRANADA_4.png">
+              <img alt="Granada model" src="../assets/images/GRANADA_1.png" class="poster-img" width="920" height="630" decoding="async" />
+              <span class="media-card-overlay" aria-hidden="true"></span>
+              <span class="media-card-chip badge-chip absolute left-4 top-4 text-brand-gold">1 Story</span>
+              <button type="button" class="badge-chip absolute right-4 top-4 font-semibold text-white"
+                data-floor-open data-floor-src="../assets/images/GRANADA_PLANO.png" data-floor-alt="Granada floor plan">
+                Floor plan <span class="material-symbols-outlined text-base">architecture</span>
+              </button>
+            </div>
+            <div class="pt-6">
+              <div class="flex items-start justify-between gap-6">
+                <div>
+                  <h3 class="font-serif text-xl text-brand-gold">Granada</h3>
+                  <p class="mt-2 font-sans text-xs uppercase tracking-[0.25em] text-white/55">Modern style</p>
+                </div>
+                <a href="model-granada.html" class="font-sans text-xs font-bold uppercase tracking-[0.24em] text-brand-gold hover:text-white">Details →</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- MERIDA -->
+          <article data-card-link="model-merida.html" class="hover-glow group border border-brand-gold/25 bg-brand-ink/25 p-4 cursor-pointer">
+            <div class="media-card aspect-[16/11] bg-black"
+              data-hover-images="assets/images/MERIDA_1.png, assets/images/MERIDA_2.png, assets/images/MERIDA_3.png, assets/images/MERIDA_4.png, assets/images/MERIDA_5.png">
+              <img alt="Merida model" src="../assets/images/MERIDA_1.png" class="poster-img" width="920" height="630" decoding="async" />
+              <span class="media-card-overlay" aria-hidden="true"></span>
+              <span class="media-card-chip badge-chip absolute left-4 top-4 text-brand-gold">1 Story</span>
+              <button type="button" class="badge-chip absolute right-4 top-4 font-semibold text-white"
+                data-floor-open data-floor-src="../assets/images/MERIDA_PLANO.png" data-floor-alt="Merida floor plan">
+                Floor plan <span class="material-symbols-outlined text-base">architecture</span>
+              </button>
+            </div>
+            <div class="pt-6">
+              <div class="flex items-start justify-between gap-6">
+                <div>
+                  <h3 class="font-serif text-xl text-brand-gold">Merida</h3>
+                  <p class="mt-2 font-sans text-xs uppercase tracking-[0.25em] text-white/55">Open plan</p>
+                </div>
+                <a href="contact.html#form" class="font-sans text-xs font-bold uppercase tracking-[0.24em] text-brand-gold hover:text-white">Inquire →</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- SEVILLA -->
+          <article data-card-link="model-sevilla.html" class="hover-glow group border border-brand-gold/25 bg-brand-ink/25 p-4 cursor-pointer">
+            <div class="media-card aspect-[16/11] bg-black"
+              data-hover-images="assets/images/SEVILLA_1.png, assets/images/SEVILLA_2.png, assets/images/SEVILLA_3.png, assets/images/SEVILLA_4.png, assets/images/SEVILLA_5.png">
+              <img alt="Sevilla model" src="../assets/images/SEVILLA_1.png" class="poster-img" width="920" height="630" decoding="async" />
+              <span class="media-card-overlay" aria-hidden="true"></span>
+              <span class="media-card-chip badge-chip absolute left-4 top-4 text-brand-gold">1 Story</span>
+              <button type="button" class="badge-chip absolute right-4 top-4 font-semibold text-white"
+                data-floor-open data-floor-src="../assets/images/SEVILLA_5.png" data-floor-alt="Sevilla floor plan">
+                Floor plan <span class="material-symbols-outlined text-base">architecture</span>
+              </button>
+            </div>
+            <div class="pt-6">
+              <div class="flex items-start justify-between gap-6">
+                <div>
+                  <h3 class="font-serif text-xl text-brand-gold">Sevilla</h3>
+                  <p class="mt-2 font-sans text-xs uppercase tracking-[0.25em] text-white/55">Modern façade</p>
+                </div>
+                <a href="contact.html#form" class="font-sans text-xs font-bold uppercase tracking-[0.24em] text-brand-gold hover:text-white">Inquire →</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- VALENCIA -->
+          <article data-card-link="model-valencia.html" class="hover-glow group border border-brand-gold/25 bg-brand-ink/25 p-4 cursor-pointer">
+            <div class="media-card aspect-[16/11] bg-black"
+              data-hover-images="assets/images/VALENCIA_1.png, assets/images/VALENCIA_2.png, assets/images/VALENCIA_3.png, assets/images/VALENCIA_4.png">
+              <img alt="Valencia model" src="../assets/images/VALENCIA_1.png" class="poster-img" width="920" height="630" decoding="async" />
+              <span class="media-card-overlay" aria-hidden="true"></span>
+              <span class="media-card-chip badge-chip absolute left-4 top-4 text-brand-gold">1 Story</span>
+              <button type="button" class="badge-chip absolute right-4 top-4 font-semibold text-white"
+                data-floor-open data-floor-src="../assets/images/VALENCIA_PLANO.png" data-floor-alt="Valencia floor plan">
+                Floor plan <span class="material-symbols-outlined text-base">architecture</span>
+              </button>
+            </div>
+            <div class="pt-6">
+              <div class="flex items-start justify-between gap-6">
+                <div>
+                  <h3 class="font-serif text-xl text-brand-gold">Valencia</h3>
+                  <p class="mt-2 font-sans text-xs uppercase tracking-[0.25em] text-white/55">Functional layout</p>
+                </div>
+                <a href="contact.html#form" class="font-sans text-xs font-bold uppercase tracking-[0.24em] text-brand-gold hover:text-white">Inquire →</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <div data-delay="1" data-reveal>
+        <div class="mb-8 flex items-baseline justify-between">
+          <h2 class="font-serif text-2xl uppercase tracking-[0.2em] text-brand-gold md:text-3xl">2 Story</h2>
+          <span class="font-sans text-[11px] uppercase tracking-[0.28em] text-white/45">Lanin · Modena · Toledo</span>
+        </div>
+        <div class="grid gap-8 grid-cols-1">
+          <!-- MODENA (VIDEO) -->
+          <article data-card-link="model-modena.html" class="hover-glow group border border-brand-gold/25 bg-brand-ink/25 p-4 cursor-pointer">
+            <div class="media-card aspect-[16/11] bg-black">
+              <img alt="Modena model" src="../assets/images/monroe/01-DSC08361-1.jpg" class="poster-img" width="920" height="630" decoding="async" />
+              <video class="loop-video" muted loop playsinline preload="none"><source src="../assets/videos/Video_Unbranded.mp4" type="video/mp4" /></video>
+              <span class="media-card-overlay" aria-hidden="true"></span>
+              <span class="media-card-chip badge-chip absolute left-4 top-4 text-brand-gold">2 Story</span>
+              <button type="button" class="badge-chip absolute right-4 top-4 font-semibold text-white"
+                data-floor-open data-floor-src="../assets/images/MODENA_4.png" data-floor-alt="Modena floor plan">
+                Floor plan <span class="material-symbols-outlined text-base">architecture</span>
+              </button>
+            </div>
+            <div class="pt-6">
+              <div class="flex items-start justify-between gap-6">
+                <div>
+                  <h3 class="font-serif text-xl text-brand-gold">Modena</h3>
+                  <p class="mt-2 font-sans text-xs uppercase tracking-[0.25em] text-white/55">Walkthrough reel</p>
+                </div>
+                <a href="model-modena.html" class="font-sans text-xs font-bold uppercase tracking-[0.24em] text-brand-gold hover:text-white">Details →</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- LANIN -->
+          <article data-card-link="model-lanin.html" class="hover-glow group border border-brand-gold/25 bg-brand-ink/25 p-4 cursor-pointer">
+            <div class="media-card aspect-[16/11] bg-black"
+              data-hover-images="assets/images/LANIN_1.png, assets/images/LANIN_2.png, assets/images/LANIN_3.png, assets/images/LANIN_4.png">
+              <img alt="Lanin model" src="../assets/images/LANIN_1.png" class="poster-img" width="920" height="630" decoding="async" />
+              <span class="media-card-overlay" aria-hidden="true"></span>
+              <span class="media-card-chip badge-chip absolute left-4 top-4 text-brand-gold">2 Story</span>
+              <button type="button" class="badge-chip absolute right-4 top-4 font-semibold text-white"
+                data-floor-open data-floor-src="../assets/images/LANIN_4.png" data-floor-alt="Lanin floor plan">
+                Floor plan <span class="material-symbols-outlined text-base">architecture</span>
+              </button>
+            </div>
+            <div class="pt-6">
+              <div class="flex items-start justify-between gap-6">
+                <div>
+                  <h3 class="font-serif text-xl text-brand-gold">Lanin</h3>
+                  <p class="mt-2 font-sans text-xs uppercase tracking-[0.25em] text-white/55">Two-level living</p>
+                </div>
+                <a href="contact.html#form" class="font-sans text-xs font-bold uppercase tracking-[0.24em] text-brand-gold hover:text-white">Inquire →</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- TOLEDO -->
+          <article data-card-link="model-toledo.html" class="hover-glow group border border-brand-gold/25 bg-brand-ink/25 p-4 cursor-pointer">
+            <div class="media-card aspect-[16/11] bg-black"
+              data-hover-images="assets/images/TOLEDO_1.png, assets/images/TOLEDO_2.png, assets/images/TOLEDO_3.png, assets/images/TOLEDO_4.png">
+              <img alt="Toledo model" src="../assets/images/TOLEDO_1.png" class="poster-img" width="1200" height="600" decoding="async" />
+              <span class="media-card-overlay" aria-hidden="true"></span>
+              <span class="media-card-chip badge-chip absolute left-4 top-4 text-brand-gold">2 Story</span>
+              <button type="button" class="badge-chip absolute right-4 top-4 font-semibold text-white"
+                data-floor-open data-floor-src="../assets/images/TOLEDO_PLANO.png" data-floor-alt="Toledo floor plan">
+                Floor plan <span class="material-symbols-outlined text-base">architecture</span>
+              </button>
+            </div>
+            <div class="pt-6">
+              <div class="flex items-start justify-between gap-6">
+                <div>
+                  <h3 class="font-serif text-xl text-brand-gold">Toledo</h3>
+                  <p class="mt-2 font-sans text-xs uppercase tracking-[0.25em] text-white/55">Balanced layout</p>
+                </div>
+                <a href="contact.html#form" class="font-sans text-xs font-bold uppercase tracking-[0.24em] text-brand-gold hover:text-white">Inquire →</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <dialog id="floor-modal" class="p-6 text-white outline-none md:p-10">
+    <div class="mb-6 flex justify-end">
+      <button type="button" class="flex items-center gap-2 rounded border border-brand-gold/40 px-4 py-2 text-xs uppercase tracking-[0.2em] text-brand-gold hover:bg-brand-gold/10" data-floor-close aria-label="Close floor plan viewer">
+        <span class="material-symbols-outlined text-lg">close</span> Close
+      </button>
+    </div>
+    <img data-floor-modal-img src="" alt="" width="1400" height="900" class="rounded-sm" />
+  </dialog>
+
+  <footer class="border-t border-brand-gold/10 bg-brand-ink px-6 py-12 lg:px-10">
+    <div class="mx-auto grid max-w-7xl gap-10 md:grid-cols-[1.15fr_0.9fr_0.95fr] md:items-start">
+      <div class="space-y-4">
+        <div class="flex items-center gap-4">
+          <img src="../assets/images/logo_futur.jpeg" alt="Futur Latam Corp logo" class="h-10 w-10 object-contain" decoding="async" />
+          <div class="leading-tight">
+            <p class="font-sans text-sm font-semibold uppercase tracking-[0.28em] text-brand-gold">FUTUR LATAM CORP</p>
+            <p class="mt-1 font-sans text-xs text-white/60">South Florida · Chile</p>
+          </div>
+        </div>
+        <p class="font-sans text-sm leading-relaxed text-white/70">
+          International real estate development, investment, and property advisory with disciplined execution.
+        </p>
+      </div>
+
+      <div class="space-y-4">
+        <p class="font-sans text-[11px] font-semibold uppercase tracking-[0.28em] text-brand-gold/90">Office</p>
+        <p class="font-sans text-sm leading-relaxed text-white/75">5000 Pembroke Rd<br />Hollywood, FL 33021</p>
+        <div class="overflow-hidden rounded-sm border border-brand-gold/15 bg-brand-navy/35 hidden md:block">
+          <iframe
+            title="Futur Latam Corp — 5000 Pembroke Rd map"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            class="h-28 w-full"
+            src="https://www.google.com/maps?q=5000%20Pembroke%20Rd%2C%20Hollywood%2C%20FL%2033021&output=embed"
+          ></iframe>
+        </div>
+        <a class="inline-flex items-center gap-2 border-b border-brand-gold/40 font-sans text-xs font-semibold uppercase tracking-[0.2em] text-brand-gold hover:text-white" href="https://www.google.com/maps/place/5000+Pembroke+Rd,+Hollywood,+FL+33021,+EE.+UU./@25.9950849,-80.193496,914m/data=!3m2!1e3!4b1!4m6!3m5!1s0x88d9a9538ed91211:0xa9ac3e5a583cd4d4!8m2!3d25.9950849!4d-80.193496!16s%2Fg%2F11wfd7xncv?entry=ttu&g_ep=EgoyMDI1MTExMi4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer">
+          Open in Google Maps
+          <span aria-hidden="true">→</span>
+        </a>
+      </div>
+
+      <div class="space-y-5">
+        <p class="font-sans text-[11px] font-semibold uppercase tracking-[0.28em] text-brand-gold/90">Contact</p>
+        <div class="grid gap-3 font-sans text-sm text-white/78">
+          <div class="flex items-start gap-3">
+            <span class="material-symbols-outlined text-brand-gold">call</span>
+            <p>+1 786 755 6998 <span class="text-xs text-white/50">(Miami)</span></p>
+          </div>
+          <div class="flex items-start gap-3">
+            <span class="material-symbols-outlined text-brand-gold">call</span>
+            <p>+56 9 6728 3175 <span class="text-xs text-white/50">(Santiago)</span></p>
+          </div>
+          <div class="flex items-start gap-3">
+            <span class="material-symbols-outlined text-brand-gold">mail</span>
+            <a class="break-all hover:text-brand-gold" href="mailto:contact@futurlatamcorp.com">contact@futurlatamcorp.com</a>
+          </div>
+        </div>
+
+        <div class="flex flex-wrap gap-x-6 gap-y-3 border-t border-brand-gold/10 pt-5 font-sans text-xs font-semibold uppercase tracking-[0.22em] text-white/65">
+          <a class="hover:text-brand-gold" href="residential.html">Projects</a>
+          <a class="hover:text-brand-gold" href="about.html">About Us</a>
+          <a class="hover:text-brand-gold" href="contact.html#form">Contact</a>
+        </div>
+      </div>
+    </div>
+
+    <p class="mx-auto max-w-7xl pt-8 text-center font-sans text-xs text-white/50">
+      <a href="../index.html" class="border-b border-brand-gold/30 text-brand-gold/80 hover:text-brand-gold" data-i18n="nav.region_link">Choose region</a>
+    </p>
+
+    <div class="mx-auto mt-10 max-w-7xl border-t border-brand-gold/10 pt-6 text-center font-sans text-xs text-white/50">
+      © 2026 Futur Latam Corp. All rights reserved.
+    </div>
+  </footer>
+
+      <script src="../js/i18n.js" defer></script>
+    <script src="../js/main.js" defer></script>
+</body>
+</html>

@@ -133,84 +133,6 @@
   transition-delay: 0.24s;
 }
 
-/* Home — About summary: marco dorado + foto y título revelados a la vez */
-.about-summary-frame {
-  margin: 0;
-  padding: 4px;
-  border-radius: 2px;
-  background: linear-gradient(
-    125deg,
-    rgba(212, 175, 55, 0.65) 0%,
-    rgba(212, 175, 55, 0.14) 42%,
-    rgba(0, 26, 51, 0.92) 100%
-  );
-  box-shadow:
-    0 28px 56px rgba(0, 0, 0, 0.42),
-    0 0 0 1px rgba(212, 175, 55, 0.22),
-    inset 0 1px 0 rgba(255, 255, 255, 0.06);
-}
-
-.about-summary-frame-inner {
-  overflow: hidden;
-  border-radius: 1px;
-  border: 1px solid rgba(212, 175, 55, 0.38);
-  background-color: var(--brand-ink);
-}
-
-.about-summary-block[data-reveal]:not(.is-visible) .about-summary-photo {
-  transform: scale(1.035);
-}
-
-.about-summary-block[data-reveal].is-visible .about-summary-photo {
-  transform: scale(1);
-  transition: transform 1s cubic-bezier(0.22, 1, 0.36, 1);
-}
-
-.about-summary-block[data-reveal]:not(.is-visible) .about-summary-copy > p,
-.about-summary-block[data-reveal]:not(.is-visible) .about-summary-copy > .about-summary-cta {
-  opacity: 0;
-  transform: translate3d(0, var(--reveal-shift), 0);
-}
-
-.about-summary-block[data-reveal].is-visible .about-summary-copy > p {
-  opacity: 1;
-  transform: translate3d(0, 0, 0);
-  transition:
-    opacity var(--reveal-dur) cubic-bezier(0.22, 1, 0.36, 1),
-    transform var(--reveal-dur) cubic-bezier(0.22, 1, 0.36, 1);
-  transition-delay: 0.12s;
-}
-
-.about-summary-block[data-reveal].is-visible .about-summary-copy > .about-summary-cta {
-  opacity: 1;
-  transform: translate3d(0, 0, 0);
-  transition:
-    opacity var(--reveal-dur) cubic-bezier(0.22, 1, 0.36, 1),
-    transform var(--reveal-dur) cubic-bezier(0.22, 1, 0.36, 1);
-  transition-delay: 0.22s;
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .about-summary-block[data-reveal]:not(.is-visible) .about-summary-copy > p,
-  .about-summary-block[data-reveal]:not(.is-visible) .about-summary-copy > .about-summary-cta {
-    opacity: 1;
-    transform: none;
-    transition: none;
-  }
-
-  .about-summary-block[data-reveal]:not(.is-visible) .about-summary-photo,
-  .about-summary-block[data-reveal].is-visible .about-summary-photo {
-    transform: none;
-    transition: none;
-  }
-
-  .about-summary-block[data-reveal].is-visible .about-summary-copy > p,
-  .about-summary-block[data-reveal].is-visible .about-summary-copy > .about-summary-cta {
-    transition: none;
-    transition-delay: 0s;
-  }
-}
-
 .nav-scrolled nav.site-nav {
   background-color: rgba(0, 26, 51, 0.92);
   backdrop-filter: blur(12px);
@@ -306,18 +228,9 @@ body.menu-open {
   border-radius: 2px;
 }
 
-#floor-modal::backdrop,
-#walkthrough-modal::backdrop {
+#floor-modal::backdrop {
   background: rgba(0, 8, 20, 0.78);
   backdrop-filter: blur(4px);
-}
-
-#walkthrough-modal video[data-walkthrough-player] {
-  display: block;
-  width: 100%;
-  max-height: min(72vh, 560px);
-  object-fit: contain;
-  background: #000;
 }
 
 #floor-modal img {
@@ -327,23 +240,6 @@ body.menu-open {
   max-height: min(78vh, 860px);
   object-fit: contain;
   background: #000;
-}
-
-/* Contact form — lista del <select> legible en tema oscuro (Win/Chrome) */
-select.contact-topic-select {
-  color-scheme: dark;
-  background-color: rgba(255, 255, 255, 0.06);
-  color: rgba(255, 255, 255, 0.95);
-}
-
-select.contact-topic-select option {
-  background-color: var(--brand-navy);
-  color: rgba(255, 255, 255, 0.95);
-}
-
-select.contact-topic-select option:checked {
-  background-color: rgba(0, 139, 139, 0.45);
-  color: #fff;
 }
 
 @media (prefers-reduced-motion: reduce) {

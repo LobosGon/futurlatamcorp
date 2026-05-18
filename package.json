@@ -1,0 +1,19 @@
+{
+  "name": "futurlatamcorp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@turf/area": "^7.3.5",
+    "@turf/centroid": "^7.3.5",
+    "@turf/polygonize": "^7.3.5",
+    "@xmldom/xmldom": "^0.9.10"
+  }
+}

@@ -1,0 +1,272 @@
+﻿<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About Us | FUTUR LATAM CORP Chile</title>
+  <meta name="description" content="Learn about Futur Latam Corp — international real estate development across South Florida and Chile." />
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/chile.css?v=20260518-cl-theme" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,300,0,0&display=swap" rel="stylesheet" />
+  <script id="tailwind-config">
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: { navy: "#001a33", ink: "#000d1a", gold: "#d4af37", goldMuted: "#b8952f", teal: "#008b8b" },
+            chile: { navy: "#0039a6", red: "#d52b1e", ink: "#071323", snow: "#f8fafc" },
+          },
+          fontFamily: {
+            sans: ["Inter", "system-ui", "sans-serif"],
+            serif: ["Playfair Display", "Georgia", "serif"],
+          },
+        },
+      },
+    };
+  </script>
+</head>
+<body class="chile-body min-h-screen pb-24 pt-24 text-white antialiased selection:bg-chile-red selection:text-white md:pt-28">
+
+  <header class="site-nav chile-nav fixed inset-x-0 top-0 z-50 transition-colors">
+    <nav class="site-nav mx-auto flex max-w-7xl items-center justify-between px-6 py-5 lg:px-10">
+      <a href="index.html" class="flex items-center gap-3 hover:opacity-90">
+        <img src="../assets/images/logo_futur.jpeg" alt="Futur Latam Corp logo" class="h-12 w-12 object-contain" decoding="async" />
+        <div class="leading-tight">
+          <span class="block font-sans text-lg font-light tracking-[0.3em]">FUTUR</span>
+          <span class="block font-sans text-[10px] uppercase tracking-[0.22em] text-white/65">Latam Corp</span>
+        </div>
+      </a>
+
+      <div class="hidden items-center gap-10 md:flex">
+        <a class="chile-link font-sans text-xs font-semibold uppercase tracking-[0.2em] text-white/78 hover:text-white" href="index.html">Home</a>
+        <a class="chile-link font-sans text-xs font-semibold uppercase tracking-[0.2em] text-white/78 hover:text-white" href="projects.html" data-i18n="nav.chile_projects">Parcels</a>
+        <a class="nav-active chile-link font-sans text-xs font-semibold uppercase tracking-[0.2em] text-white" href="about.html">About Us</a>
+        <a class="chile-link font-sans text-xs font-semibold uppercase tracking-[0.2em] text-white/78 hover:text-white" href="contact.html">Contact</a>
+      </div>
+
+      <div class="flex items-center gap-2">
+        <a href="../us/index.html" class="region-switch-chile hidden items-center rounded border border-white/35 bg-white/10 px-3 py-2 font-sans text-[10px] font-semibold uppercase tracking-[0.2em] text-white hover:bg-white/15 sm:inline-flex" data-i18n="nav.visit_miami">Miami</a>
+        <div class="flex items-center gap-1 rounded border border-white/20 bg-white/10 p-1" data-lang-switch aria-label="Language">
+          <button type="button" class="lang-toggle rounded px-2 py-1 font-sans text-[10px] font-semibold uppercase tracking-[0.18em] text-white/70 hover:text-white" data-set-lang="en">EN</button>
+          <span class="text-white/25 px-0.5" aria-hidden="true">|</span>
+          <button type="button" class="lang-toggle rounded px-2 py-1 font-sans text-[10px] font-semibold uppercase tracking-[0.18em] text-white/70 hover:text-white" data-set-lang="es">ES</button>
+        </div>
+        <button type="button" class="rounded border border-white/30 p-2 text-white md:hidden" aria-label="Open menu" data-nav-toggle>
+          <span class="material-symbols-outlined text-2xl">menu</span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <aside data-mobile-drawer class="mobile-drawer fixed right-0 top-0 z-[60] flex h-full w-[min(100%,320px)] flex-col gap-8 border-l border-white/15 bg-chile-ink px-8 pb-16 pt-24 md:hidden">
+    <button type="button" class="absolute right-6 top-6 text-white" aria-label="Close menu" data-nav-close>
+      <span class="material-symbols-outlined text-3xl">close</span>
+    </button>
+    <a class="font-sans text-sm font-semibold uppercase tracking-[0.2em] text-white/90" href="index.html">Home</a>
+    <a class="font-sans text-sm font-semibold uppercase tracking-[0.2em] text-white/90" href="projects.html" data-i18n="nav.chile_projects">Parcels</a>
+    <a class="font-sans text-sm font-semibold uppercase tracking-[0.2em] text-white" href="about.html">About Us</a>
+    <a class="font-sans text-sm font-semibold uppercase tracking-[0.2em] text-white/90" href="contact.html">Contact</a>
+    <a href="../us/index.html" class="rounded border border-white/30 bg-white/10 px-4 py-3 text-center font-sans text-xs font-semibold uppercase tracking-[0.2em] text-white hover:bg-white/15" data-i18n="nav.visit_miami">Miami</a>
+  </aside>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="relative overflow-hidden border-b border-white/10 pb-20 pt-10" data-reveal>
+      <div class="pointer-events-none absolute inset-0 -z-10">
+        <img alt="" src="../assets/images/Olivos/20220209_134123.jpg" width="2000" height="620" decoding="async" class="h-full w-full object-cover opacity-22" />
+        <div class="absolute inset-0 bg-[linear-gradient(90deg,rgba(7,19,35,0.97)_0%,rgba(7,19,35,0.85)_50%,rgba(7,19,35,0.6)_100%),linear-gradient(180deg,rgba(0,57,166,0.2),rgba(7,19,35,0.98))]"></div>
+      </div>
+      <div class="mx-auto max-w-7xl px-6 lg:px-10">
+        <p class="font-sans text-[11px] font-semibold uppercase tracking-[0.35em] text-white/70" data-i18n="cl.about.page_kicker">About · Chile</p>
+        <h1 class="mt-6 max-w-4xl font-serif text-4xl text-white md:text-6xl" data-i18n="cl.about.hero_title">Futur Latam Corp in Chile</h1>
+        <p class="mt-8 max-w-3xl font-sans text-sm leading-relaxed text-white/78" data-i18n="cl.about.hero_lead">
+          We pair international execution standards with local context for land and parcels in Chile.
+        </p>
+        <div class="mt-10 flex flex-wrap gap-3">
+          <span class="rounded-full border border-white/20 bg-white/8 px-5 py-2 font-sans text-[11px] uppercase tracking-[0.28em] text-white/85" data-i18n="cl.about.chip1">Chile land</span>
+          <span class="rounded-full border border-white/20 bg-white/8 px-5 py-2 font-sans text-[11px] uppercase tracking-[0.28em] text-white/85" data-i18n="cl.about.chip2">Valle de los Olivos</span>
+          <span class="rounded-full border border-white/20 bg-white/8 px-5 py-2 font-sans text-[11px] uppercase tracking-[0.28em] text-white/85" data-i18n="cl.about.chip3">Parcels</span>
+          <span class="rounded-full border border-white/20 bg-white/8 px-5 py-2 font-sans text-[11px] uppercase tracking-[0.28em] text-white/85" data-i18n="cl.about.chip4">Partners</span>
+        </div>
+        <div class="mt-12 flex flex-wrap gap-4">
+          <a href="contact.html#form" class="hover-glow inline-flex items-center rounded-sm bg-chile-red px-8 py-3.5 font-sans text-xs font-bold uppercase tracking-[0.28em] text-white" data-i18n="cl.about.cta_btn">Contact</a>
+          <a href="projects.html" class="hover-glow inline-flex items-center rounded-sm border border-white/60 px-8 py-3.5 font-sans text-xs font-bold uppercase tracking-[0.28em] text-white hover:border-chile-red" data-i18n="cl.about.cta_map">Parcel map</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- PHOTOS PARCELAS -->
+    <section class="border-b border-white/10 bg-chile-snow py-20 text-chile-ink">
+      <div class="mx-auto max-w-7xl px-6 lg:px-10">
+        <p class="font-sans text-[11px] font-semibold uppercase tracking-[0.32em] text-chile-red">Valle de los Olivos</p>
+        <h2 class="mt-3 font-serif text-3xl text-chile-ink md:text-4xl" data-i18n="cl.about.photos_title">The project</h2>
+        <p class="mt-4 max-w-2xl font-sans text-sm leading-relaxed text-slate-600" data-i18n="cl.about.photos_lead">Real images from the land — a direct look at what Valle de los Olivos offers.</p>
+        <div class="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+          <figure class="overflow-hidden rounded-sm shadow-md lg:col-span-2 lg:row-span-2">
+            <img alt="Valle de los Olivos — vista principal" src="../assets/images/Olivos/Casa Habitada 3.jpg" width="800" height="600" decoding="async" class="h-full min-h-[220px] w-full object-cover transition duration-700 hover:scale-[1.03]" />
+          </figure>
+          <figure class="overflow-hidden rounded-sm shadow-md">
+            <img alt="Valle de los Olivos" src="../assets/images/Olivos/20220209_134123.jpg" width="400" height="300" decoding="async" class="aspect-[4/3] w-full object-cover transition duration-700 hover:scale-[1.03]" />
+          </figure>
+          <figure class="overflow-hidden rounded-sm shadow-md">
+            <img alt="Valle de los Olivos" src="../assets/images/Olivos/20220209_131917.jpg" width="400" height="300" decoding="async" class="aspect-[4/3] w-full object-cover transition duration-700 hover:scale-[1.03]" />
+          </figure>
+          <figure class="overflow-hidden rounded-sm shadow-md">
+            <img alt="Valle de los Olivos" src="../assets/images/Olivos/bandejon central 1.JPG" width="400" height="300" decoding="async" class="aspect-[4/3] w-full object-cover transition duration-700 hover:scale-[1.03]" />
+          </figure>
+          <figure class="overflow-hidden rounded-sm shadow-md">
+            <img alt="Valle de los Olivos" src="../assets/images/Olivos/10.jpg" width="400" height="300" decoding="async" class="aspect-[4/3] w-full object-cover transition duration-700 hover:scale-[1.03]" />
+          </figure>
+        </div>
+        <div class="mt-10 text-center">
+          <a href="projects.html" class="hover-glow inline-flex rounded-sm bg-chile-red px-10 py-3.5 font-sans text-xs font-bold uppercase tracking-[0.26em] text-white" data-i18n="cl.home.parcels_cta">Open map</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTENT GRID -->
+    <section class="mx-auto max-w-7xl px-6 py-20 lg:px-10">
+      <div class="grid gap-10 lg:grid-cols-[1.05fr_0.95fr] lg:gap-12">
+        <article class="space-y-6 border border-white/12 bg-white/5 p-10 font-sans text-sm leading-relaxed text-white/80" data-reveal>
+          <h2 class="font-serif text-3xl text-white" data-i18n="cl.about.article_h2">Who we are in Chile</h2>
+          <p data-i18n="cl.about.article_p1">We focus on parcel-level clarity.</p>
+          <p data-i18n="cl.about.article_p2">Whether you are evaluating a single lot or a broader footprint.</p>
+          <p data-i18n="cl.about.article_p3">Valle de los Olivos is a flagship reference on this site.</p>
+        </article>
+
+        <aside class="border border-white/12 bg-white/5 p-10" data-delay="1" data-reveal>
+          <h2 class="font-serif text-3xl text-white" data-i18n="cl.about.aside_h2">How we work</h2>
+          <div class="mt-8 space-y-6 font-sans text-sm text-white/80">
+            <div class="flex gap-4">
+              <span class="badge-chip">01</span>
+              <div>
+                <p class="font-semibold text-white" data-i18n="cl.about.step1_t">Map-first orientation</p>
+                <p class="mt-1 text-white/70" data-i18n="cl.about.step1_d">We anchor conversations to the live parcel map.</p>
+              </div>
+            </div>
+            <div class="flex gap-4">
+              <span class="badge-chip">02</span>
+              <div>
+                <p class="font-semibold text-white" data-i18n="cl.about.step2_t">Stakeholder alignment</p>
+                <p class="mt-1 text-white/70" data-i18n="cl.about.step2_d">We connect the right partners early.</p>
+              </div>
+            </div>
+            <div class="flex gap-4">
+              <span class="badge-chip">03</span>
+              <div>
+                <p class="font-semibold text-white" data-i18n="cl.about.step3_t">Disciplined delivery</p>
+                <p class="mt-1 text-white/70" data-i18n="cl.about.step3_d">From concept to completion — we stay hands-on.</p>
+              </div>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- CAPABILITIES -->
+    <section class="border-t border-white/10 py-20" data-reveal>
+      <div class="mx-auto max-w-7xl px-6 lg:px-10">
+        <div class="flex flex-wrap items-end justify-between gap-6">
+          <div>
+            <p class="font-sans text-[11px] font-semibold uppercase tracking-[0.35em] text-white/60" data-i18n="cl.about.cap_kicker">Capabilities · Chile</p>
+            <h2 class="mt-4 font-serif text-3xl text-white md:text-4xl" data-i18n="cl.about.cap_h2">What we support</h2>
+          </div>
+          <a href="contact.html#form" class="chile-link font-sans text-xs font-semibold uppercase tracking-[0.25em] text-white/70 hover:text-white" data-i18n="cl.about.cap_cta">Contact the Chile desk →</a>
+        </div>
+        <div class="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+          <div class="border border-white/12 bg-white/5 p-8">
+            <span class="material-symbols-outlined text-chile-red">map</span>
+            <p class="mt-5 font-sans text-[11px] font-semibold uppercase tracking-[0.28em] text-white/70" data-i18n="cl.about.cap1_t">Parcel diligence</p>
+            <p class="mt-3 font-sans text-sm text-white/65" data-i18n="cl.about.cap1_d">Desktop review, map overlays, and documentation hooks tied to each lot.</p>
+          </div>
+          <div class="border border-white/12 bg-white/5 p-8">
+            <span class="material-symbols-outlined text-chile-red">handshake</span>
+            <p class="mt-5 font-sans text-[11px] font-semibold uppercase tracking-[0.28em] text-white/70" data-i18n="cl.about.cap2_t">Partnerships</p>
+            <p class="mt-3 font-sans text-sm text-white/65" data-i18n="cl.about.cap2_d">Introductions and structuring support for aligned capital in Chile.</p>
+          </div>
+          <div class="border border-white/12 bg-white/5 p-8">
+            <span class="material-symbols-outlined text-chile-red">location_city</span>
+            <p class="mt-5 font-sans text-[11px] font-semibold uppercase tracking-[0.28em] text-white/70" data-i18n="cl.about.cap3_t">Santiago presence</p>
+            <p class="mt-3 font-sans text-sm text-white/65" data-i18n="cl.about.cap3_d">Direct line to our team in Chile alongside the Miami office.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="relative overflow-hidden py-24">
+      <div class="absolute inset-0 z-0">
+        <img alt="" src="../assets/images/Olivos/1.jpg" width="2000" height="620" class="h-full w-full object-cover opacity-22" decoding="async" />
+        <div class="absolute inset-0 bg-chile-ink/92"></div>
+      </div>
+      <div class="relative z-10 mx-auto flex max-w-5xl flex-col items-center px-6 text-center" data-reveal>
+        <h2 class="font-serif text-3xl uppercase tracking-[0.12em] text-white md:text-[2.125rem]" data-i18n="cl.about.cta_h2">Ready to walk the map?</h2>
+        <p class="mx-auto mt-6 max-w-3xl font-sans text-sm leading-relaxed text-white/72" data-i18n="cl.about.cta_p">
+          Ask for Valle de los Olivos materials or a short intro call.
+        </p>
+        <a href="contact.html#form" class="hover-glow mt-10 inline-flex items-center rounded-sm bg-chile-red px-10 py-3.5 font-sans text-xs font-bold uppercase tracking-[0.26em] text-white" data-i18n="cl.about.cta_btn">Contact</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="border-t border-white/10 bg-chile-ink px-6 py-12 lg:px-10">
+    <div class="mx-auto grid max-w-7xl gap-10 md:grid-cols-[1.15fr_0.9fr_0.95fr] md:items-start">
+      <div class="space-y-4">
+        <div class="flex items-center gap-4">
+          <img src="../assets/images/logo_futur.jpeg" alt="Futur Latam Corp logo" class="h-10 w-10 object-contain" decoding="async" />
+          <div class="leading-tight">
+            <p class="font-sans text-sm font-semibold uppercase tracking-[0.28em] text-white">FUTUR LATAM CORP</p>
+            <p class="mt-1 font-sans text-xs text-white/60" data-i18n="footer.region">South Florida · Chile</p>
+          </div>
+        </div>
+        <p class="font-sans text-sm leading-relaxed text-white/70" data-i18n="footer.tagline">International real estate development, investment, and property advisory with disciplined execution.</p>
+      </div>
+
+      <div class="space-y-4">
+        <p class="font-sans text-[11px] font-semibold uppercase tracking-[0.28em] text-white/80" data-i18n="footer.office">Office</p>
+        <p class="font-sans text-sm leading-relaxed text-white/75">5000 Pembroke Rd<br />Hollywood, FL 33021</p>
+        <p class="font-sans text-sm text-white/70">Santiago, Chile <span class="text-white/35">/</span> <span data-i18n="cl.contact.chile_office_line">Operations and parcel inquiries — by appointment.</span></p>
+      </div>
+
+      <div class="space-y-5">
+        <p class="font-sans text-[11px] font-semibold uppercase tracking-[0.28em] text-white/80" data-i18n="footer.contact">Contact</p>
+        <div class="grid gap-3 font-sans text-sm text-white/78">
+          <div class="flex items-start gap-3">
+            <span class="material-symbols-outlined text-chile-red">call</span>
+            <p>+1 786 755 6998 <span class="text-xs text-white/50">(Miami)</span></p>
+          </div>
+          <div class="flex items-start gap-3">
+            <span class="material-symbols-outlined text-chile-red">call</span>
+            <p>+56 9 6728 3175 <span class="text-xs text-white/50">(Santiago)</span></p>
+          </div>
+          <div class="flex items-start gap-3">
+            <span class="material-symbols-outlined text-chile-red">mail</span>
+            <a class="break-all hover:text-white" href="mailto:contact@futurlatamcorp.com">contact@futurlatamcorp.com</a>
+          </div>
+        </div>
+        <div class="flex flex-wrap gap-x-6 gap-y-3 border-t border-white/10 pt-5 font-sans text-xs font-semibold uppercase tracking-[0.22em] text-white/65">
+          <a class="hover:text-white" href="about.html" data-i18n="nav.about">About Us</a>
+          <a class="hover:text-white" href="projects.html" data-i18n="nav.chile_projects">Parcels</a>
+          <a class="hover:text-white" href="contact.html#form" data-i18n="nav.contact">Contact</a>
+        </div>
+      </div>
+    </div>
+
+    <p class="mx-auto max-w-7xl pt-8 text-center font-sans text-xs text-white/50">
+      <a href="../index.html" class="border-b border-white/30 text-white/80 hover:text-white" data-i18n="nav.region_link">Choose region</a>
+    </p>
+    <div class="mx-auto mt-10 max-w-7xl border-t border-white/10 pt-6 text-center font-sans text-xs text-white/50" data-i18n="footer.rights">
+      © 2026 Futur Latam Corp. All rights reserved.
+    </div>
+  </footer>
+
+  <script src="../js/i18n.js?v=20260518-cl-theme" defer></script>
+  <script src="../js/main.js" defer></script>
+</body>
+</html>

@@ -1,6 +1,11 @@
 FUTUR LATAM CORP – Assets (fotos y videos)
 ========================================
 
+Estructura del sitio (2026):
+– website/index.html → selector Miami / Chile
+– website/us/       → portafolio Miami (HTML + rutas a ../assets, ../css, ../js)
+– website/cl/       → espejo del sitio Miami + projects.html (mapa de parcelas Los Olivos)
+
 Sube aquí tus archivos respetando LOS MISMOS NOMBRES que aparecen en el HTML,
 o renombra tus archivos locales para que coincidan (es la forma más rápida).
 
@@ -64,3 +69,29 @@ Recomendaciones técnicas para hosting:
 Formulario de contacto:
 – Conecta el formulario de contact.html a tu backend (Formspree, Netlify Forms, etc.)
   cambiando el atributo action del <form>.
+
+carpeta: website/assets/chile/ (Chile · visor de parcelas en cl/projects.html)
+---------------------------------------------------------
+  los-olivos.kmz      → KMZ principal (Planta Gral Los Olivos); referenciado por cl/projects.html.
+  parcels.kmz         → Legado; ya no es la ruta por defecto del mapa.
+  hero-chile.jpg       → Opcional (legado): si existía en una landing Chile antigua.
+  lumina-plaza.jpg     → Opcional: imagen tarjeta “Lumina Plaza”.
+  torre-andes.jpg      → Opcional: imagen tarjeta “Torre Andes”.
+  parcels.manifest.json → Textos/fotos por parcela (matchField vs. properties.name del GeoJSON).
+  demo-parcels.geojson  → Demo embebida si no hay KMZ o falla la carga.
+  photos/               → Imágenes referenciadas en manifest (rutas tipo assets/chile/photos/…).
+
+Esquema mínimo de parcels.manifest.json:
+  {
+    "matchField": "name",
+    "parcels": {
+      "CODIGO_KML": {
+        "title": { "en": "…", "es": "…" },
+        "notes": { "en": "…", "es": "…" },
+        "photos": ["assets/chile/photos/archivo.jpg"]
+      }
+    }
+  }
+
+La clave (ej. CODIGO_KML) debe coincidir con la propiedad del GeoJSON tras convertir el KML
+(por defecto el nombre del Placemark → properties.name). Si usas otro campo, cambia matchField.
