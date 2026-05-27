@@ -33,10 +33,11 @@
         </div>
       </a>
       <div class="hidden md:flex md:items-center md:gap-10">
-        <a class="nav-link-underline text-xs uppercase tracking-[0.2em] text-white/85 hover:text-brand-gold" href="index.html">Home</a>
-        <a class="nav-link-underline text-xs uppercase tracking-[0.2em] text-white/85 hover:text-brand-gold" href="projects.html" data-i18n="nav.chile_projects">Parcels</a>
-        <a class="nav-link-underline text-xs uppercase tracking-[0.2em] text-white/85 hover:text-brand-gold" href="about.html">About Us</a>
-        <a class="nav-link-underline text-xs uppercase tracking-[0.2em] text-white/85 hover:text-brand-gold" href="contact.html">Contact</a>
+        <a class="chile-link font-sans text-xs font-semibold uppercase tracking-[0.2em] hover:text-white text-white/78" href="index.html" data-i18n="nav.home">Home</a>
+        <a class="chile-link font-sans text-xs font-semibold uppercase tracking-[0.2em] hover:text-white nav-active text-white" href="projects.html" data-i18n="nav.projects">Projects</a>
+        <a class="chile-link font-sans text-xs font-semibold uppercase tracking-[0.2em] hover:text-white text-white/78" href="parcels.html" data-i18n="nav.parcels">Parcels</a>
+        <a class="chile-link font-sans text-xs font-semibold uppercase tracking-[0.2em] hover:text-white text-white/78" href="about.html" data-i18n="nav.about">About Us</a>
+        <a class="chile-link font-sans text-xs font-semibold uppercase tracking-[0.2em] hover:text-white text-white/78" href="contact.html" data-i18n="nav.contact">Contact</a>
       </div>
       <div class="flex items-center gap-2">
         <a href="../us/index.html" class="region-switch-chile hidden items-center rounded border border-brand-gold/50 bg-brand-navy/60 px-3 py-2 font-sans text-[10px] font-semibold uppercase tracking-[0.2em] text-brand-gold hover:bg-brand-gold/15 sm:inline-flex" data-i18n="nav.visit_miami">Miami</a>
@@ -52,19 +53,13 @@
 
   <aside data-mobile-drawer class="mobile-drawer fixed right-0 top-0 z-[60] flex h-full w-[min(100%,320px)] flex-col gap-8 border-l border-brand-gold/25 bg-brand-ink px-8 pb-16 pt-24 md:hidden">
     <button type="button" class="absolute right-6 top-6 text-brand-gold" data-nav-close aria-label="Close"><span class="material-symbols-outlined text-3xl">close</span></button>
-    <a href="index.html" class="text-sm uppercase tracking-[0.2em] text-white/90">Home</a>
-    <a href="projects.html" class="text-sm uppercase tracking-[0.2em] text-white/90" data-i18n="nav.chile_projects">Parcels</a>
-    <a href="about.html" class="text-sm uppercase tracking-[0.2em] text-white/90">About Us</a>
-    <a href="contact.html" class="text-sm uppercase tracking-[0.2em] text-white/90">Contact</a>
+    <a class="font-sans text-sm font-semibold uppercase tracking-[0.2em] text-white/90" href="index.html" data-i18n="nav.home">Home</a>
+    <a class="font-sans text-sm font-semibold uppercase tracking-[0.2em] text-white" href="projects.html" data-i18n="nav.projects">Projects</a>
+    <a class="font-sans text-sm font-semibold uppercase tracking-[0.2em] text-white/90" href="parcels.html" data-i18n="nav.parcels">Parcels</a>
+    <a class="font-sans text-sm font-semibold uppercase tracking-[0.2em] text-white/90" href="about.html" data-i18n="nav.about">About Us</a>
+    <a class="font-sans text-sm font-semibold uppercase tracking-[0.2em] text-white/90" href="contact.html" data-i18n="nav.contact">Contact</a>
     <a href="../us/index.html" class="rounded border border-brand-gold/35 bg-brand-navy/60 px-4 py-3 text-center font-sans text-xs font-semibold uppercase tracking-[0.2em] text-brand-gold hover:bg-brand-gold/10" data-i18n="nav.visit_miami">Miami</a>
   </aside>
-
-  <!-- Project lane sub-navigation -->
-  <div class="mx-auto flex max-w-7xl flex-wrap justify-center gap-4 px-6 pt-6 lg:justify-end lg:px-10" data-reveal>
-    <a href="residential.html" class="subnav-pill active rounded-full border border-brand-gold px-8 py-2 text-xs uppercase tracking-[0.28em] text-brand-navy hover:border-brand-gold/80" style="background: linear-gradient(120deg,#d4af37,#cfa83a);">Residential</a>
-    <a href="retail.html" class="subnav-pill rounded-full border border-brand-gold/35 px-8 py-2 text-xs uppercase tracking-[0.28em] text-brand-gold/90 hover:border-brand-gold hover:text-white">Retail</a>
-    <a href="industrial.html" class="subnav-pill rounded-full border border-brand-gold/35 px-8 py-2 text-xs uppercase tracking-[0.28em] text-brand-gold/90 hover:border-brand-gold hover:text-white">Industrial</a>
-  </div>
 
   <main class="mx-auto max-w-7xl px-6 py-14 lg:px-10">
     <header class="grid gap-8 lg:grid-cols-[1.2fr_0.8fr] lg:items-end" data-reveal>

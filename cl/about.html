@@ -18,7 +18,7 @@
         extend: {
           colors: {
             brand: { navy: "#001a33", ink: "#000d1a", gold: "#d4af37", goldMuted: "#b8952f", teal: "#008b8b" },
-            chile: { navy: "#0039a6", red: "#d52b1e", ink: "#071323", snow: "#f8fafc" },
+            chile: { ink: "#0B1220", stone: "#142235", andes: "#22405C", copper: "#B91C1C", copperLight: "#DC2626", snow: "#EDE7DD", navy: "#22405C", red: "#B91C1C" },
           },
           fontFamily: {
             sans: ["Inter", "system-ui", "sans-serif"],
@@ -29,7 +29,7 @@
     };
   </script>
 </head>
-<body class="chile-body min-h-screen pb-24 pt-24 text-white antialiased selection:bg-chile-red selection:text-white md:pt-28">
+<body class="chile-body min-h-screen pb-24 pt-24 text-white antialiased selection:bg-chile-copper selection:text-chile-ink md:pt-28">
 
   <header class="site-nav chile-nav fixed inset-x-0 top-0 z-50 transition-colors">
     <nav class="site-nav mx-auto flex max-w-7xl items-center justify-between px-6 py-5 lg:px-10">
@@ -42,10 +42,11 @@
       </a>
 
       <div class="hidden items-center gap-10 md:flex">
-        <a class="chile-link font-sans text-xs font-semibold uppercase tracking-[0.2em] text-white/78 hover:text-white" href="index.html">Home</a>
-        <a class="chile-link font-sans text-xs font-semibold uppercase tracking-[0.2em] text-white/78 hover:text-white" href="projects.html" data-i18n="nav.chile_projects">Parcels</a>
-        <a class="nav-active chile-link font-sans text-xs font-semibold uppercase tracking-[0.2em] text-white" href="about.html">About Us</a>
-        <a class="chile-link font-sans text-xs font-semibold uppercase tracking-[0.2em] text-white/78 hover:text-white" href="contact.html">Contact</a>
+        <a class="chile-link font-sans text-xs font-semibold uppercase tracking-[0.2em] hover:text-white text-white/78" href="index.html" data-i18n="nav.home">Home</a>
+        <a class="chile-link font-sans text-xs font-semibold uppercase tracking-[0.2em] hover:text-white text-white/78" href="projects.html" data-i18n="nav.projects">Projects</a>
+        <a class="chile-link font-sans text-xs font-semibold uppercase tracking-[0.2em] hover:text-white text-white/78" href="parcels.html" data-i18n="nav.parcels">Parcels</a>
+        <a class="chile-link font-sans text-xs font-semibold uppercase tracking-[0.2em] hover:text-white nav-active text-white" href="about.html" data-i18n="nav.about">About Us</a>
+        <a class="chile-link font-sans text-xs font-semibold uppercase tracking-[0.2em] hover:text-white text-white/78" href="contact.html" data-i18n="nav.contact">Contact</a>
       </div>
 
       <div class="flex items-center gap-2">
@@ -66,10 +67,11 @@
     <button type="button" class="absolute right-6 top-6 text-white" aria-label="Close menu" data-nav-close>
       <span class="material-symbols-outlined text-3xl">close</span>
     </button>
-    <a class="font-sans text-sm font-semibold uppercase tracking-[0.2em] text-white/90" href="index.html">Home</a>
-    <a class="font-sans text-sm font-semibold uppercase tracking-[0.2em] text-white/90" href="projects.html" data-i18n="nav.chile_projects">Parcels</a>
-    <a class="font-sans text-sm font-semibold uppercase tracking-[0.2em] text-white" href="about.html">About Us</a>
-    <a class="font-sans text-sm font-semibold uppercase tracking-[0.2em] text-white/90" href="contact.html">Contact</a>
+    <a class="font-sans text-sm font-semibold uppercase tracking-[0.2em] text-white/90" href="index.html" data-i18n="nav.home">Home</a>
+    <a class="font-sans text-sm font-semibold uppercase tracking-[0.2em] text-white/90" href="projects.html" data-i18n="nav.projects">Projects</a>
+    <a class="font-sans text-sm font-semibold uppercase tracking-[0.2em] text-white/90" href="parcels.html" data-i18n="nav.parcels">Parcels</a>
+    <a class="font-sans text-sm font-semibold uppercase tracking-[0.2em] text-white" href="about.html" data-i18n="nav.about">About Us</a>
+    <a class="font-sans text-sm font-semibold uppercase tracking-[0.2em] text-white/90" href="contact.html" data-i18n="nav.contact">Contact</a>
     <a href="../us/index.html" class="rounded border border-white/30 bg-white/10 px-4 py-3 text-center font-sans text-xs font-semibold uppercase tracking-[0.2em] text-white hover:bg-white/15" data-i18n="nav.visit_miami">Miami</a>
   </aside>
 
@@ -94,8 +96,8 @@
           <span class="rounded-full border border-white/20 bg-white/8 px-5 py-2 font-sans text-[11px] uppercase tracking-[0.28em] text-white/85" data-i18n="cl.about.chip4">Partners</span>
         </div>
         <div class="mt-12 flex flex-wrap gap-4">
-          <a href="contact.html#form" class="hover-glow inline-flex items-center rounded-sm bg-chile-red px-8 py-3.5 font-sans text-xs font-bold uppercase tracking-[0.28em] text-white" data-i18n="cl.about.cta_btn">Contact</a>
-          <a href="projects.html" class="hover-glow inline-flex items-center rounded-sm border border-white/60 px-8 py-3.5 font-sans text-xs font-bold uppercase tracking-[0.28em] text-white hover:border-chile-red" data-i18n="cl.about.cta_map">Parcel map</a>
+          <a href="contact.html#form" class="hover-glow inline-flex items-center rounded-sm bg-chile-copper px-8 py-3.5 font-sans text-xs font-bold uppercase tracking-[0.28em] text-chile-ink" data-i18n="cl.about.cta_btn">Contact</a>
+          <a href="parcels.html" class="hover-glow inline-flex items-center rounded-sm border border-white/60 px-8 py-3.5 font-sans text-xs font-bold uppercase tracking-[0.28em] text-white hover:border-chile-copper" data-i18n="cl.about.cta_map">Parcel map</a>
         </div>
       </div>
     </section>
@@ -103,7 +105,7 @@
     <!-- PHOTOS PARCELAS -->
     <section class="border-b border-white/10 bg-chile-snow py-20 text-chile-ink">
       <div class="mx-auto max-w-7xl px-6 lg:px-10">
-        <p class="font-sans text-[11px] font-semibold uppercase tracking-[0.32em] text-chile-red">Valle de los Olivos</p>
+        <p class="font-sans text-[11px] font-semibold uppercase tracking-[0.32em] text-chile-copper">Valle de los Olivos</p>
         <h2 class="mt-3 font-serif text-3xl text-chile-ink md:text-4xl" data-i18n="cl.about.photos_title">The project</h2>
         <p class="mt-4 max-w-2xl font-sans text-sm leading-relaxed text-slate-600" data-i18n="cl.about.photos_lead">Real images from the land — a direct look at what Valle de los Olivos offers.</p>
         <div class="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
@@ -124,7 +126,7 @@
           </figure>
         </div>
         <div class="mt-10 text-center">
-          <a href="projects.html" class="hover-glow inline-flex rounded-sm bg-chile-red px-10 py-3.5 font-sans text-xs font-bold uppercase tracking-[0.26em] text-white" data-i18n="cl.home.parcels_cta">Open map</a>
+          <a href="parcels.html" class="hover-glow inline-flex rounded-sm bg-chile-copper px-10 py-3.5 font-sans text-xs font-bold uppercase tracking-[0.26em] text-chile-ink" data-i18n="cl.home.parcels_cta">Open map</a>
         </div>
       </div>
     </section>
@@ -180,17 +182,17 @@
         </div>
         <div class="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           <div class="border border-white/12 bg-white/5 p-8">
-            <span class="material-symbols-outlined text-chile-red">map</span>
+            <span class="material-symbols-outlined text-chile-copper">map</span>
             <p class="mt-5 font-sans text-[11px] font-semibold uppercase tracking-[0.28em] text-white/70" data-i18n="cl.about.cap1_t">Parcel diligence</p>
             <p class="mt-3 font-sans text-sm text-white/65" data-i18n="cl.about.cap1_d">Desktop review, map overlays, and documentation hooks tied to each lot.</p>
           </div>
           <div class="border border-white/12 bg-white/5 p-8">
-            <span class="material-symbols-outlined text-chile-red">handshake</span>
+            <span class="material-symbols-outlined text-chile-copper">handshake</span>
             <p class="mt-5 font-sans text-[11px] font-semibold uppercase tracking-[0.28em] text-white/70" data-i18n="cl.about.cap2_t">Partnerships</p>
             <p class="mt-3 font-sans text-sm text-white/65" data-i18n="cl.about.cap2_d">Introductions and structuring support for aligned capital in Chile.</p>
           </div>
           <div class="border border-white/12 bg-white/5 p-8">
-            <span class="material-symbols-outlined text-chile-red">location_city</span>
+            <span class="material-symbols-outlined text-chile-copper">location_city</span>
             <p class="mt-5 font-sans text-[11px] font-semibold uppercase tracking-[0.28em] text-white/70" data-i18n="cl.about.cap3_t">Santiago presence</p>
             <p class="mt-3 font-sans text-sm text-white/65" data-i18n="cl.about.cap3_d">Direct line to our team in Chile alongside the Miami office.</p>
           </div>
@@ -209,7 +211,7 @@
         <p class="mx-auto mt-6 max-w-3xl font-sans text-sm leading-relaxed text-white/72" data-i18n="cl.about.cta_p">
           Ask for Valle de los Olivos materials or a short intro call.
         </p>
-        <a href="contact.html#form" class="hover-glow mt-10 inline-flex items-center rounded-sm bg-chile-red px-10 py-3.5 font-sans text-xs font-bold uppercase tracking-[0.26em] text-white" data-i18n="cl.about.cta_btn">Contact</a>
+        <a href="contact.html#form" class="hover-glow mt-10 inline-flex items-center rounded-sm bg-chile-copper px-10 py-3.5 font-sans text-xs font-bold uppercase tracking-[0.26em] text-chile-ink" data-i18n="cl.about.cta_btn">Contact</a>
       </div>
     </section>
 
@@ -238,21 +240,21 @@
         <p class="font-sans text-[11px] font-semibold uppercase tracking-[0.28em] text-white/80" data-i18n="footer.contact">Contact</p>
         <div class="grid gap-3 font-sans text-sm text-white/78">
           <div class="flex items-start gap-3">
-            <span class="material-symbols-outlined text-chile-red">call</span>
+            <span class="material-symbols-outlined text-chile-copper">call</span>
             <p>+1 786 755 6998 <span class="text-xs text-white/50">(Miami)</span></p>
           </div>
           <div class="flex items-start gap-3">
-            <span class="material-symbols-outlined text-chile-red">call</span>
+            <span class="material-symbols-outlined text-chile-copper">call</span>
             <p>+56 9 6728 3175 <span class="text-xs text-white/50">(Santiago)</span></p>
           </div>
           <div class="flex items-start gap-3">
-            <span class="material-symbols-outlined text-chile-red">mail</span>
+            <span class="material-symbols-outlined text-chile-copper">mail</span>
             <a class="break-all hover:text-white" href="mailto:contact@futurlatamcorp.com">contact@futurlatamcorp.com</a>
           </div>
         </div>
         <div class="flex flex-wrap gap-x-6 gap-y-3 border-t border-white/10 pt-5 font-sans text-xs font-semibold uppercase tracking-[0.22em] text-white/65">
           <a class="hover:text-white" href="about.html" data-i18n="nav.about">About Us</a>
-          <a class="hover:text-white" href="projects.html" data-i18n="nav.chile_projects">Parcels</a>
+          <a class="hover:text-white" href="parcels.html" data-i18n="nav.parcels">Parcels</a>
           <a class="hover:text-white" href="contact.html#form" data-i18n="nav.contact">Contact</a>
         </div>
       </div>

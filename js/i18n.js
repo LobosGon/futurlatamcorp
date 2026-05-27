@@ -166,7 +166,8 @@
       if (a.querySelector("img")) return;
       var href = (a.getAttribute("href") || "").split("#")[0];
       if (href === "index.html") a.setAttribute("data-i18n", "nav.home");
-      else if (href === "projects.html") a.setAttribute("data-i18n", "nav.chile_projects");
+      else if (href === "projects.html") a.setAttribute("data-i18n", "nav.projects");
+      else if (href === "parcels.html") a.setAttribute("data-i18n", "nav.parcels");
       else if (href === "about.html") a.setAttribute("data-i18n", "nav.about");
       else if (href === "contact.html" && !a.classList.contains("chile-inquire-btn")) a.setAttribute("data-i18n", "nav.contact");
     });
@@ -174,7 +175,8 @@
       var href = (a.getAttribute("href") || "").split("#")[0];
       if (href.indexOf("../") === 0) return;
       if (href === "index.html") a.setAttribute("data-i18n", "nav.home");
-      else if (href === "projects.html") a.setAttribute("data-i18n", "nav.chile_projects");
+      else if (href === "projects.html") a.setAttribute("data-i18n", "nav.projects");
+      else if (href === "parcels.html") a.setAttribute("data-i18n", "nav.parcels");
       else if (href === "about.html") a.setAttribute("data-i18n", "nav.about");
       else if (href === "contact.html" && !a.classList.contains("chile-inquire-btn")) a.setAttribute("data-i18n", "nav.contact");
     });

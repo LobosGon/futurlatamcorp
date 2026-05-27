@@ -17,7 +17,7 @@
         extend: {
           colors: {
             brand: { navy: "#001a33", ink: "#000d1a", gold: "#d4af37", goldMuted: "#b8952f", teal: "#008b8b" },
-            chile: { navy: "#0039a6", red: "#d52b1e", ink: "#071323", snow: "#f8fafc" },
+            chile: { ink: "#0B1220", stone: "#142235", andes: "#22405C", copper: "#B91C1C", copperLight: "#DC2626", snow: "#EDE7DD", navy: "#22405C", red: "#B91C1C" },
           },
           fontFamily: {
             sans: ["Inter", "system-ui", "sans-serif"],
@@ -48,57 +48,63 @@
     </div>
   </header>
 
-  <main class="min-h-screen overflow-hidden pt-[4.5rem]">
-    <section class="relative mx-auto max-w-7xl px-6 pb-16 pt-10 lg:px-10 lg:pb-24 lg:pt-14">
-      <div class="absolute inset-x-6 top-0 -z-10 h-72 rounded-full bg-[radial-gradient(circle,rgba(0,57,166,0.18),transparent_62%)] blur-3xl lg:inset-x-10"></div>
-      <div class="max-w-3xl" data-reveal>
-        <p class="font-sans text-[11px] font-semibold uppercase tracking-[0.32em] text-brand-gold/90" data-i18n="gateway.kicker">Choose your market</p>
-        <h1 class="mt-4 font-serif text-3xl text-white md:text-5xl" data-i18n="gateway.headline">Welcome — where should we begin?</h1>
-        <p class="mt-5 font-sans text-sm leading-relaxed text-white/70 md:text-base" data-i18n="gateway.lead">
-          Select Miami for the South Florida portfolio, or Chile for land parcels and project exploration.
-        </p>
-      </div>
+  <main class="min-h-screen overflow-hidden bg-brand-ink pt-[4.5rem]">
+    <section class="relative min-h-[calc(100vh-4.5rem)] overflow-hidden">
+      <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(212,175,55,0.16),transparent_28%),linear-gradient(90deg,rgba(0,13,26,0.35),transparent,rgba(0,13,26,0.35))]"></div>
 
-      <div class="mt-12 grid gap-6 lg:mt-16 lg:grid-cols-2 lg:gap-8">
-        <a href="us/index.html" class="group relative overflow-hidden rounded-sm border border-brand-gold/25 bg-brand-navy/40 shadow-[0_0_0_1px_rgba(212,175,55,0.08)] transition hover:border-brand-gold/55 hover:shadow-lg" data-reveal>
-          <div class="absolute inset-0">
-            <img src="assets/images/monroe/01-DSC08361-1.jpg" alt="" class="h-full w-full object-cover opacity-55 transition duration-500 group-hover:scale-105 group-hover:opacity-65" loading="eager" decoding="async" />
-            <div class="absolute inset-0 bg-gradient-to-t from-brand-ink via-brand-navy/75 to-brand-navy/20"></div>
-          </div>
-          <div class="relative flex min-h-[280px] flex-col justify-end p-8 md:min-h-[340px] md:p-10">
+      <div class="relative grid min-h-[calc(100vh-4.5rem)] grid-cols-1 md:grid-cols-2">
+        <a href="us/index.html" class="group relative isolate flex min-h-[42vh] overflow-hidden border-b border-white/10 md:min-h-[calc(100vh-4.5rem)] md:border-b-0 md:border-r" data-reveal aria-label="Enter Miami portfolio">
+          <img src="assets/images/monroe/01-DSC08361-1.jpg" alt="" class="absolute inset-0 -z-20 h-full w-full object-cover opacity-80 transition duration-700 group-hover:scale-105 group-hover:opacity-95" loading="eager" decoding="async" />
+          <div class="absolute inset-0 -z-10 bg-gradient-to-t from-brand-ink via-brand-navy/45 to-brand-ink/20"></div>
+          <div class="absolute inset-0 -z-10 bg-gradient-to-r from-brand-ink/55 via-transparent to-transparent"></div>
+
+          <div class="flex w-full flex-col justify-end px-6 pb-20 pt-16 sm:px-8 md:px-10 lg:px-14 lg:pb-28">
             <p class="font-sans text-[11px] font-semibold uppercase tracking-[0.3em] text-brand-gold/95" data-i18n="gateway.miami_kicker">United States</p>
-            <h2 class="mt-3 font-serif text-3xl text-white md:text-4xl" data-i18n="gateway.miami_title">Welcome to Miami</h2>
-            <p class="mt-4 max-w-md font-sans text-sm leading-relaxed text-white/75" data-i18n="gateway.miami_desc">
+            <h1 class="mt-3 max-w-xl font-serif text-4xl font-semibold leading-none text-white drop-shadow-lg sm:text-5xl lg:text-6xl" data-i18n="gateway.miami_title">Welcome to Miami</h1>
+            <p class="mt-5 max-w-md font-sans text-sm font-medium leading-relaxed text-white/88 drop-shadow md:text-base" data-i18n="gateway.miami_desc">
               Residential, retail, and industrial — the full Futur Latam Corp Miami experience.
             </p>
-            <span class="mt-8 inline-flex items-center gap-2 font-sans text-xs font-bold uppercase tracking-[0.28em] text-brand-gold">
+            <span class="mt-8 inline-flex w-fit items-center gap-2 rounded-sm bg-brand-gold px-5 py-3 font-sans text-[11px] font-extrabold uppercase tracking-[0.14em] text-brand-navy shadow-[0_16px_34px_rgba(0,0,0,0.35)] transition group-hover:-translate-y-0.5 group-hover:bg-white">
               <span data-i18n="gateway.miami_cta">Enter Miami</span>
               <span class="material-symbols-outlined text-base transition group-hover:translate-x-1">arrow_forward</span>
             </span>
           </div>
         </a>
 
-        <a href="cl/index.html" class="group relative overflow-hidden rounded-sm border border-white/20 bg-chile-ink shadow-[0_0_0_1px_rgba(255,255,255,0.06)] transition hover:border-chile-red/70 hover:shadow-lg" data-reveal>
-          <div class="absolute inset-0">
-            <img src="assets/images/Olivos/10.jpg" alt="" class="h-full w-full object-cover opacity-52 transition duration-500 group-hover:scale-105 group-hover:opacity-62" loading="eager" decoding="async" />
-            <div class="absolute inset-0 bg-gradient-to-t from-chile-ink via-chile-ink/78 to-chile-navy/25"></div>
-            <div class="absolute left-0 top-0 h-1.5 w-full bg-gradient-to-r from-chile-navy via-white to-chile-red"></div>
-          </div>
-          <div class="relative flex min-h-[280px] flex-col justify-end p-8 md:min-h-[340px] md:p-10">
+        <a href="cl/index.html" class="group relative isolate flex min-h-[42vh] overflow-hidden border-white/10 md:min-h-[calc(100vh-4.5rem)]" data-reveal data-delay="1" aria-label="Enter Chile portfolio">
+          <img src="assets/images/Olivos/IMG_9569.jpg" alt="" class="absolute inset-0 -z-20 h-full w-full object-cover opacity-80 transition duration-700 group-hover:scale-105 group-hover:opacity-95" loading="eager" decoding="async" />
+          <div class="absolute inset-0 -z-10 bg-gradient-to-t from-chile-ink via-chile-andes/55 to-chile-copper/10"></div>
+          <div class="absolute inset-0 -z-10 bg-gradient-to-l from-brand-ink/55 via-transparent to-transparent"></div>
+          <div class="absolute left-0 top-0 h-px w-full bg-chile-copper/65"></div>
+
+          <div class="flex w-full flex-col justify-end px-6 pb-24 pt-16 sm:px-8 md:px-10 lg:px-14 lg:pb-28">
             <p class="font-sans text-[11px] font-semibold uppercase tracking-[0.3em] text-white/90" data-i18n="gateway.chile_kicker">Chile</p>
-            <h2 class="mt-3 font-serif text-3xl text-white md:text-4xl" data-i18n="gateway.chile_title">Welcome to Chile</h2>
-            <p class="mt-4 max-w-md font-sans text-sm leading-relaxed text-white/78" data-i18n="gateway.chile_desc">
-              Land and parcels — explore the interactive map and parcel details.
+            <h2 class="mt-3 max-w-xl font-serif text-4xl font-semibold leading-none text-white drop-shadow-lg sm:text-5xl lg:text-6xl" data-i18n="gateway.chile_title">Welcome to Chile</h2>
+            <p class="mt-5 max-w-md font-sans text-sm font-medium leading-relaxed text-white/88 drop-shadow md:text-base" data-i18n="gateway.chile_desc">
+              Valle de los Olivos and Chile parcels — explore the interactive map and each lot.
             </p>
-            <span class="mt-8 inline-flex items-center gap-2 font-sans text-xs font-bold uppercase tracking-[0.28em] text-white">
+            <span class="mt-8 inline-flex w-fit items-center gap-2 rounded-sm bg-brand-gold px-5 py-3 font-sans text-[11px] font-extrabold uppercase tracking-[0.14em] text-brand-navy shadow-[0_16px_34px_rgba(0,0,0,0.35)] transition group-hover:-translate-y-0.5 group-hover:bg-white">
               <span data-i18n="gateway.chile_cta">Enter Chile</span>
               <span class="material-symbols-outlined text-base transition group-hover:translate-x-1">arrow_forward</span>
             </span>
           </div>
         </a>
       </div>
+
+      <div class="pointer-events-none absolute inset-x-0 top-8 z-10 hidden justify-center md:flex" data-reveal data-delay="2">
+        <div class="rounded-full border border-white/10 bg-brand-ink/35 px-5 py-2 text-center font-sans text-[10px] font-semibold uppercase tracking-[0.28em] text-white/70 backdrop-blur">
+          <span data-i18n="gateway.kicker">Choose your market</span>
+        </div>
+      </div>
     </section>
   </main>
+
+  <footer class="fixed inset-x-0 bottom-0 z-40 border-t border-white/10 bg-brand-ink/70 px-6 py-3 text-white/65 backdrop-blur-md">
+    <div class="mx-auto flex max-w-7xl flex-col gap-1 font-sans text-[10px] uppercase tracking-[0.18em] sm:flex-row sm:items-center sm:justify-between">
+      <span data-i18n="footer.region">South Florida · Chile</span>
+      <span data-i18n="footer.rights">© 2026 Futur Latam Corp. All rights reserved.</span>
+    </div>
+  </footer>
 
   <script src="js/i18n.js" defer></script>
   <script src="js/main.js" defer></script>
