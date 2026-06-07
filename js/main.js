@@ -160,7 +160,9 @@
       return attr
         .split(",")
         .map(function (s) {
-          return s.trim();
+          var src = s.trim();
+          if (src.indexOf("assets/") === 0) return "../" + src;
+          return src;
         })
         .filter(Boolean);
     }
