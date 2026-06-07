@@ -24,14 +24,40 @@
   <script>tailwind.config={theme:{extend:{colors:{brand:{navy:"#001a33",ink:"#000d1a",gold:"#d4af37",teal:"#008b8b"}},fontFamily:{sans:["Inter","sans-serif"],serif:["Playfair Display","serif"]}}}}</script>
 </head>
 <body class="miami-projects-body bg-brand-navy pb-32 pt-24 md:pt-28 text-white selection:bg-brand-gold selection:text-brand-navy antialiased">
-  <header class="site-nav fixed inset-x-0 top-0 z-50 bg-brand-navy/85 backdrop-blur-md">
+  <header class="site-nav fixed inset-x-0 top-0 z-50 bg-brand-navy/82 backdrop-blur-md">
     <nav class="mx-auto flex max-w-7xl items-center justify-between px-6 py-5 lg:px-10">
-      <a href="index.html" class="flex gap-3"><img src="../assets/images/logo_futur.jpeg" alt="Futur Latam Corp logo" class="h-12 w-12 object-contain" decoding="async" /><div class="leading-tight"><span class="block font-sans text-lg font-light tracking-[0.3em]">FUTUR</span><span class="block font-sans text-[10px] uppercase tracking-[0.22em] text-brand-gold">Latam Corp</span></div></a>
-      <div class="hidden md:flex md:gap-10"><a class="nav-link-underline text-xs uppercase tracking-[0.2em] text-white/85 hover:text-brand-gold" href="index.html">Home</a><a class="nav-active nav-link-underline text-xs uppercase tracking-[0.2em] text-brand-gold" href="industrial.html">Projects</a><a class="nav-link-underline text-xs uppercase tracking-[0.2em] text-white/85 hover:text-brand-gold" href="about.html">About Us</a><a class="nav-link-underline text-xs uppercase tracking-[0.2em] text-white/85 hover:text-brand-gold" href="contact.html">Contact</a></div>
-      <button type="button" class="rounded border border-brand-gold/35 p-2 text-brand-gold md:hidden" data-nav-toggle aria-label="Menu"><span class="material-symbols-outlined">menu</span></button>
+      <a href="index.html" class="flex gap-3">
+        <img src="../assets/images/logo_futur.jpeg" alt="Futur Latam Corp logo" class="h-12 w-12 object-contain" decoding="async" />
+        <div class="leading-tight">
+          <span class="block font-sans text-lg font-light tracking-[0.3em]">FUTUR</span>
+          <span class="block font-sans text-[10px] uppercase tracking-[0.22em] text-brand-gold">Latam Corp</span>
+        </div>
+      </a>
+      <div class="hidden md:flex md:items-center md:gap-10">
+        <a class="nav-link-underline text-xs uppercase tracking-[0.2em] text-white/85 hover:text-brand-gold" href="index.html">Home</a>
+        <a class="nav-active nav-link-underline text-xs uppercase tracking-[0.2em] text-brand-gold" href="industrial.html">Projects</a>
+        <a class="nav-link-underline text-xs uppercase tracking-[0.2em] text-white/85 hover:text-brand-gold" href="about.html">About Us</a>
+        <a class="nav-link-underline text-xs uppercase tracking-[0.2em] text-white/85 hover:text-brand-gold" href="contact.html">Contact</a>
+      </div>
+      <div class="flex items-center gap-2">
+        <a href="../cl/index.html" class="region-switch-miami hidden items-center rounded border border-brand-gold/50 bg-brand-navy/60 px-3 py-2 font-sans text-[10px] font-semibold uppercase tracking-[0.2em] text-brand-gold hover:bg-brand-gold/15 sm:inline-flex" data-i18n="nav.visit_chile">Chile</a>
+        <div class="flex items-center gap-1 rounded border border-brand-gold/25 bg-brand-navy/40 p-1" data-lang-switch aria-label="Language">
+          <button type="button" class="lang-toggle rounded px-2 py-1 font-sans text-[10px] font-semibold uppercase tracking-[0.18em] text-white/70 hover:text-brand-gold" data-set-lang="en">EN</button>
+          <span class="text-white/25 px-0.5" aria-hidden="true">|</span>
+          <button type="button" class="lang-toggle rounded px-2 py-1 font-sans text-[10px] font-semibold uppercase tracking-[0.18em] text-white/70 hover:text-brand-gold" data-set-lang="es">ES</button>
+        </div>
+        <button type="button" class="rounded border border-brand-gold/35 p-2 text-brand-gold md:hidden" data-nav-toggle aria-label="Open menu"><span class="material-symbols-outlined text-2xl">menu</span></button>
+      </div>
     </nav>
   </header>
-  <aside data-mobile-drawer class="mobile-drawer fixed right-0 top-0 z-[60] flex h-full w-[min(100%,320px)] flex-col gap-8 border-l border-brand-gold/25 bg-brand-ink px-8 pb-16 pt-24 md:hidden"><button type="button" class="absolute right-6 top-6 text-brand-gold" data-nav-close aria-label="Close"><span class="material-symbols-outlined text-3xl">close</span></button><a href="index.html" class="text-sm uppercase tracking-[0.2em]">Home</a><a href="residential.html" class="text-sm uppercase tracking-[0.2em] text-brand-gold">Projects</a><a href="about.html" class="text-sm uppercase tracking-[0.2em]">About Us</a><a href="contact.html" class="text-sm uppercase tracking-[0.2em]">Contact</a></aside>
+  <aside data-mobile-drawer class="mobile-drawer fixed right-0 top-0 z-[60] flex h-full w-[min(100%,320px)] flex-col gap-8 border-l border-brand-gold/25 bg-brand-ink px-8 pb-16 pt-24 md:hidden">
+    <button type="button" class="absolute right-6 top-6 text-brand-gold" data-nav-close aria-label="Close"><span class="material-symbols-outlined text-3xl">close</span></button>
+    <a href="index.html" class="text-sm uppercase tracking-[0.2em] text-white/90">Home</a>
+    <a href="residential.html" class="text-sm uppercase tracking-[0.2em] text-brand-gold">Projects</a>
+    <a href="about.html" class="text-sm uppercase tracking-[0.2em] text-white/90">About Us</a>
+    <a href="contact.html" class="text-sm uppercase tracking-[0.2em] text-white/90">Contact</a>
+    <a href="../cl/index.html" class="rounded border border-brand-gold/35 bg-brand-navy/60 px-4 py-3 text-center font-sans text-xs font-semibold uppercase tracking-[0.2em] text-brand-gold hover:bg-brand-gold/10" data-i18n="nav.visit_chile">Chile</a>
+  </aside>
   <div class="mx-auto flex max-w-7xl flex-wrap justify-center gap-4 px-6 pt-6 lg:justify-end lg:px-10" data-reveal><a href="residential.html" class="subnav-pill rounded-full border border-brand-gold/35 px-8 py-2 text-xs uppercase tracking-[0.28em] text-brand-gold/90 hover:text-white">Residential</a><a href="retail.html" class="subnav-pill rounded-full border border-brand-gold/35 px-8 py-2 text-xs uppercase tracking-[0.28em] text-brand-gold/90 hover:text-white">Retail</a><a href="industrial.html" class="subnav-pill active rounded-full border px-8 py-2 text-xs uppercase tracking-[0.28em]" style="background:linear-gradient(115deg,#d4af37,#c59b2f);color:#001a33;border-color:#d4af37">Industrial</a></div>
 
   <main class="mx-auto max-w-7xl px-6 py-14 lg:px-10">

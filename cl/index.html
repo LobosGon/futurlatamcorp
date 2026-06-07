@@ -93,10 +93,15 @@
   </aside>
 
   <main>
-    <section id="home" class="chile-hero relative flex min-h-screen items-center justify-center overflow-hidden pt-28 pb-20">
+    <section id="home" data-hero-parallax class="chile-hero relative flex min-h-screen items-center justify-center overflow-hidden pt-28 pb-20">
       <div class="absolute inset-0 z-0 overflow-hidden bg-chile-ink">
-        <img alt="" src="../assets/images/Olivos/10.jpg" width="2000" height="620" decoding="async" fetchpriority="high" class="absolute inset-0 h-full w-full object-cover opacity-65" />
-        <div class="absolute inset-0 bg-[linear-gradient(120deg,rgba(11,18,32,0.94)_0%,rgba(34,64,92,0.55)_55%,rgba(185,28,28,0.20)_100%),linear-gradient(180deg,rgba(11,18,32,0)_55%,rgba(11,18,32,0.85)_100%)]"></div>
+        <div class="hero-parallax-media absolute left-1/2 top-0 h-[118%] w-full max-w-none" style="will-change: transform; transform: translate3d(-50%, 0, 0) scale(1.08)">
+          <img alt="" src="../assets/images/Olivos/10.jpg" width="2000" height="620" decoding="async" fetchpriority="high" class="absolute inset-0 h-full w-full object-cover opacity-70" />
+          <video class="pointer-events-none absolute inset-0 h-full w-full object-cover opacity-[0.94]" autoplay muted loop playsinline preload="metadata" poster="../assets/images/Olivos/10.jpg" aria-hidden="true" data-playback-rate="0.72">
+            <source src="../assets/videos/chile-home-hero.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <div class="absolute inset-0 bg-[linear-gradient(120deg,rgba(11,18,32,0.86)_0%,rgba(34,64,92,0.42)_55%,rgba(185,28,28,0.18)_100%),linear-gradient(180deg,rgba(11,18,32,0.26)_0%,rgba(11,18,32,0.26)_52%,rgba(11,18,32,0.88)_100%)]"></div>
         <div class="absolute left-0 top-0 h-px w-full bg-chile-copper/70"></div>
         <div class="chile-ridge chile-ridge--soft" aria-hidden="true">
           <svg viewBox="0 0 1200 140" preserveAspectRatio="none"><path d="M0,140 L0,96 L70,72 L150,108 L230,52 L320,90 L400,40 L490,82 L580,28 L680,90 L770,46 L860,86 L950,38 L1040,80 L1130,42 L1200,76 L1200,140 Z" fill="currentColor"/></svg>
@@ -212,4 +217,3 @@
   <script src="../js/main.js" defer></script>
 </body>
 </html>
-

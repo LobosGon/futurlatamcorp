@@ -98,6 +98,23 @@
     window.addEventListener("resize", tick);
   }
 
+  function initVideoPlaybackRates() {
+    document.querySelectorAll("video[data-playback-rate]").forEach(function (video) {
+      var rate = Number(video.getAttribute("data-playback-rate"));
+      if (!Number.isFinite(rate) || rate <= 0) return;
+
+      function applyRate() {
+        try {
+          video.playbackRate = rate;
+        } catch (_) {}
+      }
+
+      applyRate();
+      video.addEventListener("loadedmetadata", applyRate);
+      video.addEventListener("play", applyRate);
+    });
+  }
+
   function initParallaxSections() {
     if (mqReduce) return;
     var nodes = Array.prototype.slice.call(document.querySelectorAll("[data-parallax-inner]"));
@@ -363,6 +380,7 @@
   function boot() {
     initNav();
     initReveal();
+    initVideoPlaybackRates();
     initParallaxHero();
     initParallaxSections();
     initMediaCards();
