@@ -32,6 +32,10 @@
       },
     };
   </script>
+  <link rel="icon" href="../assets/favicons/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicons/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicons/favicon-16x16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicons/apple-touch-icon.png" />
 </head>
 <body class="chile-body bg-brand-navy pb-32 pt-24 md:pt-28 text-white selection:bg-brand-gold selection:text-brand-navy antialiased">
   <header class="site-nav chile-nav fixed inset-x-0 top-0 z-50 bg-brand-navy/85 backdrop-blur-md">
@@ -73,32 +77,24 @@
   </aside>
 
   <div class="mx-auto flex max-w-7xl flex-wrap justify-center gap-4 px-6 pt-6 lg:justify-end lg:px-10" data-reveal>
-    <a href="residential.html" class="subnav-pill rounded-full border border-brand-gold/35 px-8 py-2 text-xs uppercase tracking-[0.28em] text-brand-gold/90 hover:border-brand-gold hover:text-white">Residential</a>
-    <a href="retail.html" class="subnav-pill rounded-full border border-brand-gold/35 px-8 py-2 text-xs uppercase tracking-[0.28em] text-brand-gold/90 hover:border-brand-gold hover:text-white">Retail</a>
-    <a href="industrial.html" class="subnav-pill active rounded-full border px-8 py-2 text-xs uppercase tracking-[0.28em]" style="background:linear-gradient(115deg,#d4af37,#c59b2f);color:#001a33;border-color:#d4af37">Industrial</a>
+    <a href="residential.html" class="subnav-pill rounded-full border border-brand-gold/35 px-8 py-2 text-xs uppercase tracking-[0.28em] text-brand-gold/90 hover:border-brand-gold hover:text-white" data-i18n="project.residential">Residential</a>
+    <a href="retail.html" class="subnav-pill rounded-full border border-brand-gold/35 px-8 py-2 text-xs uppercase tracking-[0.28em] text-brand-gold/90 hover:border-brand-gold hover:text-white" data-i18n="project.retail">Retail</a>
+    <a href="industrial.html" class="subnav-pill active rounded-full border px-8 py-2 text-xs uppercase tracking-[0.28em]" style="background:linear-gradient(115deg,#d4af37,#c59b2f);color:#001a33;border-color:#d4af37" data-i18n="project.industrial">Industrial</a>
   </div>
 
   <main class="mx-auto max-w-5xl px-6 py-16 lg:px-8">
     <article class="text-center lg:text-left" data-reveal>
-      <h1 class="mx-auto mb-14 inline-block border-b-4 border-brand-gold pb-2 font-serif text-4xl uppercase tracking-[0.18em] text-brand-gold md:text-[2.6rem]" style="font-family: Libre Baskerville, Georgia, serif;">
-        Industrial
-      </h1>
+      <h1 class="mx-auto mb-14 inline-block border-b-4 border-brand-gold pb-2 font-serif text-4xl uppercase tracking-[0.18em] text-brand-gold md:text-[2.6rem]" style="font-family: Libre Baskerville, Georgia, serif;" data-i18n="project.industrial">Industrial</h1>
       <!-- Body copy intentionally light for readability on Navy -->
       <div class="space-y-10 font-sans text-sm leading-relaxed text-white">
-        <p>
-          Our commercial projects division is expanding quickly in response to demand for modern, high-function industrial space. We focus on assembling strategic corridors, sharpening project concepts early, then steering construction and stabilization so warehousing assets stay efficient to operate, adaptable to tenancy changes, and competitive for long-term leases.
-        </p>
-        <p>
-          The broader industrial spectrum remains robust: SMB operators continue adding storage and outbound capacity to satisfy e-commerce workflows. Demand shows staying powerâ€”which underwrites resilient capital deployment when timing, sites, and product mix align thoughtfully.
-        </p>
-        <p>
-          With partnerships on the ground, disciplined underwriting, and a growing pipeline, we prioritize investments that marry immediate leasing velocity with durable exit optionality anchored to digital commerce fundamentals. A disciplined sector. Repeatable playbook. Attractive entry point into next-wave industrial product.
-        </p>
+        <p data-i18n="industrial.cl_p1">Our commercial projects division is expanding quickly in response to demand for modern, high-function industrial space. We focus on assembling strategic corridors, sharpening project concepts early, then steering construction and stabilization so warehousing assets stay efficient to operate, adaptable to tenancy changes, and competitive for long-term leases.</p>
+        <p data-i18n="industrial.cl_p2">The broader industrial spectrum remains robust: SMB operators continue adding storage and outbound capacity to satisfy e-commerce workflows. Demand shows staying power—which underwrites resilient capital deployment when timing, sites, and product mix align thoughtfully.</p>
+        <p data-i18n="industrial.cl_p3">With partnerships on the ground, disciplined underwriting, and a growing pipeline, we prioritize investments that marry immediate leasing velocity with durable exit optionality anchored to digital commerce fundamentals. A disciplined sector. Repeatable playbook. Attractive entry point into next-wave industrial product.</p>
       </div>
     </article>
 
     <section class="mt-24 border-t border-brand-gold/20 pt-16" data-reveal>
-      <h2 class="font-serif text-4xl italic text-brand-gold md:text-5xl" style="font-family: Libre Baskerville, Georgia, serif;">Gallery:</h2>
+      <h2 class="font-serif text-4xl italic text-brand-gold md:text-5xl" style="font-family: Libre Baskerville, Georgia, serif;" data-i18n="industrial.gallery">Gallery:</h2>
       <div class="mt-10 grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-6">
         <div class="media-card aspect-[4/3] bg-black ring-1 ring-brand-gold/15">
           <img alt="" src="../assets/images/ind-gallery-01.jpg" class="poster-img" decoding="async" />
@@ -124,14 +120,14 @@
         <button type="button" class="media-card floor-plan-trigger reduce-motion aspect-[4/3] cursor-zoom-in bg-brand-ink ring-1 ring-brand-gold/35"
           data-floor-open data-floor-src="../assets/images/plans/ind-unit-plan.jpg" data-floor-alt="Industrial unit floor plan">
           <img alt="Plan thumbnail" src="../assets/images/ind-gallery-06-plan-thumb.jpg" class="poster-img floor-plan-zoom object-cover opacity-95" decoding="async" />
-          <span class="badge-chip absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-white">Technical plan</span>
+          <span class="badge-chip absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-white" data-i18n="industrial.technical_plan">Technical plan</span>
         </button>
       </div>
     </section>
   </main>
 
   <dialog id="floor-modal" class="p-6 outline-none md:p-10">
-    <div class="mb-6 flex justify-end"><button type="button" class="border border-brand-gold/40 px-4 py-2 text-xs uppercase tracking-[0.2em] text-brand-gold" data-floor-close>Close</button></div>
+    <div class="mb-6 flex justify-end"><button type="button" class="border border-brand-gold/40 px-4 py-2 text-xs uppercase tracking-[0.2em] text-brand-gold" data-floor-close data-i18n="ui.close">Close</button></div>
     <img data-floor-modal-img src="" alt="" />
   </dialog>
 
@@ -145,13 +141,11 @@
             <p class="mt-1 font-sans text-xs text-white/60">South Florida Â· Chile</p>
           </div>
         </div>
-        <p class="font-sans text-sm leading-relaxed text-white/70">
-          International real estate development, investment, and property advisory with disciplined execution.
-        </p>
+        <p class="font-sans text-sm leading-relaxed text-white/70" data-i18n="footer.tagline">International real estate development, investment, and property advisory with disciplined execution.</p>
       </div>
 
       <div class="space-y-4">
-        <p class="font-sans text-[11px] font-semibold uppercase tracking-[0.28em] text-brand-gold/90">Office</p>
+        <p class="font-sans text-[11px] font-semibold uppercase tracking-[0.28em] text-brand-gold/90" data-i18n="project.office">Office</p>
         <p class="font-sans text-sm leading-relaxed text-white/75">5000 Pembroke Rd<br />Hollywood, FL 33021</p>
         <div class="overflow-hidden rounded-sm border border-brand-gold/15 bg-brand-navy/35 hidden md:block">
           <iframe
@@ -169,7 +163,7 @@
       </div>
 
       <div class="space-y-5">
-        <p class="font-sans text-[11px] font-semibold uppercase tracking-[0.28em] text-brand-gold/90">Contact</p>
+        <p class="font-sans text-[11px] font-semibold uppercase tracking-[0.28em] text-brand-gold/90" data-i18n="ui.contact">Contact</p>
         <div class="grid gap-3 font-sans text-sm text-white/78">
           <div class="flex items-start gap-3">
             <span class="material-symbols-outlined text-brand-gold">call</span>
@@ -188,7 +182,7 @@
         <div class="flex flex-wrap gap-x-6 gap-y-3 border-t border-brand-gold/10 pt-5 font-sans text-xs font-semibold uppercase tracking-[0.22em] text-white/65">
           <a class="hover:text-brand-gold" href="residential.html">Projects</a>
           <a class="hover:text-brand-gold" href="about.html">About Us</a>
-          <a class="hover:text-brand-gold" href="contact.html#form">Contact</a>
+          <a class="hover:text-brand-gold" href="contact.html#form" data-i18n="ui.contact">Contact</a>
         </div>
       </div>
     </div>

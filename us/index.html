@@ -45,6 +45,10 @@
       },
     };
   </script>
+  <link rel="icon" href="../assets/favicons/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicons/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicons/favicon-16x16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicons/apple-touch-icon.png" />
 </head>
 <body class="min-h-screen bg-brand-navy text-white antialiased selection:bg-brand-gold selection:text-brand-navy">
   <header class="site-nav fixed inset-x-0 top-0 z-50 bg-brand-navy/70 backdrop-blur-sm transition-colors">
@@ -61,7 +65,7 @@
         <a class="nav-active nav-link-underline font-sans text-xs font-semibold uppercase tracking-[0.2em] text-brand-gold" href="index.html">Home</a>
         <a class="nav-link-underline font-sans text-xs font-semibold uppercase tracking-[0.2em] text-white/85 hover:text-brand-gold" href="residential.html">Projects</a>
         <a class="nav-link-underline font-sans text-xs font-semibold uppercase tracking-[0.2em] text-white/85 hover:text-brand-gold" href="about.html">About Us</a>
-        <a class="nav-link-underline font-sans text-xs font-semibold uppercase tracking-[0.2em] text-white/85 hover:text-brand-gold" href="contact.html">Contact</a>
+        <a class="nav-link-underline font-sans text-xs font-semibold uppercase tracking-[0.2em] text-white/85 hover:text-brand-gold" href="contact.html" data-i18n="ui.contact">Contact</a>
       </div>
 
       <div class="flex items-center gap-2">
@@ -86,7 +90,7 @@
     <a class="font-sans text-sm font-semibold uppercase tracking-[0.2em] text-brand-gold" href="index.html">Home</a>
     <a class="font-sans text-sm font-semibold uppercase tracking-[0.2em] text-white/90" href="residential.html">Projects</a>
     <a class="font-sans text-sm font-semibold uppercase tracking-[0.2em] text-white/90" href="about.html">About Us</a>
-    <a class="font-sans text-sm font-semibold uppercase tracking-[0.2em] text-white/90" href="contact.html">Contact</a>
+    <a class="font-sans text-sm font-semibold uppercase tracking-[0.2em] text-white/90" href="contact.html" data-i18n="ui.contact">Contact</a>
     <a href="../cl/index.html" class="rounded border border-brand-gold/35 bg-brand-navy/60 px-4 py-3 text-center font-sans text-xs font-semibold uppercase tracking-[0.2em] text-brand-gold hover:bg-brand-gold/10" data-i18n="nav.visit_chile">Chile</a>
   </aside>
 
@@ -130,13 +134,11 @@
         </div>
         <div class="relative z-[1] mx-auto flex h-full max-w-7xl flex-col justify-center px-6 lg:flex-row lg:items-center lg:justify-between lg:px-12">
           <div class="max-w-xl" data-reveal>
-            <p class="font-sans text-xs font-semibold uppercase tracking-[0.35em] text-brand-gold/90">Integrated platform</p>
-            <h2 class="mt-6 font-serif text-3xl text-white md:text-4xl">Residential, retail &amp; industrial experience—under one disciplined team.</h2>
+            <p class="font-sans text-xs font-semibold uppercase tracking-[0.35em] text-brand-gold/90" data-i18n="us.home.platform_kicker">Integrated platform</p>
+            <h2 class="mt-6 font-serif text-3xl text-white md:text-4xl" data-i18n="us.home.platform_title" data-i18n="us.home.platform_title">Residential, retail &amp; industrial experience—under one disciplined team.</h2>
           </div>
           <div class="mt-12 grid max-w-xl gap-5 font-sans text-sm leading-relaxed text-white/82 lg:mt-0" data-delay="1" data-reveal>
-            <p class="rounded-sm border border-brand-gold/20 bg-brand-navy/60 px-6 py-4 hover:border-brand-gold/40">
-              Hover-driven media cards on project pages showcase short building loops and enlarge floor plans in a modal for a sharper, cinematic review.
-            </p>
+            <p class="rounded-sm border border-brand-gold/20 bg-brand-navy/60 px-6 py-4 hover:border-brand-gold/40" data-i18n="us.home.platform_desc">Hover-driven media cards on project pages showcase short building loops and enlarge floor plans in a modal for a sharper, cinematic review.</p>
           </div>
         </div>
       </div>
@@ -155,12 +157,10 @@
           <img alt="Portfolio highlight" src="../assets/images/monroe/09-Staging.jpg" width="900" height="1100" class="h-auto w-full object-cover" decoding="async" />
         </figure>
         <div class="order-1 space-y-8 lg:order-2">
-          <h2 class="font-serif text-3xl text-brand-gold md:text-4xl" data-reveal>Miami roots. Continental reach.</h2>
-          <p class="font-sans text-sm leading-relaxed text-white/80" data-delay="1" data-reveal>
-            FUTUR LATAM CORP is an international real estate company based in South Florida, focused on development and acquisitions across Broward and Miami-Dade—with strategic collaboration in Chile when your goals span borders.
-          </p>
+          <h2 class="font-serif text-3xl text-brand-gold md:text-4xl" data-reveal data-i18n="us.home.about_title">Miami roots. Continental reach.</h2>
+          <p class="font-sans text-sm leading-relaxed text-white/80" data-delay="1" data-reveal data-i18n="us.home.about_desc">FUTUR LATAM CORP is an international real estate company based in South Florida, focused on development and acquisitions across Broward and Miami-Dade—with strategic collaboration in Chile when your goals span borders.</p>
           <div class="flex flex-wrap gap-4 pt-4" data-delay="2" data-reveal>
-            <a href="about.html" class="nav-link-underline font-sans text-xs font-semibold uppercase tracking-[0.25em] text-brand-gold">Read About Us →</a>
+            <a href="about.html" class="nav-link-underline font-sans text-xs font-semibold uppercase tracking-[0.25em] text-brand-gold" data-i18n="ui.read_about">Read About Us →</a>
           </div>
         </div>
         </div>
@@ -176,12 +176,12 @@
       </div>
       <div class="mx-auto max-w-7xl">
         <div class="text-center" data-reveal>
-          <h2 class="font-serif text-3xl text-brand-gold md:text-4xl">Explore the portfolio</h2>
-          <p class="mx-auto mt-4 max-w-2xl font-sans text-sm text-white/80">Hover to preview highlights. Open any lane to explore models, galleries, and floor plans.</p>
+          <h2 class="font-serif text-3xl text-brand-gold md:text-4xl" data-i18n="us.home.portfolio_title">Explore the portfolio</h2>
+          <p class="mx-auto mt-4 max-w-2xl font-sans text-sm text-white/80" data-i18n="us.home.portfolio_desc">Hover to preview highlights. Open any lane to explore models, galleries, and floor plans.</p>
           <div class="mx-auto mt-8 flex max-w-3xl flex-wrap justify-center gap-3">
-            <span class="rounded-full border border-brand-gold/25 bg-brand-navy/40 px-5 py-2 font-sans text-[11px] uppercase tracking-[0.28em] text-brand-gold/95">Residential</span>
-            <span class="rounded-full border border-brand-gold/25 bg-brand-navy/40 px-5 py-2 font-sans text-[11px] uppercase tracking-[0.28em] text-brand-gold/95">Retail</span>
-            <span class="rounded-full border border-brand-gold/25 bg-brand-navy/40 px-5 py-2 font-sans text-[11px] uppercase tracking-[0.28em] text-brand-gold/95">Industrial</span>
+            <span class="rounded-full border border-brand-gold/25 bg-brand-navy/40 px-5 py-2 font-sans text-[11px] uppercase tracking-[0.28em] text-brand-gold/95" data-i18n="project.residential">Residential</span>
+            <span class="rounded-full border border-brand-gold/25 bg-brand-navy/40 px-5 py-2 font-sans text-[11px] uppercase tracking-[0.28em] text-brand-gold/95" data-i18n="project.retail">Retail</span>
+            <span class="rounded-full border border-brand-gold/25 bg-brand-navy/40 px-5 py-2 font-sans text-[11px] uppercase tracking-[0.28em] text-brand-gold/95" data-i18n="project.industrial">Industrial</span>
           </div>
         </div>
         <div class="mt-16 grid gap-10 md:grid-cols-3">
@@ -192,28 +192,28 @@
               <img class="poster-img" alt="Residential — Monroe featured reel" src="../assets/images/monroe/01-DSC08361-1.jpg" width="640" height="440" decoding="async" />
               <!-- Monroe walkthrough hover video -->
               <video class="loop-video" muted loop playsinline preload="none"><source src="../assets/videos/Video_Unbranded.mp4" type="video/mp4" /></video>
-              <span class="media-card-chip absolute left-4 top-4 badge-chip font-sans text-brand-gold/95">Residential</span>
-              <span class="media-card-caption absolute bottom-4 left-4 font-sans text-xs uppercase tracking-[0.25em] text-white">Models →</span>
+              <span class="media-card-chip absolute left-4 top-4 badge-chip font-sans text-brand-gold/95" data-i18n="project.residential">Residential</span>
+              <span class="media-card-caption absolute bottom-4 left-4 font-sans text-xs uppercase tracking-[0.25em] text-white" data-i18n="ui.models_arrow">Models →</span>
             </div>
-            <p class="mt-5 font-serif text-xl text-brand-gold">Residential</p>
+            <p class="mt-5 font-serif text-xl text-brand-gold" data-i18n="project.residential">Residential</p>
           </a>
 
           <a href="retail.html" class="group hover-glow rounded-sm border border-brand-gold/25 bg-brand-navy/55 p-6" data-delay="1" data-reveal>
             <div class="media-card aspect-[16/11] rounded-sm bg-brand-ink ring-1 ring-brand-gold/15" data-hover-images="assets/images/westplazamall_1.jpeg, assets/images/westplazamall_2.jpeg, assets/images/office_1.jpeg">
               <img class="poster-img" alt="Retail portfolio preview" src="../assets/images/westplazamall_1.jpeg" width="640" height="440" decoding="async" />
-              <span class="media-card-chip absolute left-4 top-4 badge-chip font-sans text-brand-gold/95">Retail</span>
-              <span class="media-card-caption absolute bottom-4 left-4 font-sans text-xs uppercase tracking-[0.25em] text-white">Plazas &amp; office →</span>
+              <span class="media-card-chip absolute left-4 top-4 badge-chip font-sans text-brand-gold/95" data-i18n="project.retail">Retail</span>
+              <span class="media-card-caption absolute bottom-4 left-4 font-sans text-xs uppercase tracking-[0.25em] text-white" data-i18n="ui.plazas_office_arrow">Plazas &amp; office →</span>
             </div>
-            <p class="mt-5 font-serif text-xl text-brand-gold">Retail</p>
+            <p class="mt-5 font-serif text-xl text-brand-gold" data-i18n="project.retail">Retail</p>
           </a>
 
           <a href="industrial.html" class="group hover-glow rounded-sm border border-brand-gold/25 bg-brand-navy/55 p-6" data-delay="2" data-reveal>
             <div class="media-card aspect-[16/11] rounded-sm bg-brand-ink ring-1 ring-brand-gold/15" data-hover-images="assets/images/industrial_1.png, assets/images/industrial_2.png, assets/images/industrial_5.png">
               <img class="poster-img" alt="Industrial portfolio preview" src="../assets/images/industrial_1.png" width="640" height="440" decoding="async" />
-              <span class="media-card-chip absolute left-4 top-4 badge-chip font-sans text-brand-gold/95">Industrial</span>
-              <span class="media-card-caption absolute bottom-4 left-4 font-sans text-xs uppercase tracking-[0.25em] text-white">Logistics hubs →</span>
+              <span class="media-card-chip absolute left-4 top-4 badge-chip font-sans text-brand-gold/95" data-i18n="project.industrial">Industrial</span>
+              <span class="media-card-caption absolute bottom-4 left-4 font-sans text-xs uppercase tracking-[0.25em] text-white" data-i18n="ui.logistics_hubs_arrow">Logistics hubs →</span>
             </div>
-            <p class="mt-5 font-serif text-xl text-brand-gold">Industrial</p>
+            <p class="mt-5 font-serif text-xl text-brand-gold" data-i18n="project.industrial">Industrial</p>
           </a>
         </div>
       </div>
@@ -226,9 +226,9 @@
         <div class="absolute inset-0 bg-brand-navy/92"></div>
       </div>
       <div class="relative z-10 mx-auto flex max-w-5xl flex-col items-center px-6 text-center" data-reveal>
-        <h2 class="font-serif text-3xl uppercase tracking-[0.12em] text-brand-gold md:text-[2.125rem]">Let's talk about your next project.</h2>
-        <p class="mt-8 max-w-2xl font-sans text-sm leading-relaxed text-white/76">Share your timeline, parcel, or investment mandate—we'll respond quickly with pragmatic next steps.</p>
-        <a href="contact.html" class="hover-glow mt-10 rounded-sm bg-brand-gold px-10 py-3.5 font-sans text-xs font-bold uppercase tracking-[0.26em] text-brand-navy">Contact</a>
+        <h2 class="font-serif text-3xl uppercase tracking-[0.12em] text-brand-gold md:text-[2.125rem]" data-i18n="us.home.cta_title">Let's talk about your next project.</h2>
+        <p class="mt-8 max-w-2xl font-sans text-sm leading-relaxed text-white/76" data-i18n="us.home.cta_desc">Share your timeline, parcel, or investment mandate—we'll respond quickly with pragmatic next steps.</p>
+        <a href="contact.html" class="hover-glow mt-10 rounded-sm bg-brand-gold px-10 py-3.5 font-sans text-xs font-bold uppercase tracking-[0.26em] text-brand-navy" data-i18n="ui.contact">Contact</a>
       </div>
     </section>
   </main>
@@ -241,16 +241,14 @@
           <img src="../assets/images/logo_futur.jpeg" alt="Futur Latam Corp logo" class="h-10 w-10 object-contain" decoding="async" />
           <div class="leading-tight">
             <p class="font-sans text-sm font-semibold uppercase tracking-[0.28em] text-brand-gold">FUTUR LATAM CORP</p>
-            <p class="mt-1 font-sans text-xs text-white/60">South Florida · Chile</p>
+            <p class="mt-1 font-sans text-xs text-white/60" data-i18n="footer.region">South Florida · Chile</p>
           </div>
         </div>
-        <p class="font-sans text-sm leading-relaxed text-white/70">
-          International real estate development, investment, and property advisory with disciplined execution.
-        </p>
+        <p class="font-sans text-sm leading-relaxed text-white/70" data-i18n="footer.tagline">International real estate development, investment, and property advisory with disciplined execution.</p>
       </div>
 
       <div class="space-y-4">
-        <p class="font-sans text-[11px] font-semibold uppercase tracking-[0.28em] text-brand-gold/90">Office</p>
+        <p class="font-sans text-[11px] font-semibold uppercase tracking-[0.28em] text-brand-gold/90" data-i18n="project.office">Office</p>
         <p class="font-sans text-sm leading-relaxed text-white/75">5000 Pembroke Rd<br />Hollywood, FL 33021</p>
         <div class="overflow-hidden rounded-sm border border-brand-gold/15 bg-brand-navy/35 hidden md:block">
           <iframe
@@ -268,7 +266,7 @@
       </div>
 
       <div class="space-y-5">
-        <p class="font-sans text-[11px] font-semibold uppercase tracking-[0.28em] text-brand-gold/90">Contact</p>
+        <p class="font-sans text-[11px] font-semibold uppercase tracking-[0.28em] text-brand-gold/90" data-i18n="ui.contact">Contact</p>
         <div class="grid gap-3 font-sans text-sm text-white/78">
           <div class="flex items-start gap-3">
             <span class="material-symbols-outlined text-brand-gold">call</span>
@@ -286,10 +284,10 @@
 
         <div class="flex flex-wrap gap-x-6 gap-y-3 border-t border-brand-gold/10 pt-5 font-sans text-xs font-semibold uppercase tracking-[0.22em] text-white/65">
           <a class="hover:text-brand-gold" href="about.html">About Us</a>
-          <a class="hover:text-brand-gold" href="residential.html">Residential</a>
-          <a class="hover:text-brand-gold" href="retail.html">Retail</a>
-          <a class="hover:text-brand-gold" href="industrial.html">Industrial</a>
-          <a class="hover:text-brand-gold" href="contact.html#form">Contact</a>
+          <a class="hover:text-brand-gold" href="residential.html" data-i18n="project.residential">Residential</a>
+          <a class="hover:text-brand-gold" href="retail.html" data-i18n="project.retail">Retail</a>
+          <a class="hover:text-brand-gold" href="industrial.html" data-i18n="project.industrial">Industrial</a>
+          <a class="hover:text-brand-gold" href="contact.html#form" data-i18n="ui.contact">Contact</a>
         </div>
       </div>
     </div>

@@ -38,6 +38,10 @@
       },
     };
   </script>
+  <link rel="icon" href="../assets/favicons/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicons/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicons/favicon-16x16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicons/apple-touch-icon.png" />
 </head>
 <body class="min-h-screen bg-brand-navy pb-24 text-white antialiased selection:bg-brand-gold selection:text-brand-navy pt-24 md:pt-28">
   <header class="site-nav fixed inset-x-0 top-0 z-50 bg-brand-navy/70 backdrop-blur-sm">
@@ -53,7 +57,7 @@
         <a class="nav-link-underline font-sans text-xs font-semibold uppercase tracking-[0.2em] text-white/85 hover:text-brand-gold" href="index.html">Home</a>
         <a class="nav-link-underline font-sans text-xs font-semibold uppercase tracking-[0.2em] text-white/85 hover:text-brand-gold" href="residential.html">Projects</a>
         <a class="nav-active nav-link-underline font-sans text-xs font-semibold uppercase tracking-[0.2em] text-brand-gold" href="about.html">About Us</a>
-        <a class="nav-link-underline font-sans text-xs font-semibold uppercase tracking-[0.2em] text-white/85 hover:text-brand-gold" href="contact.html">Contact</a>
+        <a class="nav-link-underline font-sans text-xs font-semibold uppercase tracking-[0.2em] text-white/85 hover:text-brand-gold" href="contact.html" data-i18n="ui.contact">Contact</a>
       </div>
       <div class="flex items-center gap-2">
         <a href="../cl/index.html" class="region-switch-miami hidden items-center rounded border border-brand-gold/50 bg-brand-navy/60 px-3 py-2 font-sans text-[10px] font-semibold uppercase tracking-[0.2em] text-brand-gold hover:bg-brand-gold/15 sm:inline-flex" data-i18n="nav.visit_chile">Chile</a>
@@ -76,7 +80,7 @@
     <a class="font-sans text-sm font-semibold uppercase tracking-[0.2em] text-white/90" href="index.html">Home</a>
     <a class="font-sans text-sm font-semibold uppercase tracking-[0.2em] text-white/90" href="residential.html">Projects</a>
     <a class="font-sans text-sm font-semibold uppercase tracking-[0.2em] text-brand-gold" href="about.html">About Us</a>
-    <a class="font-sans text-sm font-semibold uppercase tracking-[0.2em] text-white/90" href="contact.html">Contact</a>
+    <a class="font-sans text-sm font-semibold uppercase tracking-[0.2em] text-white/90" href="contact.html" data-i18n="ui.contact">Contact</a>
     <a href="../cl/index.html" class="rounded border border-brand-gold/35 bg-brand-navy/60 px-4 py-3 text-center font-sans text-xs font-semibold uppercase tracking-[0.2em] text-brand-gold hover:bg-brand-gold/10" data-i18n="nav.visit_chile">Chile</a>
   </aside>
 
@@ -87,62 +91,52 @@
         <img alt="" src="../assets/images/monroe/04-DJI_0827-Edit-1.jpg" width="2000" height="1200" decoding="async" class="h-full w-full object-cover opacity-12 grayscale" />
         <div class="absolute inset-0 bg-gradient-to-b from-brand-navy/95 via-brand-navy/78 to-brand-navy"></div>
       </div>
-      <p class="font-sans text-[11px] font-semibold uppercase tracking-[0.35em] text-brand-gold/90">About</p>
-      <h1 class="mt-6 max-w-4xl font-serif text-4xl text-white md:text-6xl">International real estate, built with discipline.</h1>
-      <p class="mt-8 max-w-3xl font-sans text-sm leading-relaxed text-white/78">
-        Based in South Florida, we are an international real estate firm focused on the vibrant markets of Broward County and Miami-Dade County.
-        Our work is inspired by the region’s diversity, potential, and dynamic growth.
-      </p>
+      <p class="font-sans text-[11px] font-semibold uppercase tracking-[0.35em] text-brand-gold/90" data-i18n="us.about.kicker">About</p>
+      <h1 class="mt-6 max-w-4xl font-serif text-4xl text-white md:text-6xl" data-i18n="us.about.hero_title">International real estate, built with discipline.</h1>
+      <p class="mt-8 max-w-3xl font-sans text-sm leading-relaxed text-white/78" data-i18n="us.about.hero_lead">Based in South Florida, we are an international real estate firm focused on the vibrant markets of Broward County and Miami-Dade County. Our work is inspired by the region’s diversity, potential, and dynamic growth.</p>
       <div class="mt-10 flex flex-wrap gap-3">
-        <span class="rounded-full border border-brand-gold/25 bg-brand-navy/40 px-5 py-2 font-sans text-[11px] uppercase tracking-[0.28em] text-brand-gold/95">Development</span>
-        <span class="rounded-full border border-brand-gold/25 bg-brand-navy/40 px-5 py-2 font-sans text-[11px] uppercase tracking-[0.28em] text-brand-gold/95">Investment</span>
-        <span class="rounded-full border border-brand-gold/25 bg-brand-navy/40 px-5 py-2 font-sans text-[11px] uppercase tracking-[0.28em] text-brand-gold/95">Land</span>
-        <span class="rounded-full border border-brand-gold/25 bg-brand-navy/40 px-5 py-2 font-sans text-[11px] uppercase tracking-[0.28em] text-brand-gold/95">Property management</span>
+        <span class="rounded-full border border-brand-gold/25 bg-brand-navy/40 px-5 py-2 font-sans text-[11px] uppercase tracking-[0.28em] text-brand-gold/95" data-i18n="us.about.chip_development">Development</span>
+        <span class="rounded-full border border-brand-gold/25 bg-brand-navy/40 px-5 py-2 font-sans text-[11px] uppercase tracking-[0.28em] text-brand-gold/95" data-i18n="us.about.chip_investment">Investment</span>
+        <span class="rounded-full border border-brand-gold/25 bg-brand-navy/40 px-5 py-2 font-sans text-[11px] uppercase tracking-[0.28em] text-brand-gold/95" data-i18n="us.about.chip_land">Land</span>
+        <span class="rounded-full border border-brand-gold/25 bg-brand-navy/40 px-5 py-2 font-sans text-[11px] uppercase tracking-[0.28em] text-brand-gold/95" data-i18n="us.about.chip_property_management">Property management</span>
       </div>
       <div class="mt-12 flex flex-wrap gap-4">
-        <a href="contact.html#form" class="hover-glow inline-flex items-center rounded-sm bg-brand-gold px-8 py-3.5 font-sans text-xs font-bold uppercase tracking-[0.28em] text-brand-navy">Contact</a>
-        <a href="residential.html" class="hover-glow inline-flex items-center rounded-sm border border-brand-gold/60 px-8 py-3.5 font-sans text-xs font-bold uppercase tracking-[0.28em] text-brand-gold hover:bg-brand-gold hover:text-brand-navy">View projects</a>
+        <a href="contact.html#form" class="hover-glow inline-flex items-center rounded-sm bg-brand-gold px-8 py-3.5 font-sans text-xs font-bold uppercase tracking-[0.28em] text-brand-navy" data-i18n="ui.contact">Contact</a>
+        <a href="residential.html" class="hover-glow inline-flex items-center rounded-sm border border-brand-gold/60 px-8 py-3.5 font-sans text-xs font-bold uppercase tracking-[0.28em] text-brand-gold hover:bg-brand-gold hover:text-brand-navy" data-i18n="ui.view_projects">View projects</a>
       </div>
     </section>
 
     <!-- CONTENT GRID -->
     <section class="mt-18 grid gap-10 pt-16 lg:grid-cols-[1.05fr_0.95fr] lg:gap-12">
       <article class="space-y-6 rounded-sm border border-brand-gold/20 bg-brand-ink/30 p-10 font-sans text-sm leading-relaxed text-white/80" data-reveal>
-        <h2 class="font-serif text-3xl text-brand-gold">Who we are</h2>
-        <p>
-          We specialize in real estate development, investment, land acquisition, and property management, with experience in single-family homes, multifamily residences,
-          offices, retail, and mixed-use projects.
-        </p>
-        <p>
-          Our integrated approach allows us to oversee each stage of development — from concept to completion — with care, innovation, and precision.
-        </p>
-        <p>
-          We collaborate with investors, partners, and communities who share our vision of creating long-term value and transforming neighborhoods through thoughtful and sustainable development.
-        </p>
+        <h2 class="font-serif text-3xl text-brand-gold" data-i18n="us.about.who_title">Who we are</h2>
+        <p data-i18n="us.about.who_p1">We specialize in real estate development, investment, land acquisition, and property management, with experience in single-family homes, multifamily residences, offices, retail, and mixed-use projects.</p>
+        <p data-i18n="us.about.who_p2">Our integrated approach allows us to oversee each stage of development — from concept to completion — with care, innovation, and precision.</p>
+        <p data-i18n="us.about.who_p3">We collaborate with investors, partners, and communities who share our vision of creating long-term value and transforming neighborhoods through thoughtful and sustainable development.</p>
       </article>
 
       <aside class="rounded-sm border border-brand-gold/20 bg-brand-ink/30 p-10" data-delay="1" data-reveal>
-        <h2 class="font-serif text-3xl text-brand-gold">How we work</h2>
+        <h2 class="font-serif text-3xl text-brand-gold" data-i18n="us.about.how_title">How we work</h2>
         <div class="mt-8 space-y-6 font-sans text-sm text-white/80">
           <div class="flex gap-4">
             <span class="badge-chip text-brand-gold">01</span>
             <div>
-              <p class="font-semibold text-white">Underwrite with clarity</p>
-              <p class="mt-1 text-white/70">We align scope, timelines, and constraints early—then execute without surprises.</p>
+              <p class="font-semibold text-white" data-i18n="us.about.work1_title">Underwrite with clarity</p>
+              <p class="mt-1 text-white/70" data-i18n="us.about.work1_desc">We align scope, timelines, and constraints early—then execute without surprises.</p>
             </div>
           </div>
           <div class="flex gap-4">
             <span class="badge-chip text-brand-gold">02</span>
             <div>
-              <p class="font-semibold text-white">Design for durability</p>
-              <p class="mt-1 text-white/70">Clean architecture, practical details, and efficient operations across the asset lifecycle.</p>
+              <p class="font-semibold text-white" data-i18n="us.about.work2_title">Design for durability</p>
+              <p class="mt-1 text-white/70" data-i18n="us.about.work2_desc">Clean architecture, practical details, and efficient operations across the asset lifecycle.</p>
             </div>
           </div>
           <div class="flex gap-4">
             <span class="badge-chip text-brand-gold">03</span>
             <div>
-              <p class="font-semibold text-white">Deliver with discipline</p>
-              <p class="mt-1 text-white/70">From concept to completion—we stay hands-on to protect quality and schedule.</p>
+              <p class="font-semibold text-white" data-i18n="us.about.work3_title">Deliver with discipline</p>
+              <p class="mt-1 text-white/70" data-i18n="us.about.work3_desc">From concept to completion—we stay hands-on to protect quality and schedule.</p>
             </div>
           </div>
         </div>
@@ -153,35 +147,35 @@
     <section class="mt-16 border-t border-brand-gold/15 pt-16" data-reveal>
       <div class="flex flex-wrap items-end justify-between gap-6">
         <div>
-          <p class="font-sans text-[11px] font-semibold uppercase tracking-[0.35em] text-brand-gold/90">Capabilities</p>
-          <h2 class="mt-4 font-serif text-3xl text-brand-gold md:text-4xl">What we deliver</h2>
+          <p class="font-sans text-[11px] font-semibold uppercase tracking-[0.35em] text-brand-gold/90" data-i18n="us.about.capabilities">Capabilities</p>
+          <h2 class="mt-4 font-serif text-3xl text-brand-gold md:text-4xl" data-i18n="us.about.deliver_title">What we deliver</h2>
         </div>
-        <a href="contact.html#form" class="nav-link-underline font-sans text-xs font-semibold uppercase tracking-[0.25em] text-brand-gold">Start a conversation →</a>
+        <a href="contact.html#form" class="nav-link-underline font-sans text-xs font-semibold uppercase tracking-[0.25em] text-brand-gold" data-i18n="ui.start_conversation">Start a conversation →</a>
       </div>
       <div class="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
         <div class="rounded-sm border border-brand-gold/20 bg-brand-ink/30 p-8">
-          <p class="font-sans text-[11px] font-semibold uppercase tracking-[0.28em] text-brand-gold/90">Development</p>
-          <p class="mt-4 font-sans text-sm text-white/75">Concept-to-delivery execution with scope control and quality oversight.</p>
+          <p class="font-sans text-[11px] font-semibold uppercase tracking-[0.28em] text-brand-gold/90" data-i18n="us.about.chip_development">Development</p>
+          <p class="mt-4 font-sans text-sm text-white/75" data-i18n="us.about.dev_desc">Concept-to-delivery execution with scope control and quality oversight.</p>
         </div>
         <div class="rounded-sm border border-brand-gold/20 bg-brand-ink/30 p-8">
-          <p class="font-sans text-[11px] font-semibold uppercase tracking-[0.28em] text-brand-gold/90">Investment</p>
-          <p class="mt-4 font-sans text-sm text-white/75">Pragmatic underwriting, durable fundamentals, and clear exit optionality.</p>
+          <p class="font-sans text-[11px] font-semibold uppercase tracking-[0.28em] text-brand-gold/90" data-i18n="us.about.chip_investment">Investment</p>
+          <p class="mt-4 font-sans text-sm text-white/75" data-i18n="us.about.investment_desc">Pragmatic underwriting, durable fundamentals, and clear exit optionality.</p>
         </div>
         <div class="rounded-sm border border-brand-gold/20 bg-brand-ink/30 p-8">
-          <p class="font-sans text-[11px] font-semibold uppercase tracking-[0.28em] text-brand-gold/90">Land acquisition</p>
-          <p class="mt-4 font-sans text-sm text-white/75">Site screening and corridor strategy across Broward and Miami-Dade.</p>
+          <p class="font-sans text-[11px] font-semibold uppercase tracking-[0.28em] text-brand-gold/90" data-i18n="form.option_land">Land acquisition</p>
+          <p class="mt-4 font-sans text-sm text-white/75" data-i18n="us.about.land_desc">Site screening and corridor strategy across Broward and Miami-Dade.</p>
         </div>
         <div class="rounded-sm border border-brand-gold/20 bg-brand-ink/30 p-8">
-          <p class="font-sans text-[11px] font-semibold uppercase tracking-[0.28em] text-brand-gold/90">Property management</p>
-          <p class="mt-4 font-sans text-sm text-white/75">Stewardship that supports leasing performance and long-term asset health.</p>
+          <p class="font-sans text-[11px] font-semibold uppercase tracking-[0.28em] text-brand-gold/90" data-i18n="us.about.chip_property_management">Property management</p>
+          <p class="mt-4 font-sans text-sm text-white/75" data-i18n="us.about.property_desc">Stewardship that supports leasing performance and long-term asset health.</p>
         </div>
         <div class="rounded-sm border border-brand-gold/20 bg-brand-ink/30 p-8">
-          <p class="font-sans text-[11px] font-semibold uppercase tracking-[0.28em] text-brand-gold/90">Asset types</p>
-          <p class="mt-4 font-sans text-sm text-white/75">Single-family, multifamily, offices, retail, and mixed-use projects.</p>
+          <p class="font-sans text-[11px] font-semibold uppercase tracking-[0.28em] text-brand-gold/90" data-i18n="us.about.asset_types">Asset types</p>
+          <p class="mt-4 font-sans text-sm text-white/75" data-i18n="us.about.asset_desc">Single-family, multifamily, offices, retail, and mixed-use projects.</p>
         </div>
         <div class="rounded-sm border border-brand-gold/20 bg-brand-ink/30 p-8">
-          <p class="font-sans text-[11px] font-semibold uppercase tracking-[0.28em] text-brand-gold/90">Partnerships</p>
-          <p class="mt-4 font-sans text-sm text-white/75">Aligned capital + transparent execution with investors and communities.</p>
+          <p class="font-sans text-[11px] font-semibold uppercase tracking-[0.28em] text-brand-gold/90" data-i18n="us.about.partnerships">Partnerships</p>
+          <p class="mt-4 font-sans text-sm text-white/75" data-i18n="us.about.partnerships_desc">Aligned capital + transparent execution with investors and communities.</p>
         </div>
       </div>
     </section>
@@ -201,11 +195,9 @@
 
     <!-- CTA -->
     <section class="mt-16 overflow-hidden rounded-sm border border-brand-gold/15 bg-brand-ink/35 px-10 py-12 text-center" data-reveal>
-      <h2 class="font-serif text-3xl text-brand-gold md:text-4xl">Building long-term value.</h2>
-      <p class="mx-auto mt-5 max-w-3xl font-sans text-sm leading-relaxed text-white/75">
-        Our goal is to build spaces where people can live, work, and thrive—contributing to the continued evolution of South Florida’s urban landscape.
-      </p>
-      <a href="contact.html#form" class="hover-glow mt-9 inline-flex items-center rounded-sm bg-brand-gold px-10 py-3.5 font-sans text-xs font-bold uppercase tracking-[0.26em] text-brand-navy">Contact</a>
+      <h2 class="font-serif text-3xl text-brand-gold md:text-4xl" data-i18n="us.about.value_title">Building long-term value.</h2>
+      <p class="mx-auto mt-5 max-w-3xl font-sans text-sm leading-relaxed text-white/75" data-i18n="us.about.value_desc">Our goal is to build spaces where people can live, work, and thrive—contributing to the continued evolution of South Florida’s urban landscape.</p>
+      <a href="contact.html#form" class="hover-glow mt-9 inline-flex items-center rounded-sm bg-brand-gold px-10 py-3.5 font-sans text-xs font-bold uppercase tracking-[0.26em] text-brand-navy" data-i18n="ui.contact">Contact</a>
     </section>
   </main>
 
@@ -216,16 +208,14 @@
           <img src="../assets/images/logo_futur.jpeg" alt="Futur Latam Corp logo" class="h-10 w-10 object-contain" decoding="async" />
           <div class="leading-tight">
             <p class="font-sans text-sm font-semibold uppercase tracking-[0.28em] text-brand-gold">FUTUR LATAM CORP</p>
-            <p class="mt-1 font-sans text-xs text-white/60">South Florida · Chile</p>
+            <p class="mt-1 font-sans text-xs text-white/60" data-i18n="footer.region">South Florida · Chile</p>
           </div>
         </div>
-        <p class="font-sans text-sm leading-relaxed text-white/70">
-          International real estate development, investment, and property advisory with disciplined execution.
-        </p>
+        <p class="font-sans text-sm leading-relaxed text-white/70" data-i18n="footer.tagline">International real estate development, investment, and property advisory with disciplined execution.</p>
       </div>
 
       <div class="space-y-4">
-        <p class="font-sans text-[11px] font-semibold uppercase tracking-[0.28em] text-brand-gold/90">Office</p>
+        <p class="font-sans text-[11px] font-semibold uppercase tracking-[0.28em] text-brand-gold/90" data-i18n="project.office">Office</p>
         <p class="font-sans text-sm leading-relaxed text-white/75">5000 Pembroke Rd<br />Hollywood, FL 33021</p>
         <div class="overflow-hidden rounded-sm border border-brand-gold/15 bg-brand-navy/35 hidden md:block">
           <iframe
@@ -243,7 +233,7 @@
       </div>
 
       <div class="space-y-5">
-        <p class="font-sans text-[11px] font-semibold uppercase tracking-[0.28em] text-brand-gold/90">Contact</p>
+        <p class="font-sans text-[11px] font-semibold uppercase tracking-[0.28em] text-brand-gold/90" data-i18n="ui.contact">Contact</p>
         <div class="grid gap-3 font-sans text-sm text-white/78">
           <div class="flex items-start gap-3">
             <span class="material-symbols-outlined text-brand-gold">call</span>
@@ -261,10 +251,10 @@
 
         <div class="flex flex-wrap gap-x-6 gap-y-3 border-t border-brand-gold/10 pt-5 font-sans text-xs font-semibold uppercase tracking-[0.22em] text-white/65">
           <a class="hover:text-brand-gold" href="about.html">About Us</a>
-          <a class="hover:text-brand-gold" href="residential.html">Residential</a>
-          <a class="hover:text-brand-gold" href="retail.html">Retail</a>
-          <a class="hover:text-brand-gold" href="industrial.html">Industrial</a>
-          <a class="hover:text-brand-gold" href="contact.html#form">Contact</a>
+          <a class="hover:text-brand-gold" href="residential.html" data-i18n="project.residential">Residential</a>
+          <a class="hover:text-brand-gold" href="retail.html" data-i18n="project.retail">Retail</a>
+          <a class="hover:text-brand-gold" href="industrial.html" data-i18n="project.industrial">Industrial</a>
+          <a class="hover:text-brand-gold" href="contact.html#form" data-i18n="ui.contact">Contact</a>
         </div>
       </div>
     </div>

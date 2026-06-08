@@ -38,6 +38,10 @@
       },
     };
   </script>
+  <link rel="icon" href="../assets/favicons/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicons/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicons/favicon-16x16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicons/apple-touch-icon.png" />
 </head>
 <body class="min-h-screen bg-brand-navy text-white antialiased selection:bg-brand-gold selection:text-brand-navy pb-28 pt-24 md:pt-28">
   <header class="site-nav fixed inset-x-0 top-0 z-50 bg-brand-navy/75 backdrop-blur-sm">
@@ -53,7 +57,7 @@
         <a class="nav-link-underline font-sans text-xs font-semibold uppercase tracking-[0.2em] text-white/85 hover:text-brand-gold" href="index.html">Home</a>
         <a class="nav-link-underline font-sans text-xs font-semibold uppercase tracking-[0.2em] text-white/85 hover:text-brand-gold" href="residential.html">Projects</a>
         <a class="nav-link-underline font-sans text-xs font-semibold uppercase tracking-[0.2em] text-white/85 hover:text-brand-gold" href="about.html">About Us</a>
-        <a class="nav-active nav-link-underline font-sans text-xs font-semibold uppercase tracking-[0.2em] text-brand-gold" href="contact.html">Contact</a>
+        <a class="nav-active nav-link-underline font-sans text-xs font-semibold uppercase tracking-[0.2em] text-brand-gold" href="contact.html" data-i18n="ui.contact">Contact</a>
       </div>
       <div class="flex items-center gap-2">
         <a href="../cl/index.html" class="region-switch-miami hidden items-center rounded border border-brand-gold/50 bg-brand-navy/60 px-3 py-2 font-sans text-[10px] font-semibold uppercase tracking-[0.2em] text-brand-gold hover:bg-brand-gold/15 sm:inline-flex" data-i18n="nav.visit_chile">Chile</a>
@@ -74,7 +78,7 @@
     <a class="text-sm uppercase tracking-[0.2em] text-white/90" href="index.html">Home</a>
     <a class="text-sm uppercase tracking-[0.2em] text-white/90" href="residential.html">Projects</a>
     <a class="text-sm uppercase tracking-[0.2em] text-white/90" href="about.html">About Us</a>
-    <a class="text-sm uppercase tracking-[0.2em] text-brand-gold" href="contact.html">Contact</a>
+    <a class="text-sm uppercase tracking-[0.2em] text-brand-gold" href="contact.html" data-i18n="ui.contact">Contact</a>
     <a href="../cl/index.html" class="rounded border border-brand-gold/35 bg-brand-navy/60 px-4 py-3 text-center font-sans text-xs font-semibold uppercase tracking-[0.2em] text-brand-gold hover:bg-brand-gold/10" data-i18n="nav.visit_chile">Chile</a>
   </aside>
 
@@ -86,11 +90,9 @@
       </div>
       <div class="relative mx-auto max-w-7xl px-6 pb-14 pt-28 lg:px-10 lg:pb-18 lg:pt-32">
         <div class="max-w-3xl" data-reveal>
-          <p class="font-sans text-[11px] font-semibold uppercase tracking-[0.3em] text-white/70">Contact</p>
-          <h1 class="mt-4 font-serif text-3xl text-white md:text-4xl">Let’s talk about your next project.</h1>
-          <p class="mt-5 max-w-2xl font-sans text-sm leading-relaxed text-white/70">
-            Share the basics—asset type, location, timing, and decision stage. We’ll respond with a focused next-step plan.
-          </p>
+          <p class="font-sans text-[11px] font-semibold uppercase tracking-[0.3em] text-white/70" data-i18n="ui.contact">Contact</p>
+          <h1 class="mt-4 font-serif text-3xl text-white md:text-4xl" data-i18n="us.contact.hero_title">Let’s talk about your next project.</h1>
+          <p class="mt-5 max-w-2xl font-sans text-sm leading-relaxed text-white/70" data-i18n="us.contact.hero_lead">Share the basics—asset type, location, timing, and decision stage. We’ll respond with a focused next-step plan.</p>
           <div class="mt-8 flex flex-wrap items-center gap-3">
             <a href="#form" class="hover-glow inline-flex items-center gap-2 rounded border border-brand-gold/35 bg-brand-gold/10 px-5 py-3 font-sans text-xs font-semibold uppercase tracking-[0.24em] text-brand-gold hover:border-brand-gold/60">
               Send a message
@@ -108,7 +110,7 @@
       <div class="grid gap-10 lg:grid-cols-[0.95fr_1.05fr] lg:gap-14">
         <div class="space-y-6" data-reveal>
           <div class="rounded-sm border border-brand-gold/15 bg-brand-ink/40 p-7">
-            <p class="font-sans text-[11px] font-semibold uppercase tracking-[0.28em] text-brand-gold/90">Contact details</p>
+            <p class="font-sans text-[11px] font-semibold uppercase tracking-[0.28em] text-brand-gold/90" data-i18n="us.contact.details">Contact details</p>
             <div class="mt-5 grid gap-4 font-sans text-sm text-white/75">
               <div class="flex items-start gap-3">
                 <span class="material-symbols-outlined text-brand-gold">location_on</span>
@@ -130,7 +132,7 @@
               </div>
               <div class="flex items-start gap-3">
                 <span class="material-symbols-outlined text-brand-gold">schedule</span>
-                <p>Monday–Friday · 9:00 AM–6:00 PM</p>
+                <p data-i18n="us.contact.hours">Monday–Friday · 9:00 AM–6:00 PM</p>
               </div>
             </div>
           </div>
@@ -153,55 +155,55 @@
         <div id="form" class="rounded-sm border border-brand-gold/20 bg-brand-ink/35 p-7 md:p-9" data-delay="1" data-reveal>
           <div class="flex flex-wrap items-end justify-between gap-4">
             <div>
-              <p class="font-sans text-[11px] font-semibold uppercase tracking-[0.28em] text-brand-gold/90">Send a message</p>
-              <p class="mt-2 font-sans text-sm text-white/65">We’ll reply within 1–2 business days.</p>
+              <p class="font-sans text-[11px] font-semibold uppercase tracking-[0.28em] text-brand-gold/90" data-i18n="ui.send_message">Send a message</p>
+              <p class="mt-2 font-sans text-sm text-white/65" data-i18n="us.contact.form_note">We’ll reply within 1–2 business days.</p>
             </div>
-            <p class="font-sans text-xs text-white/45">No backend required (opens your email app).</p>
+            <p class="font-sans text-xs text-white/45" data-i18n="us.contact.form_backend">No backend required (opens your email app).</p>
           </div>
 
           <form class="mt-7 grid gap-5" data-mailto-form data-mailto-to="contact@futurlatamcorp.com" data-mailto-subject="New inquiry — Futur Latam Corp">
             <div class="grid gap-5 md:grid-cols-2">
               <div>
-                <label for="nm" class="mb-2 block font-sans text-[11px] font-semibold uppercase tracking-[0.3em] text-white/70">Name</label>
+                <label for="nm" class="mb-2 block font-sans text-[11px] font-semibold uppercase tracking-[0.3em] text-white/70" data-i18n="form.name">Name</label>
                 <input id="nm" name="name" type="text" required placeholder="Jane Doe" class="w-full rounded-sm border border-white/15 bg-white/5 px-4 py-3 text-sm text-white placeholder-white/35 focus:border-brand-gold focus:outline-none focus:ring-0" />
               </div>
               <div>
-                <label for="em" class="mb-2 block font-sans text-[11px] font-semibold uppercase tracking-[0.3em] text-white/70">E-mail</label>
+                <label for="em" class="mb-2 block font-sans text-[11px] font-semibold uppercase tracking-[0.3em] text-white/70" data-i18n="form.email">E-mail</label>
                 <input id="em" name="email" type="email" required placeholder="you@example.com" class="w-full rounded-sm border border-white/15 bg-white/5 px-4 py-3 text-sm text-white placeholder-white/35 focus:border-brand-gold focus:outline-none focus:ring-0" />
               </div>
             </div>
 
             <div class="grid gap-5 md:grid-cols-2">
               <div>
-                <label for="co" class="mb-2 block font-sans text-[11px] font-semibold uppercase tracking-[0.3em] text-white/70">Company <span class="text-white/40">(optional)</span></label>
+                <label for="co" class="mb-2 block font-sans text-[11px] font-semibold uppercase tracking-[0.3em] text-white/70">Company <span class="text-white/40" data-i18n="ui.optional">(optional)</span></label>
                 <input id="co" name="company" type="text" placeholder="Company / Fund / Partnership" class="w-full rounded-sm border border-white/15 bg-white/5 px-4 py-3 text-sm text-white placeholder-white/35 focus:border-brand-gold focus:outline-none focus:ring-0" />
               </div>
               <div>
-                <label for="ph" class="mb-2 block font-sans text-[11px] font-semibold uppercase tracking-[0.3em] text-white/70">Phone <span class="text-white/40">(optional)</span></label>
+                <label for="ph" class="mb-2 block font-sans text-[11px] font-semibold uppercase tracking-[0.3em] text-white/70">Phone <span class="text-white/40" data-i18n="ui.optional">(optional)</span></label>
                 <input id="ph" name="phone" type="tel" placeholder="+1 (___) ___-____" class="w-full rounded-sm border border-white/15 bg-white/5 px-4 py-3 text-sm text-white placeholder-white/35 focus:border-brand-gold focus:outline-none focus:ring-0" />
               </div>
             </div>
 
             <div>
-              <label for="tp" class="mb-2 block font-sans text-[11px] font-semibold uppercase tracking-[0.3em] text-white/70">Topic</label>
+              <label for="tp" class="mb-2 block font-sans text-[11px] font-semibold uppercase tracking-[0.3em] text-white/70" data-i18n="form.topic">Topic</label>
               <select id="tp" name="topic" class="w-full rounded-sm border border-white/15 bg-white/5 px-4 py-3 text-sm text-white focus:border-brand-gold focus:outline-none focus:ring-0">
-                <option value="Residential">Residential</option>
-                <option value="Retail">Retail</option>
-                <option value="Industrial">Industrial</option>
-                <option value="Investment / Partnership">Investment / Partnership</option>
-                <option value="Land acquisition">Land acquisition</option>
-                <option value="Other" selected>Other</option>
+                <option value="Residential" data-i18n="project.residential">Residential</option>
+                <option value="Retail" data-i18n="project.retail">Retail</option>
+                <option value="Industrial" data-i18n="project.industrial">Industrial</option>
+                <option value="Investment / Partnership" data-i18n="form.option_investment">Investment / Partnership</option>
+                <option value="Land acquisition" data-i18n="form.option_land">Land acquisition</option>
+                <option value="Other" selected data-i18n="form.option_other">Other</option>
               </select>
             </div>
 
             <div>
-              <label for="msg" class="mb-2 block font-sans text-[11px] font-semibold uppercase tracking-[0.3em] text-white/70">Message</label>
+              <label for="msg" class="mb-2 block font-sans text-[11px] font-semibold uppercase tracking-[0.3em] text-white/70" data-i18n="form.message">Message</label>
               <textarea id="msg" name="message" rows="7" required placeholder="Tell us about objectives, timelines, location, and current stage." class="w-full rounded-sm border border-white/15 bg-white/5 px-4 py-3 text-sm text-white placeholder-white/35 focus:border-brand-gold focus:outline-none focus:ring-0"></textarea>
             </div>
 
             <div class="flex flex-wrap items-center justify-between gap-4 pt-1">
-              <p class="text-xs text-white/55">By sending, your email client will open with the details pre-filled.</p>
-              <button type="submit" class="btn-send-contact hover-glow rounded px-12 py-3.5 font-sans text-xs font-bold uppercase tracking-[0.34em] text-white">Send</button>
+              <p class="text-xs text-white/55" data-i18n="form.send_note">By sending, your email client will open with the details pre-filled.</p>
+              <button type="submit" class="btn-send-contact hover-glow rounded px-12 py-3.5 font-sans text-xs font-bold uppercase tracking-[0.34em] text-white" data-i18n="ui.send">Send</button>
             </div>
           </form>
         </div>
@@ -216,16 +218,14 @@
           <img src="../assets/images/logo_futur.jpeg" alt="Futur Latam Corp logo" class="h-10 w-10 object-contain" decoding="async" />
           <div class="leading-tight">
             <p class="font-sans text-sm font-semibold uppercase tracking-[0.28em] text-brand-gold">FUTUR LATAM CORP</p>
-            <p class="mt-1 font-sans text-xs text-white/60">South Florida · Chile</p>
+            <p class="mt-1 font-sans text-xs text-white/60" data-i18n="footer.region">South Florida · Chile</p>
           </div>
         </div>
-        <p class="font-sans text-sm leading-relaxed text-white/70">
-          International real estate development, investment, and property advisory with disciplined execution.
-        </p>
+        <p class="font-sans text-sm leading-relaxed text-white/70" data-i18n="footer.tagline">International real estate development, investment, and property advisory with disciplined execution.</p>
       </div>
 
       <div class="space-y-4">
-        <p class="font-sans text-[11px] font-semibold uppercase tracking-[0.28em] text-brand-gold/90">Office</p>
+        <p class="font-sans text-[11px] font-semibold uppercase tracking-[0.28em] text-brand-gold/90" data-i18n="project.office">Office</p>
         <p class="font-sans text-sm leading-relaxed text-white/75">5000 Pembroke Rd<br />Hollywood, FL 33021</p>
         <div class="overflow-hidden rounded-sm border border-brand-gold/15 bg-brand-navy/35 hidden md:block">
           <iframe
@@ -243,7 +243,7 @@
       </div>
 
       <div class="space-y-5">
-        <p class="font-sans text-[11px] font-semibold uppercase tracking-[0.28em] text-brand-gold/90">Contact</p>
+        <p class="font-sans text-[11px] font-semibold uppercase tracking-[0.28em] text-brand-gold/90" data-i18n="ui.contact">Contact</p>
         <div class="grid gap-3 font-sans text-sm text-white/78">
           <div class="flex items-start gap-3">
             <span class="material-symbols-outlined text-brand-gold">call</span>
@@ -262,7 +262,7 @@
         <div class="flex flex-wrap gap-x-6 gap-y-3 border-t border-brand-gold/10 pt-5 font-sans text-xs font-semibold uppercase tracking-[0.22em] text-white/65">
           <a class="hover:text-brand-gold" href="residential.html">Projects</a>
           <a class="hover:text-brand-gold" href="about.html">About Us</a>
-          <a class="hover:text-brand-gold" href="contact.html#form">Contact</a>
+          <a class="hover:text-brand-gold" href="contact.html#form" data-i18n="ui.contact">Contact</a>
         </div>
       </div>
     </div>

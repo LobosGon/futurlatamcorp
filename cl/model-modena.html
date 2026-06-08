@@ -32,6 +32,10 @@
       },
     };
   </script>
+  <link rel="icon" href="../assets/favicons/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicons/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicons/favicon-16x16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicons/apple-touch-icon.png" />
 </head>
 <body class="chile-body bg-brand-navy pb-32 pt-24 md:pt-28 text-white antialiased selection:bg-brand-gold selection:text-brand-navy">
   <header class="site-nav chile-nav fixed inset-x-0 top-0 z-50 bg-brand-navy/85 backdrop-blur-md border-b border-brand-gold/10">
@@ -88,21 +92,19 @@
         <p class="text-xs uppercase tracking-[0.3em] text-brand-gold/80">Residential model</p>
         <h1 class="mt-4 font-serif text-4xl uppercase tracking-[0.14em] text-brand-gold md:text-5xl">Modena</h1>
         <ul class="mt-8 space-y-3 font-sans text-sm uppercase tracking-[0.18em] text-brand-gold/90">
-          <li>2 Story</li>
+          <li data-i18n="project.two_story">2 Story</li>
           <li>Walkthrough reel + photo gallery</li>
         </ul>
-        <p class="mt-10 font-sans text-sm leading-relaxed text-white/80">
-          The <strong class="text-brand-gold">Modena</strong> presentation focuses on scale, light, and circulation through a clean unbranded walkthrough. Use the player for full playback control; the Home and portfolio cards reuse this clip on hover for quick preview.
-        </p>
+        <p class="mt-10 font-sans text-sm leading-relaxed text-white/80" data-i18n="model.modena.video_desc">The Modena presentation focuses on scale, light, and circulation through a clean unbranded walkthrough. Use the player for full playback control; the Home and portfolio cards reuse this clip on hover for quick preview.</p>
         <div class="mt-8 flex flex-wrap gap-4">
-          <a href="contact.html#form" class="hover-glow inline-flex items-center rounded-sm bg-brand-gold px-6 py-3 text-xs font-bold uppercase tracking-[0.22em] text-brand-navy">Request info</a>
+          <a href="contact.html#form" class="hover-glow inline-flex items-center rounded-sm bg-brand-gold px-6 py-3 text-xs font-bold uppercase tracking-[0.22em] text-brand-navy" data-i18n="ui.request_info">Request info</a>
         </div>
         <p class="mt-6 font-sans text-xs text-white/45"><a class="text-brand-gold/90 hover:text-brand-gold" href="residential.html">â† Back to residential grid</a></p>
       </div>
     </div>
 
     <section class="mt-24 border-t border-brand-gold/15 pt-16" data-reveal>
-      <h2 class="font-serif text-4xl text-brand-gold md:text-5xl">Gallery:</h2>
+      <h2 class="font-serif text-4xl text-brand-gold md:text-5xl" data-i18n="industrial.gallery">Gallery:</h2>
       <div class="mt-10 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-6">
         <div class="media-card aspect-[4/3] bg-black ring-1 ring-brand-gold/10">
           <img alt="Modena photo 01" src="../assets/images/monroe/01-DSC08361-1.jpg" class="poster-img" width="480" height="360" decoding="async" />
@@ -167,13 +169,11 @@
             <p class="mt-1 font-sans text-xs text-white/60">South Florida Â· Chile</p>
           </div>
         </div>
-        <p class="font-sans text-sm leading-relaxed text-white/70">
-          International real estate development, investment, and property advisory with disciplined execution.
-        </p>
+        <p class="font-sans text-sm leading-relaxed text-white/70" data-i18n="footer.tagline">International real estate development, investment, and property advisory with disciplined execution.</p>
       </div>
 
       <div class="space-y-4">
-        <p class="font-sans text-[11px] font-semibold uppercase tracking-[0.28em] text-brand-gold/90">Office</p>
+        <p class="font-sans text-[11px] font-semibold uppercase tracking-[0.28em] text-brand-gold/90" data-i18n="project.office">Office</p>
         <p class="font-sans text-sm leading-relaxed text-white/75">5000 Pembroke Rd<br />Hollywood, FL 33021</p>
         <div class="overflow-hidden rounded-sm border border-brand-gold/15 bg-brand-navy/35 hidden md:block">
           <iframe
@@ -191,7 +191,7 @@
       </div>
 
       <div class="space-y-5">
-        <p class="font-sans text-[11px] font-semibold uppercase tracking-[0.28em] text-brand-gold/90">Contact</p>
+        <p class="font-sans text-[11px] font-semibold uppercase tracking-[0.28em] text-brand-gold/90" data-i18n="ui.contact">Contact</p>
         <div class="grid gap-3 font-sans text-sm text-white/78">
           <div class="flex items-start gap-3">
             <span class="material-symbols-outlined text-brand-gold">call</span>
@@ -210,7 +210,7 @@
         <div class="flex flex-wrap gap-x-6 gap-y-3 border-t border-brand-gold/10 pt-5 font-sans text-xs font-semibold uppercase tracking-[0.22em] text-white/65">
           <a class="hover:text-brand-gold" href="about.html">About Us</a>
           <a class="hover:text-brand-gold" href="residential.html">Projects</a>
-          <a class="hover:text-brand-gold" href="contact.html#form">Contact</a>
+          <a class="hover:text-brand-gold" href="contact.html#form" data-i18n="ui.contact">Contact</a>
         </div>
       </div>
     </div>

@@ -47,6 +47,10 @@
       },
     };
   </script>
+  <link rel="icon" href="../assets/favicons/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicons/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicons/favicon-16x16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicons/apple-touch-icon.png" />
 </head>
 <body class="chile-body min-h-screen pb-16 pt-24 text-white antialiased selection:bg-chile-copper selection:text-chile-ink md:pt-28">
   <header class="site-nav chile-nav fixed inset-x-0 top-0 z-[70]">
@@ -106,22 +110,22 @@
         <div class="flex flex-wrap items-center gap-1.5">
           <div class="stat-chip stat-chip--available">
             <strong id="parcel-count-available">0</strong>
-            <span>Disponibles</span>
+            <span data-i18n="parcel.available">Disponibles</span>
           </div>
           <div class="stat-chip stat-chip--sold">
             <strong id="parcel-count-sold">0</strong>
-            <span>Vendidas</span>
+            <span data-i18n="parcel.sold">Vendidas</span>
           </div>
           <div class="stat-chip stat-chip--reference">
             <strong id="parcel-count-reference">0</strong>
-            <span>Refs</span>
+            <span data-i18n="parcel.refs">Refs</span>
           </div>
         </div>
 
         <div class="flex items-center gap-1.5">
-          <button type="button" class="parcel-filter" data-parcel-filter="all">Todas</button>
-          <button type="button" class="parcel-filter is-active" data-parcel-filter="available">Disponibles</button>
-          <button type="button" class="parcel-filter" data-parcel-filter="sold">Vendidas</button>
+          <button type="button" class="parcel-filter" data-parcel-filter="all" data-i18n="parcel.all">Todas</button>
+          <button type="button" class="parcel-filter is-active" data-parcel-filter="available" data-i18n="parcel.available">Disponibles</button>
+          <button type="button" class="parcel-filter" data-parcel-filter="sold" data-i18n="parcel.sold">Vendidas</button>
         </div>
       </div>
     </section>
@@ -133,7 +137,7 @@
           <div id="chile-canvas" class="absolute inset-0"></div>
         </div>
         <div class="cl-map-legend pointer-events-auto absolute z-[400] border border-white/15 bg-chile-ink/85 px-4 py-3 font-sans text-xs text-white/85 backdrop-blur-md shadow-lg shadow-black/30">
-          <p class="uppercase tracking-[0.2em] text-white/55">Estados</p>
+          <p class="uppercase tracking-[0.2em] text-white/55" data-i18n="parcel.states">Estados</p>
           <div class="mt-2 flex flex-wrap gap-x-3 gap-y-1.5">
             <span class="inline-flex items-center gap-2"><i class="h-2.5 w-2.5 rounded-full bg-emerald-400 ring-2 ring-white/40"></i> Disponible</span>
             <span class="inline-flex items-center gap-2"><i class="h-2.5 w-2.5 rounded-full bg-red-500 ring-2 ring-white/40"></i> Vendida</span>

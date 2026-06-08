@@ -40,6 +40,10 @@
       },
     };
   </script>
+  <link rel="icon" href="../assets/favicons/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicons/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicons/favicon-16x16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicons/apple-touch-icon.png" />
 </head>
 <body class="chile-body min-h-screen pb-28 pt-24 text-white antialiased selection:bg-chile-copper selection:text-chile-ink md:pt-28">
 
@@ -182,28 +186,28 @@
           <form class="mt-7 grid gap-5" data-mailto-form data-mailto-to="contact@futurlatamcorp.com" data-mailto-subject="New inquiry — Futur Latam Corp">
             <div class="grid gap-5 md:grid-cols-2">
               <div>
-                <label for="nm" class="mb-2 block font-sans text-[11px] font-semibold uppercase tracking-[0.3em] text-white/65">Name</label>
+                <label for="nm" class="mb-2 block font-sans text-[11px] font-semibold uppercase tracking-[0.3em] text-white/65" data-i18n="form.name">Name</label>
                 <input id="nm" name="name" type="text" required placeholder="Jane Doe" class="w-full border border-white/15 bg-white/5 px-4 py-3 text-sm text-white placeholder-white/30 focus:border-white/45 focus:outline-none focus:ring-0" />
               </div>
               <div>
-                <label for="em" class="mb-2 block font-sans text-[11px] font-semibold uppercase tracking-[0.3em] text-white/65">E-mail</label>
+                <label for="em" class="mb-2 block font-sans text-[11px] font-semibold uppercase tracking-[0.3em] text-white/65" data-i18n="form.email">E-mail</label>
                 <input id="em" name="email" type="email" required placeholder="you@example.com" class="w-full border border-white/15 bg-white/5 px-4 py-3 text-sm text-white placeholder-white/30 focus:border-white/45 focus:outline-none focus:ring-0" />
               </div>
             </div>
 
             <div class="grid gap-5 md:grid-cols-2">
               <div>
-                <label for="co" class="mb-2 block font-sans text-[11px] font-semibold uppercase tracking-[0.3em] text-white/65">Company <span class="text-white/35">(optional)</span></label>
+                <label for="co" class="mb-2 block font-sans text-[11px] font-semibold uppercase tracking-[0.3em] text-white/65">Company <span class="text-white/35" data-i18n="ui.optional">(optional)</span></label>
                 <input id="co" name="company" type="text" placeholder="Company / Fund / Partnership" class="w-full border border-white/15 bg-white/5 px-4 py-3 text-sm text-white placeholder-white/30 focus:border-white/45 focus:outline-none focus:ring-0" />
               </div>
               <div>
-                <label for="ph" class="mb-2 block font-sans text-[11px] font-semibold uppercase tracking-[0.3em] text-white/65">Phone <span class="text-white/35">(optional)</span></label>
+                <label for="ph" class="mb-2 block font-sans text-[11px] font-semibold uppercase tracking-[0.3em] text-white/65">Phone <span class="text-white/35" data-i18n="ui.optional">(optional)</span></label>
                 <input id="ph" name="phone" type="tel" placeholder="+1 (___) ___-____" class="w-full border border-white/15 bg-white/5 px-4 py-3 text-sm text-white placeholder-white/30 focus:border-white/45 focus:outline-none focus:ring-0" />
               </div>
             </div>
 
             <div>
-              <label for="tp" class="mb-2 block font-sans text-[11px] font-semibold uppercase tracking-[0.3em] text-white/65">Topic</label>
+              <label for="tp" class="mb-2 block font-sans text-[11px] font-semibold uppercase tracking-[0.3em] text-white/65" data-i18n="form.topic">Topic</label>
               <select id="tp" name="topic" class="w-full border border-white/15 bg-chile-ink px-4 py-3 text-sm text-white focus:border-white/45 focus:outline-none focus:ring-0">
                 <option value="Chile parcels" data-i18n="cl.contact.topic_parcel">Chile parcels / Valle de los Olivos</option>
                 <option value="Partnership" data-i18n="cl.contact.topic_partner">Partnership</option>
@@ -212,13 +216,13 @@
             </div>
 
             <div>
-              <label for="msg" class="mb-2 block font-sans text-[11px] font-semibold uppercase tracking-[0.3em] text-white/65">Message</label>
+              <label for="msg" class="mb-2 block font-sans text-[11px] font-semibold uppercase tracking-[0.3em] text-white/65" data-i18n="form.message">Message</label>
               <textarea id="msg" name="message" rows="7" required placeholder="Tell us about objectives, timelines, location, and current stage." class="w-full border border-white/15 bg-white/5 px-4 py-3 text-sm text-white placeholder-white/30 focus:border-white/45 focus:outline-none focus:ring-0"></textarea>
             </div>
 
             <div class="flex flex-wrap items-center justify-between gap-4 pt-1">
-              <p class="text-xs text-white/50">By sending, your email client will open with the details pre-filled.</p>
-              <button type="submit" class="btn-send-contact hover-glow rounded px-12 py-3.5 font-sans text-xs font-bold uppercase tracking-[0.34em] text-white">Send</button>
+              <p class="text-xs text-white/50" data-i18n="form.send_note">By sending, your email client will open with the details pre-filled.</p>
+              <button type="submit" class="btn-send-contact hover-glow rounded px-12 py-3.5 font-sans text-xs font-bold uppercase tracking-[0.34em] text-white" data-i18n="ui.send">Send</button>
             </div>
           </form>
         </div>
