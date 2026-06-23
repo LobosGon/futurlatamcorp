@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Explorador de Parcelas en Chile | Valle de los Olivos</title>
+  <title data-i18n="cl.parcels.text.explorador_de_parcelas_en_chile_valle_de_los">Explorador de Parcelas en Chile | Valle de los Olivos</title>
   <meta name="description" content="Explora las parcelas de Valle de los Olivos con mapa interactivo, estados, fotografías, videos y notas comerciales." />
   <meta name="robots" content="index, follow" />
   <link rel="canonical" href="https://futurlatamcorp.com/cl/parcels.html" />
@@ -56,7 +56,7 @@
   <header class="site-nav chile-nav fixed inset-x-0 top-0 z-[70]">
     <nav class="site-nav mx-auto flex max-w-7xl items-center justify-between px-6 py-5 lg:px-10">
       <a href="index.html" class="flex items-center gap-3 hover:opacity-90">
-        <img src="../assets/images/logo_futur.jpeg" alt="Futur Latam Corp logo" class="h-12 w-12 object-contain" decoding="async" />
+        <img src="../assets/images/logo_futur.jpeg" alt="Futur Latam Corp logo" class="h-12 w-12 object-contain" decoding="async" data-i18n="cl.parcels.alt.futur_latam_corp_logo" data-i18n-attr="alt">
         <div class="leading-tight">
           <span class="block font-sans text-lg font-light tracking-[0.3em]">FUTUR</span>
           <span class="block font-sans text-[10px] uppercase tracking-[0.22em] text-white/65">Latam Corp</span>
@@ -78,7 +78,7 @@
           <span class="text-white/25 px-0.5" aria-hidden="true">|</span>
           <button type="button" class="lang-toggle rounded px-2 py-1 font-sans text-[10px] font-semibold uppercase tracking-[0.18em] text-white/70 hover:text-white" data-set-lang="es">ES</button>
         </div>
-        <button type="button" class="rounded border border-white/30 p-2 text-white md:hidden" aria-label="Open menu" data-nav-toggle>
+        <button type="button" class="rounded border border-white/30 p-2 text-white md:hidden" aria-label="Open menu" data-nav-toggle data-i18n="cl.parcels.aria-label.open_menu" data-i18n-attr="aria-label">
           <span class="material-symbols-outlined text-2xl">menu</span>
         </button>
       </div>
@@ -173,14 +173,14 @@
 
   <!-- Photo lightbox overlay -->
   <div id="gallery-lightbox" class="gallery-lightbox hidden" role="dialog" aria-modal="true" aria-label="Galería de fotos">
-    <button id="gallery-close" class="gallery-lb-close" aria-label="Cerrar">&#215;</button>
+    <button id="gallery-close" class="gallery-lb-close" aria-label="Cerrar" data-i18n="cl.parcels.aria-label.cerrar" data-i18n-attr="aria-label">&#215;</button>
     <span   id="gallery-counter" class="gallery-lb-counter"></span>
-    <button id="gallery-prev"  class="gallery-lb-nav gallery-lb-prev"  aria-label="Anterior">&#8249;</button>
+    <button id="gallery-prev"  class="gallery-lb-nav gallery-lb-prev"  aria-label="Anterior" data-i18n="cl.parcels.aria-label.anterior" data-i18n-attr="aria-label">&#8249;</button>
     <img    id="gallery-img"   class="gallery-lb-img"  src="" alt="Vista aérea Valle de los Olivos">
     <button id="gallery-next"  class="gallery-lb-nav gallery-lb-next"  aria-label="Siguiente">&#8250;</button>
   </div>
 
-  <span class="hidden" data-i18n="cl.projects.map_error">Could not load map data.</span>
+  <span class="hidden" data-i18n="cl.projects.map_error">We could not load the parcel map. Please try again later or contact the team for current availability.</span>
 
   <script src="../js/i18n.js?v=20260518-cl-theme" defer></script>
   <script src="../js/main.js" defer></script>

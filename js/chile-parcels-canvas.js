@@ -700,13 +700,6 @@
       /* ── Initial fit ──────────────────────────────────── */
       fitView();
 
-      /* ── Debug ────────────────────────────────────────── */
-      global.__chileCanvasDebug = {
-        records: records.length,
-        lines: linesFC.features.length,
-        pins: pins.length,
-      };
-
       /* Auto-select first available parcel */
       var firstAvailable = records.filter(function (r) { return r.entry.status === "available"; })[0];
       if (firstAvailable) {
