@@ -6,7 +6,7 @@
  *
  *   - demarcation : white parcel/road lines from "Block Reference [F95F]"
  *   - letter      : reference letter pins (A, B, …)
- *   - sold        : occupied lots (clic abre popup chico sobre el mapa)
+ *   - sold        : upcoming-release lots (clic abre popup chico sobre el mapa)
  *   - available   : available lots (clic abre popup chico sobre el mapa)
  *   - other       : misc reference points
  *   - photo       : aerial photo placemarks (clic abre el lightbox global)
@@ -70,10 +70,10 @@
     });
   }
 
-  // Sold parcel — small circular badge (less prominent than available)
+  // Upcoming parcel — circular badge used for lots that will be released later.
   function makeSoldIcon(L, label) {
     return L.divIcon({
-      className: "kmz-pin kmz-pin--sold",
+      className: "kmz-pin kmz-pin--sold kmz-pin--upcoming",
       html:
         '<span class="kmz-pin__dot">' +
           '<span class="kmz-pin__num">' + escapeHtml(label || "") + "</span>" +
@@ -273,7 +273,7 @@
             riseOnHover: true,
           });
           mSold.bindTooltip(
-            (getLang() === "es" ? "Vendida " : "Sold ") + name,
+            (getLang() === "es" ? "Próxima a salir a la venta " : "Coming soon for sale ") + name,
             { direction: "top", offset: [0, -14], opacity: 0.92 }
           );
           mSold.addTo(soldLayer);
@@ -336,6 +336,7 @@
       /* ── Filters ─────────────────────────────────────────── */
       function applyFilter(status) {
         var f = status || "available";
+        container.classList.toggle("cl-parcels-map--all", f === "all");
         document.querySelectorAll("[data-parcel-filter]").forEach(function (btn) {
           btn.classList.toggle("is-active", btn.getAttribute("data-parcel-filter") === f);
         });

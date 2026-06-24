@@ -3,7 +3,7 @@
 
   var STORAGE_KEY = "flc_lang";
   var DEFAULT_LANG = "en";
-  var LOCALE_VERSION = "20260518-parcels";
+  var LOCALE_VERSION = "20260623-cl-projects-i18n";
 
   function getScriptUrl() {
     var s = document.currentScript;

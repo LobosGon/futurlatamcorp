@@ -19,7 +19,7 @@
   /* ── STATUS map ──────────────────────────────────────────────────────── */
   var STATUS = {
     available : { label: { en: "Available",  es: "Disponible" }, color: "#22c55e", fill: "#16a34a", fillAlpha: 0.45 },
-    sold      : { label: { en: "Sold",       es: "Vendida"    }, color: "#ef4444", fill: "#dc2626", fillAlpha: 0.45 },
+    sold      : { label: { en: "Coming soon for sale", es: "Próxima a salir a la venta" }, color: "#facc15", fill: "#d97706", fillAlpha: 0.45 },
     reserved  : { label: { en: "Reserved",   es: "Reservada"  }, color: "#38bdf8", fill: "#0284c7", fillAlpha: 0.40 },
     hold      : { label: { en: "On hold",    es: "En pausa"   }, color: "#f59e0b", fill: "#d97706", fillAlpha: 0.35 },
     reference : { label: { en: "Reference",  es: "Referencial"}, color: "#94a3b8", fill: "#64748b", fillAlpha: 0.30 },

@@ -306,7 +306,7 @@
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.55);
 }
 
-/* ── Sold — small dot with the number ─────────────────────────────── */
+/* ── Upcoming release — compact dot with the number ───────────────── */
 .kmz-pin--sold {
   width: 22px;
   height: 22px;
@@ -319,16 +319,33 @@
   align-items: center;
   justify-content: center;
   border-radius: 999px;
-  background: linear-gradient(135deg, #fb7185 0%, #dc2626 65%, #b91c1c 100%);
+  background: linear-gradient(135deg, #fde68a 0%, #facc15 58%, #d97706 100%);
   border: 1.5px solid rgba(255, 255, 255, 0.92);
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3);
+  box-shadow:
+    0 0 0 3px rgba(250, 204, 21, 0.2),
+    inset 0 1px 0 rgba(255, 255, 255, 0.42);
   opacity: 0.95;
+  transition: box-shadow 0.22s ease, transform 0.22s ease;
 }
 
 .kmz-pin--sold .kmz-pin__num {
   font: 800 0.6rem/1 Inter, system-ui, sans-serif;
-  color: #fff;
-  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.55);
+  color: #251a02;
+  text-shadow: none;
+}
+
+#chile-canvas.cl-parcels-map--all .kmz-pin--sold {
+  filter: drop-shadow(0 8px 15px rgba(2, 6, 23, 0.55));
+  z-index: 580;
+}
+
+#chile-canvas.cl-parcels-map--all .kmz-pin--sold .kmz-pin__dot {
+  box-shadow:
+    0 0 0 7px rgba(250, 204, 21, 0.24),
+    0 0 0 14px rgba(217, 119, 6, 0.12),
+    0 10px 20px rgba(2, 6, 23, 0.38),
+    inset 0 1px 0 rgba(255, 255, 255, 0.5);
+  transform: scale(1.18);
 }
 
 /* ── Reference / "other" — tiny grey dot ──────────────────────────── */
@@ -420,10 +437,14 @@
 .stat-chip--available strong { color: #86efac; }
 
 .stat-chip--sold {
-  border-color: rgba(239, 68, 68, 0.4);
-  background: rgba(239, 68, 68, 0.07);
+  border-color: rgba(250, 204, 21, 0.45);
+  background: rgba(250, 204, 21, 0.08);
 }
-.stat-chip--sold strong { color: #fca5a5; }
+.stat-chip--sold strong { color: #fde68a; }
+
+.stat-chip--sold span {
+  letter-spacing: 0.08em;
+}
 
 .stat-chip--reference {
   border-color: rgba(56, 189, 248, 0.4);
@@ -435,6 +456,17 @@
 .cl-parcels-toolbar .parcel-filter {
   padding: 0.42rem 0.85rem;
   font-size: 0.62rem;
+}
+
+.cl-parcels-toolbar .parcel-filter[data-parcel-filter="sold"] {
+  letter-spacing: 0.1em;
+}
+
+.cl-parcels-toolbar .parcel-filter[data-parcel-filter="sold"]:hover,
+.cl-parcels-toolbar .parcel-filter[data-parcel-filter="sold"].is-active {
+  border-color: rgba(250, 204, 21, 0.85);
+  background: rgba(250, 204, 21, 0.2);
+  color: #fde68a;
 }
 
 /* Map section: kill the default outer padding so the map can extend full width */
@@ -777,6 +809,7 @@ button.parcel-pin {
 
 .parcel-pin[data-status="sold"] {
   background: #facc15;
+  color: #251a02;
 }
 
 .parcel-pin[data-status="reference"] {
