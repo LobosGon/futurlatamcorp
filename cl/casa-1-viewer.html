@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <title>Casa 1 — Visor 3D</title>
+  <link rel="icon" href="data:," />
+  <link rel="stylesheet" href="../css/casa-2-viewer.css" />
+  <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.4.0/model-viewer.min.js"></script>
+</head>
+<body>
+  <div id="model-viewer-container" class="viewer--floor-picker">
+    <div class="viewer-buttons">
+      <button class="fs-button svg-button unselectable" id="fs-button" style="display: none;" type="button" aria-label="Pantalla completa">
+        <img src="https://d3bk9lhuisl5pl.cloudfront.net/model_viewer/fullscreen.svg" alt="" />
+      </button>
+    </div>
+
+    <div id="poster">
+      <div class="centered">
+        <div id="mv-progress-bar">
+          <div class="progress-bar">
+            <div class="bar">
+              <div id="mv-progress" class="progress"></div>
+            </div>
+          </div>
+          <div class="progress-text">Cargando modelo...</div>
+        </div>
+      </div>
+    </div>
+
+    <model-viewer
+      id="model-viewer"
+      src="../assets/chile/casa-1/casa-1-vista-total.glb"
+      alt="Casa 1"
+      camera-orbit="16.55deg 88.04deg 44.53m"
+      max-camera-orbit="auto 360deg 1000"
+      min-camera-orbit="auto -360deg -1000"
+      min-field-of-view="0.5deg"
+      max-field-of-view="90deg"
+      camera-target="0m 0m 0m"
+      field-of-view="30deg"
+      touch-action="none"
+      disable-tap
+      interpolation-decay="50"
+      camera-controls
+      exposure="1"
+      minimum-render-scale="1"
+      shadow-intensity="1"
+      autoplay
+      style="visibility: hidden;"
+    >
+      <div slot="poster" style="background: transparent;"></div>
+
+      <div class="slider slider--vertical">
+        <div class="slides">
+          <button type="button" data-id="0" data-name="Casa 1 — Vista completa" data-glb="../assets/chile/casa-1/casa-1-vista-total.glb" class="slide selected" style="background-image: url(../assets/chile/casa-1/casa-1-viewer-thumb.png)"></button>
+          <button type="button" data-id="1" data-name="Casa 1 — Piso 1" data-glb="../assets/chile/casa-1/casa-1-vista-piso-1.glb" class="slide" style="background-image: url(../assets/chile/casa-1/casa-1-viewer-thumb.png)"></button>
+        </div>
+        <div class="current-variant">Casa 1 — Vista completa</div>
+      </div>
+    </model-viewer>
+  </div>
+
+  <script src="https://d3bk9lhuisl5pl.cloudfront.net/model_viewer/screenfull.min.js"></script>
+  <script>
+    (function () {
+      var modelViewer = document.getElementById("model-viewer");
+      var container = document.getElementById("model-viewer-container");
+
+      var defaultCamera = {
+        orbit: "16.55deg 88.04deg 44.53m",
+        target: "0m 0m 0m",
+        fov: "30deg"
+      };
+
+      function applyDefaultCamera() {
+        modelViewer.cameraTarget = defaultCamera.target;
+        modelViewer.cameraOrbit = defaultCamera.orbit;
+        modelViewer.fieldOfView = defaultCamera.fov;
+      }
+
+      modelViewer.addEventListener("dblclick", function () {
+        applyDefaultCamera();
+      });
+
+      function switchSrc(slide) {
+        if (slide.classList.contains("selected") || slide.classList.contains("disabled")) return;
+
+        document.querySelectorAll(".slide").forEach(function (el) { el.classList.add("disabled"); });
+        modelViewer.src = slide.getAttribute("data-glb");
+        document.querySelectorAll(".slide").forEach(function (el) { el.classList.remove("selected"); });
+        slide.classList.add("selected");
+        document.querySelector(".current-variant").textContent = slide.getAttribute("data-name");
+
+        document.getElementById("poster").style.display = "block";
+        document.getElementById("mv-progress").style.width = "0%";
+        modelViewer.style.visibility = "hidden";
+      }
+
+      document.querySelectorAll(".slide").forEach(function (slide) {
+        slide.addEventListener("click", function () { switchSrc(slide); });
+      });
+
+      document.getElementById("fs-button").addEventListener("click", function () {
+        if (typeof screenfull !== "undefined" && screenfull.isEnabled) {
+          screenfull.toggle(container);
+        }
+      });
+
+      modelViewer.addEventListener("progress", function (e) {
+        var progress = (e.detail.totalProgress * 100).toString().match(/^-?\d+(?:\.\d{0,2})?/)[0];
+        document.getElementById("mv-progress").style.width = progress + "%";
+      });
+
+      modelViewer.addEventListener("load", function () {
+        applyDefaultCamera();
+        document.getElementById("poster").style.display = "none";
+        document.getElementById("fs-button").style.display = "block";
+        modelViewer.style.visibility = "visible";
+        document.querySelectorAll(".slide").forEach(function (el) { el.classList.remove("disabled"); });
+      });
+    })();
+  </script>
+</body>
+</html>
